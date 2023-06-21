@@ -30,4 +30,4 @@ python mr-plotter.py example1.ini
 ```
 ![example1](https://github.com/castro-gzlz/mr-plotter/assets/132309889/e557494f-9af6-4ec5-b105-0f42bb9f69cc)
 
-### Example 1: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs)
+### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs)
