@@ -11,3 +11,11 @@ Just **clone or download** this folder into your computer. All the dependencies 
 pip install -r requirements.txt
 ```
 If you have any problem with the installation please drop me and issue [here](https://github.com/castro-gzlz/mr-plotter/issues) :smiley:.
+
+## Usage
+
+To use *mr-plotter* you just need to create a .ini file into the configuration folder, and then just run
+
+```
+python mr-plotter.py my_config_file.ini
+```
