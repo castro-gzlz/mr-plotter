@@ -28,7 +28,8 @@ In this example we contextualize and hihglight the location of a new planet ([TO
 ```
 python mr-plotter.py example1.ini
 ```
-![example1](https://github.com/castro-gzlz/mr-plotter/assets/132309889/e557494f-9af6-4ec5-b105-0f42bb9f69cc)
+![example1](https://github.com/castro-gzlz/mr-plotter/assets/132309889/d020a7d6-949d-4d0c-9d87-90beb92cc233)
+
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water models
 
