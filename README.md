@@ -5,7 +5,7 @@
 
 ## Installation & Requirenments
 
-Just clone or download this folder to your computer. All the packages used are very well-known and probably you already have them installed in your computer. However, if this is not the case, you can just enter the folder and type
+Just **clone or download** this folder into your computer. All the dependencies used are very well-known and probably you already have them installed. However, if this is not the case, you can just enter the folder via terminal type
 
 ```
 pip install -r requirements.txt
