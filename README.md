@@ -14,8 +14,9 @@ If you have any problem with the installation please drop me and issue [here](ht
 
 ## Usage
 
-To use *mr-plotter* you just need to create a **.ini** file into the configuration folder, and then just run
+To run *mr-plotter* you just need to create a **.ini** and then type
 
 ```
 python mr-plotter.py my_config_file.ini
 ```
+The file my_config_file.ini will contain all the information necessary to make your plot, which will be saved into the **output** folder both in **.pdf** and **.png** formats.
