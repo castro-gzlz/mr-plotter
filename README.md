@@ -14,7 +14,7 @@ If you have any problem with the installation please drop me and issue [here](ht
 
 ## Usage
 
-To run *mr-plotter* you just need to create a **.ini** and then type
+To run *mr-plotter* you just need to create a **.ini** file and then type
 
 ```
 python mr-plotter.py my_config_file.ini
