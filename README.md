@@ -23,7 +23,7 @@ The file *my_config_file.ini* should contain all the necessary information to ma
 ## Usage examples
 
 ### Example 1: The easiest case. Contextualizing a new planet.
-In this example we contextualize and hihglight the location of a new planet (TOI-244 b) in the mass-radius diagram of known planets, and include the theoretical models for rocky planets of Zeng et al. (2019) which consider different proportions of iron and silicates in the interior of rocky planets. 
+In this example we contextualize and hihglight the location of a new planet ([TOI-244 b](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract) in the mass-radius diagram of known planets, and include the theoretical models for rocky planets of Zeng et al. (2019) which consider different proportions of iron and silicates in their interiors.
 
 ```
 python mr-plotter.py example1.ini
