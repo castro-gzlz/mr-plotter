@@ -33,3 +33,11 @@ python mr-plotter.py example1.ini
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water models
 
 In this example we include three models computed from Turbet et al. (2020) equations which consider a steam water atmosphere over a canonical rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extense hydrosphere would be enough to explain the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). Besides, we include a color code according to the stellar host metallicity. Wait! do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars!** For more insights on this take a look at our paper [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
+
+
+```
+python mr-plotter.py example2.ini
+```
+![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/2d4ba7af-e095-4e66-995e-5cdce211955f)
+
+
