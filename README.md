@@ -10,4 +10,4 @@ Just **clone or download** this folder into your computer. All the dependencies 
 ```
 pip install -r requirements.txt
 ```
-*mr-plotter* is extremelly easy to install :smiley: If you have any problems please drop me and issue [here](https://github.com/castro-gzlz/mr-plotter/issues).
+If you have any problem with the installation please drop me and issue [here](https://github.com/castro-gzlz/mr-plotter/issues) :smiley:.
