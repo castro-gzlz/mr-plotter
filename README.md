@@ -43,7 +43,7 @@ python mr-plotter.py example2.ini
 
 ### Example 3: Custom color maps
 
-In this example we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract). The color code indicates the received insolation flux, spanning from 1 to 2 Earth fluxes, which roughly corresponds to fluxes received by planets in the habitable zone (HZ) of their stars. LHS 1140 b stands out as one of the only characterized HZ planets in the rocky domain. In this plot we have used the *summer* color map, but **any matplotlib color map can be easyly selected**. 
+In this example we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract). The color code indicates the received insolation flux, spanning from 1 to 2 Earth fluxes, which roughly corresponds to fluxes received by planets in the habitable zone (HZ) of their stars. LHS 1140 b stands out as one of the only characterized HZ planets in the rocky domain. In this plot we have used the *summer* color map, but **any matplotlib color map can be easily selected**. 
 
 ```
 python mr-plotter.py example3.ini
