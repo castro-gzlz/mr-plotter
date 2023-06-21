@@ -5,8 +5,9 @@
 
 ## Installation & Requirements
 
-Just **clone or download** this folder into your computer. All the dependencies used are very well-known and probably you already have them installed in a recent version compatible with *mr-plotter*. However, if this is not the case, you can just enter the folder via terminal type
+Just **clone or download** this folder into your computer. All the dependencies used are very well-known and probably you already have them installed in a recent version compatible with *mr-plotter*. However, if this is not the case, you can just enter the folder via terminal and type
 
 ```
 pip install -r requirements.txt
 ```
+mr-plotter is extremelly easy to install! If you have any problems please drop me and issue [here] (https://github.com/castro-gzlz/mr-plotter/issues)
