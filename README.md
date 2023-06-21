@@ -10,7 +10,7 @@ Just **clone or download** this folder into your computer. All the dependencies 
 ```
 pip install -r requirements.txt
 ```
-If you have any problem with the installation please drop me and issue [here](https://github.com/castro-gzlz/mr-plotter/issues) :smiley:.
+If you have any problem with the installation you can drop me an issue [here](https://github.com/castro-gzlz/mr-plotter/issues) :smiley:.
 
 ## Usage
 
