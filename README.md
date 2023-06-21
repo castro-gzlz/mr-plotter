@@ -22,5 +22,5 @@ python mr-plotter.py my_config_file.ini
 The file *my_config_file.ini* should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. **In the [config.ini file] you can find a detailed explanation of each option than can be used**. If this is your first time using *mr-plotter*, I invite you to follow along with the tutorial and see some examples that I have prepared to illustrate the operation of the package in diferent scenarios (some of them might be of interest for you!). 
 ## Examples
 
-# Example 1:
+### Example 1:
 
