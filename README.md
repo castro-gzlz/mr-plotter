@@ -99,6 +99,53 @@ archivePrefix = {arXiv},
 }
 ```
 **Please also give credit to the models used:**
+
+
+#### Marcus et al. (2010)
+
+```
+@ARTICLE{2010ApJ...712L..73M,
+       author = {{Marcus}, Robert A. and {Sasselov}, Dimitar and {Hernquist}, Lars and {Stewart}, Sarah T.},
+        title = "{Minimum Radii of Super-Earths: Constraints from Giant Impacts}",
+      journal = {\apjl},
+     keywords = {planetary systems, planets and satellites: formation, Astrophysics - Earth and Planetary Astrophysics},
+         year = 2010,
+        month = mar,
+       volume = {712},
+       number = {1},
+        pages = {L73-L76},
+          doi = {10.1088/2041-8205/712/1/L73},
+archivePrefix = {arXiv},
+       eprint = {1003.0451},
+ primaryClass = {astro-ph.EP},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
+
+#### Lopez & Fortney et al. (2014)
+
+```
+@ARTICLE{2014ApJ...792....1L,
+       author = {{Lopez}, Eric D. and {Fortney}, Jonathan J.},
+        title = "{Understanding the Mass-Radius Relation for Sub-neptunes: Radius as a Proxy for Composition}",
+      journal = {\apj},
+     keywords = {planets and satellites: composition, planets and satellites: formation, planets and satellites: interiors, planets and satellites: physical evolution, Astrophysics - Earth and Planetary Astrophysics},
+         year = 2014,
+        month = sep,
+       volume = {792},
+       number = {1},
+          eid = {1},
+        pages = {1},
+          doi = {10.1088/0004-637X/792/1/1},
+archivePrefix = {arXiv},
+       eprint = {1311.0329},
+ primaryClass = {astro-ph.EP},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
+
 #### Zeng et al. (2016)
 
 ```
@@ -139,28 +186,6 @@ archivePrefix = {arXiv},
        eprint = {1906.04253},
  primaryClass = {astro-ph.EP},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
-#### Lopez & Fortney et al. (2014)
-
-```
-@ARTICLE{2014ApJ...792....1L,
-       author = {{Lopez}, Eric D. and {Fortney}, Jonathan J.},
-        title = "{Understanding the Mass-Radius Relation for Sub-neptunes: Radius as a Proxy for Composition}",
-      journal = {\apj},
-     keywords = {planets and satellites: composition, planets and satellites: formation, planets and satellites: interiors, planets and satellites: physical evolution, Astrophysics - Earth and Planetary Astrophysics},
-         year = 2014,
-        month = sep,
-       volume = {792},
-       number = {1},
-          eid = {1},
-        pages = {1},
-          doi = {10.1088/0004-637X/792/1/1},
-archivePrefix = {arXiv},
-       eprint = {1311.0329},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
@@ -206,28 +231,6 @@ archivePrefix = {arXiv},
        eprint = {2105.01102},
  primaryClass = {astro-ph.EP},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
-
-#### Marcus et al. (2010)
-
-```
-@ARTICLE{2010ApJ...712L..73M,
-       author = {{Marcus}, Robert A. and {Sasselov}, Dimitar and {Hernquist}, Lars and {Stewart}, Sarah T.},
-        title = "{Minimum Radii of Super-Earths: Constraints from Giant Impacts}",
-      journal = {\apjl},
-     keywords = {planetary systems, planets and satellites: formation, Astrophysics - Earth and Planetary Astrophysics},
-         year = 2010,
-        month = mar,
-       volume = {712},
-       number = {1},
-        pages = {L73-L76},
-          doi = {10.1088/2041-8205/712/1/L73},
-archivePrefix = {arXiv},
-       eprint = {1003.0451},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
