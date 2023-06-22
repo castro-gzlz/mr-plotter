@@ -76,7 +76,7 @@ If your favourite model is not yet included in *mr-plotter*, or you have any iss
 
 ## Credits
 
-If you use mr-plotter, please give credit to the following paper: 
+If you use mr-plotter, please give credit to the following [paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract): 
 
 ```
 @ARTICLE{2023arXiv230504922C,
@@ -95,8 +95,29 @@ archivePrefix = {arXiv},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+```
+**Please give also credit to the models used in your research:**
+#### Zeng et al. (2016)
 
 ```
+@ARTICLE{2023arXiv230504922C,
+       author = {{Castro-Gonz{\'a}lez}, A. and {Demangeon}, O.~D.~S. and {Lillo-Box}, J. and {Lovis}, C. and {Lavie}, B. and {Adibekyan}, V. and {Acu{\~n}a}, L. and {Deleuil}, M. and {Aguichine}, A. and {Zapatero Osorio}, M.~R. and {Tabernero}, H.~M. and {Davoult}, J. and {Alibert}, Y. and {Santos}, N. and {Sousa}, S.~G. and {Antoniadis-Karnavas}, A. and {Borsa}, F. and {Winn}, J.~N. and {Allende Prieto}, C. and {Figueira}, P. and {Jenkins}, J.~M. and {Sozzetti}, A. and {Damasso}, M. and {Silva}, A.~M. and {Astudillo-Defru}, N. and {Barros}, S.~C.~C. and {Bonfils}, X. and {Cristiani}, S. and {Di Marcantonio}, P. and {Gonz{\'a}lez Hern{\'a}ndez}, J.~I. and {Lo Curto}, G. and {Martins}, C.~J.~A.~P. and {Nunes}, N.~J. and {Palle}, E. and {Pepe}, F. and {Seager}, S. and {Su{\'a}rez Mascare{\~n}o}, A.},
+        title = "{An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)}",
+      journal = {arXiv e-prints},
+     keywords = {Astrophysics - Earth and Planetary Astrophysics},
+         year = 2023,
+        month = may,
+          eid = {arXiv:2305.04922},
+        pages = {arXiv:2305.04922},
+          doi = {10.48550/arXiv.2305.04922},
+archivePrefix = {arXiv},
+       eprint = {2305.04922},
+ primaryClass = {astro-ph.EP},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
+
 
 
 
