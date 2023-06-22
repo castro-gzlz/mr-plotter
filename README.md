@@ -48,7 +48,8 @@ In this example we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.e
 ```
 python mr-plotter.py example3.ini
 ```
-![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/83ca68f5-ae8c-4813-9e43-a138f98fcddc)
+![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/81a9729a-f1d6-4ca4-8fc1-1956ec3011a9)
+
 
 ### Example 4: Exploring other theoretical models
 
