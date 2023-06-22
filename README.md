@@ -58,7 +58,7 @@ Althogh in the [original paper](https://ui.adsabs.harvard.edu/abs/2023arXiv23050
 ```
 python mr-plotter.py example4.ini
 ```
-![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/976dd391-e1f8-40fa-9e9a-f0a2a2aa87d8)
+![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/e60f55ca-98b6-453e-9925-d16a25051407)
 
 ### Example 5: More models and isodensity curves
 
