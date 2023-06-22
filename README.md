@@ -22,7 +22,7 @@ python mr-plotter.py my_config_file.ini
 The file *my_config_file.ini* should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. **In the [config.ini file] you can find a detailed explanation of each option than can be used**. If this is your first time using *mr-plotter*, I invite you to follow along with the tutorial and see some examples that I have prepared to illustrate the operation of the package in diferent scenarios (some of them might be of interest for you!). 
 ## Usage examples
 
-### Example 1: The easiest case. Contextualizing a new planet
+### Example 1: The simplest case. Contextualizing a new planet
 In this example we contextualize and hihglight the location of a new planet ([TOI-244 b](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)) in the mass-radius diagram of known planets, and include the theoretical models for **rocky planets** and **water wolds** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
 ```
 python mr-plotter.py example1.ini
