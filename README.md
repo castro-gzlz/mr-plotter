@@ -96,7 +96,7 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
-**Please give also credit to the models used in your research:**
+**Please give also credit to the models used:**
 #### Zeng et al. (2016)
 
 ```
