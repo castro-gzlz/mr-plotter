@@ -27,7 +27,7 @@ In this example we contextualize and hihglight the location of a new planet ([TO
 ```
 python mr-plotter.py example1.ini
 ```
-![example1](https://github.com/castro-gzlz/mr-plotter/assets/132309889/057ee788-9216-4fc3-b4d4-72603d4bf2f0)
+![example1](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7bcf7d35-2cac-48ed-ae97-592845008b8b)
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water models
@@ -38,7 +38,7 @@ In this example we include three models computed from [Turbet et al. (2020)](htt
 ```
 python mr-plotter.py example2.ini
 ```
-![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/5707be78-bc83-4a27-a2c5-3ef810ec962b)
+![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/b9f98801-44b2-4182-8617-eb19687ff3a8)
 
 
 ### Example 3: Custom color maps
@@ -48,7 +48,7 @@ In this example we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.e
 ```
 python mr-plotter.py example3.ini
 ```
-![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/81a9729a-f1d6-4ca4-8fc1-1956ec3011a9)
+![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/79d43010-3f8a-430f-ad75-d8a608f76256)
 
 
 ### Example 4: Exploring other theoretical models
@@ -58,7 +58,7 @@ Althogh in the [original paper](https://ui.adsabs.harvard.edu/abs/2023arXiv23050
 ```
 python mr-plotter.py example4.ini
 ```
-![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/e60f55ca-98b6-453e-9925-d16a25051407)
+![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/f5ebda42-942e-467a-a8c6-53ec7fbe6b92)
 
 ### Example 5: More models and isodensity curves
 
@@ -67,8 +67,7 @@ In this example we include the model by [Marcus et al. (2010)](https://ui.adsabs
 ```
 python mr-plotter.py example5.ini
 ```
-
-![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/1643a8fe-c6b6-49a2-9e29-29768bc26d55)
+![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/22ebd49d-c337-4477-bf1e-c8e1b42c1a99)
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
