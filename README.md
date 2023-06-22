@@ -39,7 +39,7 @@ In this example we include three models computed from [Turbet et al. (2020)](htt
 ```
 python mr-plotter.py example2.ini
 ```
-![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/aff9ff54-8c23-48e2-ad6f-a43f8de352c5)
+![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/cbceaaa5-c4ff-49fb-9c3b-7e961b5a9362)
 
 
 ### Example 3: Custom color maps
