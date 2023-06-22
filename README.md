@@ -59,6 +59,17 @@ python mr-plotter.py example4.ini
 ```
 ![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/d263e412-0196-4f26-b941-c32701c1efd4)
 
+### Example 5: More models and isodensity curves
+
+In this example we include the model by Marcus et al. (2010) corresponding to the maximum density curve for a planet subjected to mantle stripping. We highlight the earth-sized mercurian-density planet K2-229 b which is just above that curve. Besides, we show how to include isodensity curves. 
+
+```
+python mr-plotter.py example5.ini
+```
+
+![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/1643a8fe-c6b6-49a2-9e29-29768bc26d55)
+
+
 ## Credits
 
 If you use mr-plotter, please give credit to the following paper: 
