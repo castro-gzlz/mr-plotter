@@ -76,7 +76,7 @@ If your favourite model is not yet included in *mr-plotter*, or you have any iss
 
 ## Credits
 
-If you use mr-plotter, please give credit to the following [paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract): 
+**If you use mr-plotter, please give credit to the following [paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)**: 
 
 ```
 @ARTICLE{2023arXiv230504922C,
