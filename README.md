@@ -91,7 +91,9 @@ python mr-plotter.py example5.ini
 
 #### Section [MY_DATA]
 
-| m_p1  | Possible values | Description |
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| m_p1  | Any ($M_{\oplus}$) | Description |
 | m_p1_err_up | Any ($M_{\oplus}$) | Minimum precision in mass to plot NEA planets |
 | m_p1_err_down | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
 
