@@ -71,6 +71,13 @@ python mr-plotter.py example5.ini
 ```
 ![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/22ebd49d-c337-4477-bf1e-c8e1b42c1a99)
 
+## Options
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 ## Inclusion of additional models, issues, improvements, and suggestions
 
 If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es).
