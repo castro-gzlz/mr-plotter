@@ -103,6 +103,7 @@ python mr-plotter.py example5.ini
 | name_p1<sup>**2**</sup> | Any name (e.g. TOI-244 b) | Name of your planet 1 |
 | dis_x_p1<sup>**2**</sup>  | Any value ($\rm M_{\oplus}$)  | Location of the box in terms of the distance from the planet (X-axis) |
 | dis_y_p1<sup>**2**</sup> | Any value ($\rm R_{\oplus}$)  | Location of the box in terms of the distance from the planet (Y-axis) |
+|....|..The same options are valid for as many planets as you want..|....|
 
 
 **<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be color-coded as the rest of the NEA planets.
