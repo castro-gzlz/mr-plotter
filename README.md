@@ -80,13 +80,13 @@ python mr-plotter.py example5.ini
 | Option  | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | web_or_local  | web or local  | Download the data from the Nasa Exoplanet Archive (**web**) or pick it up from the *NEA_data* folder (**local**)**<sup>1</sup>** |
-| ps_or_composite | ps or composite  | Indicates which table to use: *Planetary Systems (**ps**) or *Planetary Systems Composite Data* (**composite**)  |
+| ps_or_composite | ps or composite  | Indicates which table to use: *[Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0)* (**ps**) or *[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)* (**composite**)**<sup>1</sup>** |
 | precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
 | color_coding | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>1</sup> | Color coding of the plot |
 
 **<sup>1</sup>** If **web**, it will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *NEA_data* folder. Please don't change the default name of the downloaded tables. If you have several tables, *mr-plotter* wil automatically select the most recently downloaded.
-
+**<sup>1</sup>** If you want to use the composite data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first. 
 
 ### Optional
 
