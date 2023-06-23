@@ -79,8 +79,8 @@ python mr-plotter.py example5.ini
 
 | Option  | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  |
-| *Content Cell*  | Content Cell  | Content Cell  |
+| web_or_local  | web or local  | Indicates where to get the data from NASA Exoplanet Archive |
+| ps_or_composite | ps or composite  | Indicates which table to use (*Planetary Systems* or *Planetary Systems Composite Data*)  |
 
 ### Optional
 
