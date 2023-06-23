@@ -73,11 +73,16 @@ python mr-plotter.py example5.ini
 
 ## Options
 
-[NEA_DATA] 
+### Mandatory 
+
+#### Section [NEA_DATA]
+
 | Option  | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | Content Cell  |
 | *Content Cell*  | Content Cell  | Content Cell  |
+
+### Optional
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
