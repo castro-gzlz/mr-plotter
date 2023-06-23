@@ -76,7 +76,7 @@ python mr-plotter.py example5.ini
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| *Content Cell*  | Content Cell  |
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
