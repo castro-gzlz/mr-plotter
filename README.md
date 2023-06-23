@@ -73,10 +73,11 @@ python mr-plotter.py example5.ini
 
 ## Options
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| *Content Cell*  | Content Cell  |
+[NEA_DATA] 
+| Option  | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | Content Cell  |
+| *Content Cell*  | Content Cell  | Content Cell  |
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
