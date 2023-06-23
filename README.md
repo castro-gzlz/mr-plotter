@@ -89,6 +89,12 @@ python mr-plotter.py example5.ini
 
 ### Optional
 
+#### Section [MY_DATA]
+
+| m_p1  | Possible values | Description |
+| m_p1_err_up | Any ($M_{\oplus}$) | Minimum precision in mass to plot NEA planets |
+| m_p1_err_down | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
+
 ## Inclusion of additional models, issues, improvements, and suggestions
 
 If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es).
