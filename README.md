@@ -83,7 +83,7 @@ python mr-plotter.py example5.ini
 | ps_or_composite | ps or composite  | Indicates which table to use (*Planetary Systems* or *Planetary Systems Composite Data*)  |
 | precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
-| color_coding | none, st_met, pl_insol,...etc<sup>1</sup> | Minimum precision in radius to plot NEA planets |
+| color_coding | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>1</sup> | Color coding of the plot |
 
 ### Optional
 
