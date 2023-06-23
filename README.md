@@ -93,9 +93,22 @@ python mr-plotter.py example5.ini
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| m_p1  | Any ($M_{\oplus}$) | Description |
-| m_p1_err_up | Any ($M_{\oplus}$) | Minimum precision in mass to plot NEA planets |
-| m_p1_err_down | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
+| m_p1  | Any (\rm $M_{\oplus}$) | Mass of your planet 1 |
+| m_p1_err_up | Any (\rm $M_{\oplus}$) | Upper uncertainty on the mass of your planet 1 |
+| m_p1_err_down | Any (\rm $M_{\oplus}$) | Lower uncertainty on the mass of your planet 1 |
+| r_p1  | Any (\rm $R_{\oplus}$) | Radius of your planet 1 |
+| r_p1_err_up | Any (\rm $R_{\oplus}$) | Upper uncertainty on the radius of your planet 1 |
+| r_p1_err_down | Any (\rm $R_{\oplus}$) | Lower uncertainty on the radius of your planet 1 |
+| c_p1 | Any color or any number**<sup>1</sup>** | Color for your planet 1 |
+| name_p1**<sup>2</sup>** | Any name (e.g. TOI-244 b) | Name of your planet 1 |
+| dis_x_p1**<sup>2</sup>** | Any value (\rm $M_{\oplus}$)  | Location of the box in terms of the distance from the planet (X-axis) |
+| dis_y_p1**<sup>2</sup>** | Any value (\rm $R_{\oplus}$)  | Location of the box in terms of the distance from the planet (Y-axis) |
+| .....  | ..... | ...... |
+
+
+**<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be color-coded as the rest of the NEA planets.
+**<sup>2</sup>** These three options should be specified only if you want to include text boxes next to your planets indicating their names.
+
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
