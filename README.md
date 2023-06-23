@@ -79,7 +79,7 @@ python mr-plotter.py example5.ini
 
 | Option  | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| web_or_local  | web or local  | Indicates where to get the data from NASA Exoplanet Archive |
+| web_or_local  | web or local  | Download data from the NEA (web) of pick it from the NEA_data folder (local) |
 | ps_or_composite | ps or composite  | Indicates which table to use (*Planetary Systems* or *Planetary Systems Composite Data*)  |
 | precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
