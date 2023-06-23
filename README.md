@@ -79,11 +79,14 @@ python mr-plotter.py example5.ini
 
 | Option  | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| web_or_local  | web or local  | Download data from the NEA (web) of pick it from the NEA_data folder (local) |
+| web_or_local  | web or local  | Download data from the Nasa Exoplaner Archive (**web**) of pick it from the NEA_data folder (**local**)<sup>1</sup> |
 | ps_or_composite | ps or composite  | Indicates which table to use (*Planetary Systems* or *Planetary Systems Composite Data*)  |
 | precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
 | color_coding | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>1</sup> | Color coding of the plot |
+
+<sup>1</sup> If **web**, it will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the NEA_data folder. **Important:** Please don't change the default name of the downloaded tables. If you have several tables, mr-plotter wil automatically select the most recently downloaded.
+
 
 ### Optional
 
