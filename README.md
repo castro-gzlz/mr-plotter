@@ -52,8 +52,8 @@ In the following we describe all the options (mandatory and optional) available 
 | r_p1_err_down | Any ($\rm R_{\oplus}$) | Lower uncertainty on the radius of your planet 1 |
 | c_p1 | Any color or any number<sup>**1**</sup>  | Color for your planet 1 |
 | name_p1| Any name (e.g. TOI-244 b) | Name of your planet 1 to be plotted inside a box next to the planet location<sup>**2**</sup>  |
-| dis_x_p1 | Any value ($\rm M_{\oplus}$)  | Location of the box in terms of the distance from the planet (X-axis)<sup>**2**</sup>  |
-| dis_y_p1| Any value ($\rm R_{\oplus}$)  | Location of the box in terms of the distance from the planet (Y-axis)<sup>**2**</sup>  |
+| dis_x_p1 | Any ($\rm M_{\oplus}$)  | Location of the box in terms of the distance from the planet (X-axis)<sup>**2**</sup>  |
+| dis_y_p1| Any ($\rm R_{\oplus}$)  | Location of the box in terms of the distance from the planet (Y-axis)<sup>**2**</sup>  |
 |....|....|....|
 
 
