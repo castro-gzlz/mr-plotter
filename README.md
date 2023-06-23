@@ -20,6 +20,45 @@ python mr-plotter.py my_config_file.ini
 ```
 The file *my_config_file.ini* should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. **In the [options.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/options.ini) file you can find a detailed explanation of each option than can be used**. Alternatively, you can also run the notebook [mr-plotter.ipynb](). 
 
+## Options
+
+### Mandatory 
+
+#### Section [NEA_DATA]
+
+| Option  | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| web_or_local  | web or local  | Download the data from the [Nasa Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *NEA_data* folder (**local**)**<sup>1</sup>** |
+| ps_or_composite | ps or composite  | Indicates which table to use: *[Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0)* (**ps**) or *[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)* (**composite**)**<sup>2</sup>** |
+| precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
+| precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
+| color_coding | none, st_met, pl_insol, st_teff, sy_kmag, ... **<sup>3</sup>** | Color coding of the plot |
+
+**<sup>1</sup>** If **web**, it will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *NEA_data* folder. Please don't change the default name of the downloaded tables. If you have several tables, *mr-plotter* wil automatically select the most recently downloaded. <br /> **<sup>2</sup>** If you want to use the composite data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first. 
+
+### Optional
+
+#### Section [MY_DATA]
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| m_p1  | Any ($\rm M_{\oplus}$) | Mass of your planet 1 |
+| m_p1_err_up | Any ($\rm M_{\oplus}$) | Upper uncertainty on the mass of your planet 1 |
+| m_p1_err_down | Any ($\rm M_{\oplus}$) | Lower uncertainty on the mass of your planet 1 |
+| r_p1  | Any ($\rm R_{\oplus}$) | Radius of your planet 1 |
+| r_p1_err_up | Any ($\rm R_{\oplus}$) | Upper uncertainty on the radius of your planet 1 |
+| r_p1_err_down | Any ($\rm R_{\oplus}$) | Lower uncertainty on the radius of your planet 1 |
+| c_p1 | Any color or any number<sup>**1**</sup>  | Color for your planet 1 |
+| name_p1| Any name (e.g. TOI-244 b) | Name of your planet 1 to be plotted inside a box next to the planet location<sup>**2**</sup>  |
+| dis_x_p1 | Any value ($\rm M_{\oplus}$)  | Location of the box in terms of the distance from the planet (X-axis)<sup>**2**</sup>  |
+| dis_y_p1| Any value ($\rm R_{\oplus}$)  | Location of the box in terms of the distance from the planet (Y-axis)<sup>**2**</sup>  |
+|....|....|....|
+
+
+**<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be color-coded as the rest of the NEA planets. <br /> **<sup>2</sup>** These three options should be specified only if you want to include text boxes next to your planets indicating their names.
+
+
+
 ## Usage examples
 
 If this is **your first time using *mr-plotter***, I invite you to **take a look at some examples** I have prepared to illustrate the operation of the package in diferent scenarios (some of them might be of interest for you! :smiley:).
@@ -70,44 +109,6 @@ In this example, we include the model by [Marcus et al. (2010)](https://ui.adsab
 python mr-plotter.py example5.ini
 ```
 ![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/22ebd49d-c337-4477-bf1e-c8e1b42c1a99)
-
-## Options
-
-### Mandatory 
-
-#### Section [NEA_DATA]
-
-| Option  | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| web_or_local  | web or local  | Download the data from the [Nasa Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *NEA_data* folder (**local**)**<sup>1</sup>** |
-| ps_or_composite | ps or composite  | Indicates which table to use: *[Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0)* (**ps**) or *[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)* (**composite**)**<sup>2</sup>** |
-| precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
-| precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
-| color_coding | none, st_met, pl_insol, st_teff, sy_kmag, ... **<sup>3</sup>** | Color coding of the plot |
-
-**<sup>1</sup>** If **web**, it will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *NEA_data* folder. Please don't change the default name of the downloaded tables. If you have several tables, *mr-plotter* wil automatically select the most recently downloaded. <br /> **<sup>2</sup>** If you want to use the composite data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first. 
-
-### Optional
-
-#### Section [MY_DATA]
-
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| m_p1  | Any ($\rm M_{\oplus}$) | Mass of your planet 1 |
-| m_p1_err_up | Any ($\rm M_{\oplus}$) | Upper uncertainty on the mass of your planet 1 |
-| m_p1_err_down | Any ($\rm M_{\oplus}$) | Lower uncertainty on the mass of your planet 1 |
-| r_p1  | Any ($\rm R_{\oplus}$) | Radius of your planet 1 |
-| r_p1_err_up | Any ($\rm R_{\oplus}$) | Upper uncertainty on the radius of your planet 1 |
-| r_p1_err_down | Any ($\rm R_{\oplus}$) | Lower uncertainty on the radius of your planet 1 |
-| c_p1 | Any color or any number<sup>**1**</sup>  | Color for your planet 1 |
-| name_p1| Any name (e.g. TOI-244 b) | Name of your planet 1 to be plotted inside a box next to the planet location<sup>**2**</sup>  |
-| dis_x_p1 | Any value ($\rm M_{\oplus}$)  | Location of the box in terms of the distance from the planet (X-axis)<sup>**2**</sup>  |
-| dis_y_p1| Any value ($\rm R_{\oplus}$)  | Location of the box in terms of the distance from the planet (Y-axis)<sup>**2**</sup>  |
-|....|....|....|
-
-
-**<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be color-coded as the rest of the NEA planets. <br /> **<sup>2</sup>** These three options should be specified only if you want to include text boxes next to your planets indicating their names.
-
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
