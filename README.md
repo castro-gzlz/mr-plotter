@@ -18,7 +18,7 @@ To run *mr-plotter* you just need to create a **.ini** file and then type
 ```
 python mr-plotter.py my_config_file.ini
 ```
-The file *my_config_file.ini* should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. Alternatively, you can also run the notebook [mr-plotter.ipynb](). 
+The file *my_config_file.ini* should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. Alternatively, you can also run the notebook [mr-plotter.ipynb](https://github.com/castro-gzlz/mr-plotter/blob/main/mr-plotter.ipynb). 
 
 In the following we describe all the options (mandatory and optional) available in *mr-plotter*. If this is **your first time using *mr-plotter***, please don't be overwhelmed by the sheer number of options. I invite you to **take a look at the [Usage Examples](##-Usage-Examples) section** I have prepared to illustrate the operation of the package in diferent scenarios (some of them might be of interest for you! :smiley:).
 
