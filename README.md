@@ -63,6 +63,16 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 **<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be **color-coded** as the rest of the NEA planets. <br /> **<sup>2</sup>** These options should be **only specified** if you want to include **text boxes** next to your planets with their names.
 
+#### Section [MODELS] | Include theoretical models
+
+##### Zeng et al. (2016, 2019)
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, zeng_2019_pure_iron, etc | Models from Zeng et al. (2016, 2019) |
+
+
+
 ## Usage examples
 
 If this is **your first time using *mr-plotter***, I invite you to **take a look at some examples** I have prepared to illustrate the operation of the package in diferent scenarios (some of them might be of interest for you! :smiley:).
