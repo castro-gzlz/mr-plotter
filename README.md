@@ -13,18 +13,18 @@ If you have any problems with the installation, you can drop me an issue [here](
 
 ## Usage
 
-To run *mr-plotter* you just need to create a **.ini** file and then type
+To run *mr-plotter* you just need to create a configuration file **my_config_file.ini** inside the *config* folder and then type
 
 ```
 python mr-plotter.py my_config_file.ini
 ```
 The file *my_config_file.ini* should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. Alternatively, you can also run the notebook [mr-plotter.ipynb](https://github.com/castro-gzlz/mr-plotter/blob/main/mr-plotter.ipynb). 
 
-In the following we describe all the options (mandatory and optional) available in *mr-plotter*. Please don't be overwhelmed by the sheer number of options! If this is **your first time using *mr-plotter***, I invite you to **take a look at the [Usage Examples](##-Usage-Examples) section** I have prepared to illustrate the operation of the package in diferent scenarios (some of them might be of interest for you! :smiley:).
+In the following we describe all the options (mandatory and optional) that can be used in the configuration file. Please **don't be overwhelmed by the sheer number of options!** If this is **your first time using *mr-plotter***, I invite you to **take a look at the [Usage Examples](##-Usage-Examples) section** that I have prepared to illustrate the operation of the package in diferent key scenarios (some of them might be of interest for you! :smiley:).
 
-## Options
+## Configuration file
 
-### Mandatory 
+### Mandatory parameters
 
 #### Section [NEA_DATA]
 
@@ -38,7 +38,7 @@ In the following we describe all the options (mandatory and optional) available 
 
 **<sup>1</sup>** If **web**, it will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *NEA_data* folder. Please don't change the default name of the downloaded tables. If you have several tables, *mr-plotter* wil automatically select the most recently downloaded. <br /> **<sup>2</sup>** If you want to use the composite data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first. 
 
-### Optional
+### Optional parameters
 
 #### Section [MY_DATA]
 
