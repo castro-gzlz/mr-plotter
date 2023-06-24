@@ -25,7 +25,7 @@ In the next section we describe all the parameters (mandatory and optional) that
 
 ### Is this your first time using *mr-plotter*?
 
-If so, I invite you to take a look at the [Usage Examples](##-Usage-Examples) section that I have prepared to illustrate the operation of the package in diferent key scenarios (some of them might be of interest for you! :smiley:). You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder.
+If so, I invite you to first take a look at the [Usage Examples](##-Usage-Examples) section that I have prepared to illustrate the operation of the package in diferent key scenarios (some of them might be of interest for you! :smiley:). You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder.
 
 ## Configuration file
 
