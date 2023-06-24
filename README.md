@@ -29,7 +29,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 ### Mandatory parameters
 
-#### Section [NEA_DATA]
+#### Section [NEA_DATA] | Include data from the [*Nasa Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/index.html)
 
 | Parameter  | Possible values | Description |
 | ------------- | ------------- | ------------- |
