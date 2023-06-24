@@ -18,7 +18,7 @@ You just need to create a configuration file ***my_config_file.ini*** inside the
 ```
 python mr-plotter.py my_config_file.ini
 ```
-The file ***my_config_file.ini*** should contain all the necessary information to make your plot, which will be **saved into the output** folder. In the [Configuration file](#configuration-file) section we describe all the parameters (mandatory and optional) that can be used in the configuration file. 
+The file ***my_config_file.ini*** should contain all the necessary information to make your plot, which will be **saved into the *output* folder**. In the [Configuration file](#configuration-file) section we describe all the parameters (mandatory and optional) that can be used in the configuration file. 
 
 ### Is this your first time using *mr-plotter*?
 
