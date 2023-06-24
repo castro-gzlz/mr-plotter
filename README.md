@@ -69,9 +69,9 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc**<sup>1</sup>** | Models from Zeng et al. (2016, 2019) |
+| models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc<sup>**1**</sup> | Models from Zeng et al. (2016, 2019) |
 
-All the Zeng et al. (2016, 2019) models available here are included in the *mr-plotter* database. The names of the models are **self-descriptive**. Hence, The four models including only solid material are: **zeng_2019_pure_iron**, **zeng_2019_earth_like**, **zeng_2019_pure_rock**, **and zeng_2016_20_Fe** (for a 20% composition of iron). In this table we include all the Zeng et al. (2016, 2019) models, including models for **water worlds** and **gas dwarfs**. 
+<sup>**1**</sup> All the Zeng et al. (2016, 2019) models available here are included in the *mr-plotter* database. The names of the models are **self-descriptive**. In this table we include all the Zeng et al. (2016, 2019) models, including models for **water worlds** and **gas dwarfs**. 
 
 
 ## Usage examples
