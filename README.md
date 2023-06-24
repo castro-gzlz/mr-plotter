@@ -25,7 +25,7 @@ In the [Configuration file](#configuration-file) section we describe all the par
 
 ### Is this your first time using *mr-plotter*?
 
-If so, please **don't be overwhelmed by the sheer number of options**. In most cases you will only use a few! To **get familiarized with the options** and **have a first contact with *mr-plotter***, I invite you to take a look at the [Usage Examples](#usage-examples) section which illustrates the operation of the package in diferent key scenarios (some of them might be of interest for you!). You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder so you can have a feeling on the operation of the package. Enjoy :smiley:.
+If so, please **don't be overwhelmed by the large number of options**. In most cases you will only use a few! To **get familiarized with the options** and **have a first contact with *mr-plotter***, I invite you to take a look at the [Usage Examples](#usage-examples) section which illustrates the operation of the package in diferent key scenarios (some of them might be of interest for you!). You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder so you can have a feeling on the operation of the package. Enjoy :smiley:.
 
 ## Configuration file
 
