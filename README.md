@@ -69,7 +69,41 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc | Models from Zeng et al. (2016, 2019) |
+| models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc**<sup>1</sup>** | Models from Zeng et al. (2016, 2019) |
+**<sup>1</sup>** All 
+
+{'zeng_2019_pure_iron':r'100% Fe (0% $\rm MgSiO_{3}$)',\
+'zeng_2019_earth_like': r'33% Fe (66% $\rm MgSiO_{3}$)',\
+'zeng_2019_pure_rock': r'0% Fe (100% $\rm MgSiO_{3}$)',\
+'zeng_2019_0.1_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',\
+'zeng_2019_0.3_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',\
+'zeng_2019_1_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',\
+'zeng_2019_2_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',\
+'zeng_2019_5_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',\
+'zeng_2019_0.1_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',\
+'zeng_2019_0.3_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',\
+'zeng_2019_1_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',\
+'zeng_2019_2_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',\
+'zeng_2019_5_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',\
+'zeng_2019_0.1_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',\
+'zeng_2019_0.3_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',\
+'zeng_2019_1_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',\
+'zeng_2019_2_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',\
+'zeng_2019_5_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',\
+'zeng_2019_0.1_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',\
+'zeng_2019_0.3_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',\
+'zeng_2019_1_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',\
+'zeng_2019_2_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',\
+'zeng_2019_5_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',\
+'zeng_2019_0.1_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',\
+'zeng_2019_0.3_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',\
+'zeng_2019_1_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',\
+'zeng_2019_2_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',\
+'zeng_2019_5_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',\
+'zeng_2016_20_Fe': r'20% Fe (80% $\rm MgSiO_{3}$)',\
+'zeng_2019_50_H2O_700K': r'50% $\rm H_{2}O$ (700K)',\
+'zeng_2019_100_H2O_700K': r'100% $\rm H_{2}O$ (700K)',\
+                    }
 
 
 
