@@ -13,7 +13,7 @@ If you have any problems with the installation, you can drop me an issue [here](
 
 ## Usage
 
-You just need to create a configuration file **my_config_file.ini** inside the *config* folder and then type
+You just need to create a configuration file **my_config_file.ini** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder and then type
 
 ```
 python mr-plotter.py my_config_file.ini
@@ -23,7 +23,7 @@ The file *my_config_file.ini* should contain all the necessary information to ma
 ## Configuration file
 
 
-In the following we describe all the options (mandatory and optional) that can be used in the configuration file. Please **don't be overwhelmed by the sheer number of options (most of them are optional)!** If this is **your first time using *mr-plotter***, I invite you to **take a look at the [Usage Examples](##-Usage-Examples) section** that I have prepared to illustrate the operation of the package in **diferent key scenarios** (some of them might be of interest for you! :smiley:). You can find all the five example configuration files inside the config folder.
+In the following we describe all the parameters (mandatory and optional) that can be used in the configuration file. Please **don't be overwhelmed by the sheer number of options (in most cases you will only use a few)!** If this is **your first time using *mr-plotter***, I invite you to **take a look at the [Usage Examples](##-Usage-Examples) section** that I have prepared to illustrate the operation of the package in **diferent key scenarios** (some of them might be of interest for you! :smiley:). You can find all the five example configuration files inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder.
 
 ### Mandatory parameters
 
