@@ -44,7 +44,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 ### Optional parameters
 
-#### Section [MY_DATA]
+#### Section [MY_DATA] | Include data of your planets
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
