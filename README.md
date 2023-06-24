@@ -61,7 +61,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 |....|....|....|
 
 
-**<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be **color-coded** as the rest of the NEA planets. <br /> **<sup>2</sup>** These options should be only specified if you want to include text boxes next to your planets with their names.
+**<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be **color-coded** as the rest of the NEA planets. <br /> **<sup>2</sup>** These options should be **only specified** if you want to include **text boxes** next to your planets with their names.
 
 ## Usage examples
 
