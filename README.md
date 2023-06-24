@@ -18,7 +18,9 @@ You just need to create a configuration file ***my_config_file.ini*** inside the
 ```
 python mr-plotter.py my_config_file.ini
 ```
-The file ***my_config_file.ini*** should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. Alternatively, you can also run the notebook [mr-plotter.ipynb](https://github.com/castro-gzlz/mr-plotter/blob/main/mr-plotter.ipynb). 
+The file ***my_config_file.ini*** should contain all the necessary information to make your plot, which will be **saved into the output** folder both in **.pdf** and **.png** formats. You can find five example configuration files inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder.  <br /> 
+
+Alternatively, you can also run the notebook [mr-plotter.ipynb](https://github.com/castro-gzlz/mr-plotter/blob/main/mr-plotter.ipynb). 
 
 ## Configuration file
 
