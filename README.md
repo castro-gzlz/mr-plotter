@@ -22,7 +22,7 @@ The file ***my_config_file.ini*** should contain all the necessary information t
 
 ### Is this your first time using *mr-plotter*?
 
-If so, please **don't be overwhelmed by the large number of parameters**. In most cases you will only use a few! To **get familiarized with the main parameters** and **have a first contact with *mr-plotter***, I invite you to take a look at the [Usage examples](#usage-examples) section which illustrates the operation of the package in **diferent key scenarios**. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
+If so, please **don't be overwhelmed by the large number of parameters**. In most cases you will only use a few! To **get familiarized with the main parameters** and **have a first contact with *mr-plotter***, I invite you to take a look at the [Usage examples](#usage-examples) section, which illustrates the operation of the package in **diferent key scenarios**. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
 
 ## Configuration file
 
