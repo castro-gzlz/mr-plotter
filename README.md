@@ -23,7 +23,7 @@ Alternatively, you can also run the notebook [mr-plotter.ipynb](https://github.c
 
 In the next section we describe all the parameters (mandatory and optional) that can be used in the configuration file. Please **don't be overwhelmed by the sheer number of options. In most cases you will only use a few!**  <br /> 
 
-### First time using *mr-plotter*
+#### First time using *mr-plotter*
 
 If this is **your first time using *mr-plotter***, I invite you to **take a look at the [Usage Examples](##-Usage-Examples) section** that I have prepared to illustrate the operation of the package in **diferent key scenarios** (some of them might be of interest for you! :smiley:). You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder.
 
