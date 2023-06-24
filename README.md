@@ -13,7 +13,7 @@ If you have any problems with the installation, you can drop me an issue [here](
 
 ## Usage
 
-To run *mr-plotter* you just need to create a configuration file **my_config_file.ini** inside the *config* folder and then type
+You just need to create a configuration file **my_config_file.ini** inside the *config* folder and then type
 
 ```
 python mr-plotter.py my_config_file.ini
