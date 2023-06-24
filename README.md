@@ -13,7 +13,7 @@ If you have any problems with the installation, you can drop me an issue [here](
 
 ## Usage
 
-You just need to create a configuration file **my_config_file.ini** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder and then type
+You just need to create a configuration file *my_config_file.ini* inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder and then type
 
 ```
 python mr-plotter.py my_config_file.ini
