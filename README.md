@@ -38,7 +38,9 @@ If so, please **don't be overwhelmed by the large number of parameters**. In mos
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
 | color_coding | none, st_met, pl_insol, st_teff, sy_kmag, ... **<sup>3</sup>** | Color coding of the plot |
 
-**<sup>1</sup>** If **web**, it will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *NEA_data* folder. Please don't change the default name of the downloaded tables. If you have several tables, *mr-plotter* wil automatically select the most recently downloaded. <br /> **<sup>2</sup>** If you want to use the composite data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first. 
+**<sup>1</sup>** If **web**, it will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *NEA_data* folder. Please don't change the default name of the downloaded tables. If you have several tables, *mr-plotter* wil automatically select the most recently downloaded. <br /> **<sup>2</sup>** If you want to use the **composite** data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first.  <br /> 
+**<sup>3</sup>** All the possible values to color code your plot: <br /> 
+st_met -> Stellar metallicity (dex)
 
 ### Optional parameters
 
