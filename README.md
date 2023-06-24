@@ -33,7 +33,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option  | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| web_or_local  | web or local  | Download the data from the [Nasa Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *NEA_data* folder (**local**)**<sup>1</sup>** |
+| web_or_local  | web or local  | Download the data from the [Nasa Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *[NEA_data](https://github.com/castro-gzlz/mr-plotter/tree/main/NEA_data)* folder (**local**)**<sup>1</sup>** |
 | ps_or_composite | ps or composite  | Indicates which table to use: *[Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0)* (**ps**) or *[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)* (**composite**)**<sup>2</sup>** |
 | precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
