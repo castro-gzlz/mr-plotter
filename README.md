@@ -1,5 +1,5 @@
 # **mr-plotter**
-**Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool that creates **paper-ready mass-radius diagrams** with your favorite theoretical models. It also includes the ability to **color-code diagrams** based on any published stellar or planetary property collected in the [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/). 
+**Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool that creates **paper-ready mass-radius diagrams** with your favorite theoretical models. It also includes the ability to **color-code diagrams** based on any published stellar or planetary property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/). 
 
 
 ![logo_mr-plotter](https://github.com/castro-gzlz/mr-plotter/assets/132309889/6ee7dbb3-4d5c-4f8c-b4fe-9d69131f66fd)
@@ -33,7 +33,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option  | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| web_or_local  | web or local  | Download the data from the [Nasa Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *[NEA_data](https://github.com/castro-gzlz/mr-plotter/tree/main/NEA_data)* folder (**local**)**<sup>1</sup>** |
+| web_or_local  | web or local  | Download the data from the [*Nasa Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *[NEA_data](https://github.com/castro-gzlz/mr-plotter/tree/main/NEA_data)* folder (**local**)**<sup>1</sup>** |
 | ps_or_composite | ps or composite  | Indicates which table to use: *[Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0)* (**ps**) or *[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)* (**composite**)**<sup>2</sup>** |
 | precision_mass | From 0 to 100 (%) | Minimum precision in mass to plot NEA planets |
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius to plot NEA planets |
