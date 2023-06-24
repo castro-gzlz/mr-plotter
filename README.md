@@ -69,7 +69,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, zeng_2019_pure_iron, etc | Models from Zeng et al. (2016, 2019) |
+| models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc | Models from Zeng et al. (2016, 2019) |
 
 
 
