@@ -1,16 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 ###########################
 #@|-----mr-plotter------#@|
 ###########################
-
-
-# In[ ]:
-
 
 import os
 import pyvo
@@ -24,32 +17,20 @@ import astropy.constants as const
 import argparse
 
 
-# In[ ]:
-
-
 #@|Uncomment this for the mr-plotter.py version
-#parser = argparse.ArgumentParser()
-#parser.add_argument('config_file')
-#args = parser.parse_args()
-#config_file = args.config_file
-
-
-# In[ ]:
+parser = argparse.ArgumentParser()
+parser.add_argument('config_file')
+args = parser.parse_args()
+config_file = args.config_file
 
 
 #@|Uncomment this for the mr.plotter.ipynb version
 #@|#####--Configuration file--#########
-config_file = 'example4.ini'
+#config_file = 'example4.ini'
 #@|####################################
 
 
-# In[ ]:
-
-
 path_models = 'theoretical_models/'
-
-
-# In[ ]:
 
 
 #|Turbet et al. (2020) theoretical M-R models
@@ -122,10 +103,6 @@ def turbet2020_MR():
         #@|####################
         
 
-
-# In[ ]:
-
-
 def aguich2021_MR():
     
     global R_aguich2021, M_aguich2021
@@ -142,10 +119,6 @@ def aguich2021_MR():
         R_aguich2021.append(r_aguich2021)
         M_aguich2021.append(m_aguich2021)
     
-
-
-# In[ ]:
-
 
 def lopez_fortney2014_MR():
     
@@ -167,9 +140,6 @@ def lopez_fortney2014_MR():
         M_lf2014.append(m_lf2014)
 
 
-# In[ ]:
-
-
 def iso_density():
     
     global Radii_iso, Masses_iso
@@ -183,9 +153,6 @@ def iso_density():
         
         Radii_iso.append(radii / const.R_earth.value)
         Masses_iso.append(masses / const.M_earth.value)
-
-
-# In[ ]:
 
 
 #@|Read the configuration file 'config.ini' into a config_object
@@ -209,9 +176,6 @@ try:
     OPTIONAL_CONFIG = config_object['OPTIONAL_CONFIG']
 except:
     pass
-
-
-# In[ ]:
 
 
 #@|Load data from the NASA Exoplanet Archive (Confirmed planets)
@@ -254,9 +218,6 @@ if web_or_local == 'local':
         df = pd.read_csv('NEA_data/'+list_composite[-1], comment = "#")
 
 
-# In[ ]:
-
-
 #@|We remove the planets with a precision in mass and radius lower than precision_radius and precision_mass
 
 precision_radius = float(NEA_DATA['precision_radius'])
@@ -275,9 +236,6 @@ idxs_R_pl_thres = np.where(R_pl_err / R_pl < (precision_radius / 100))[0]
 df = df.iloc[idxs_R_pl_thres]
 
 
-# In[ ]:
-
-
 #@|We remove the rows from the df that have not 'color_coding'
 color_coding = NEA_DATA['color_coding']
 
@@ -289,9 +247,6 @@ if color_coding in df_cols:
 print('Your sample contains '+str(len(df))+' planets')
 
 
-# In[ ]:
-
-
 #@|Definition of the Mass and radius arrays
 R_NEA, R_NEA_err_up, R_NEA_err_down = df['pl_rade'].values, df['pl_radeerr1'].values, df['pl_radeerr2'].values
 M_NEA, M_NEA_err_up, M_NEA_err_down = df['pl_bmasse'].values, df['pl_bmasseerr1'].values, df['pl_bmasseerr2'].values
@@ -300,10 +255,6 @@ M_NEA, M_NEA_err_up, M_NEA_err_down = df['pl_bmasse'].values, df['pl_bmasseerr1'
 
 R_NEA_ERR = [(abs(R_NEA_err_down[i]), R_NEA_err_up[i]) for i in range(len(R_NEA))]
 M_NEA_ERR = [(abs(M_NEA_err_down[i]), M_NEA_err_up[i]) for i in range(len(M_NEA))]
-
-
-# In[ ]:
-
 
 #@|zeng et al. (2016,2019) and marcus et al. (2010) colors and labels
 #@|data from https://lweb.cfa.harvard.edu/~lzeng/planetmodels.html
@@ -315,13 +266,9 @@ models_dic_labels = {'zeng_2019_pure_iron':r'100% Fe (0% $\rm MgSiO_{3}$)',     
                     }
 
 
-# In[ ]:
-
 
 color_codings_label_dic = {'disc_year': 'Discovery year',                            'pl_orbper': 'Orbital period (days)',                           'pl_orbsmax': 'Semi-major axis (AU)',                           'pl_orbeccen': 'Eccentricity',                           'pl_insol': r'Insolation Flux $\rm (S_{\oplus})$',                            'pl_eqt': 'Equilibrium temperature (K)',                           'st_teff': 'Stellar effective temperature (K)',                           'st_rad': r'Stellar radius $\rm (R_{\odot})$' ,                           'st_mass':r'Stellar mass $\rm (M_{\odot})$' ,                           'st_met': r'Star metallicity (dex)',                           'st_logg': 'Stellar surface gravity (dex)',                           'sy_dist': 'Distance (pc)',                           'sy_vmag': r'$V$ (Johnson) magnitude',                           'sy_kmag': r'$K_{\rm s}$ (2MASS) magnitude',                           'sy_gaiamag': r'$Gaia$ magnitude' }
 
-
-# In[ ]:
 
 
 #@|#######--zeng et al. (2016,2019) config--##########
@@ -333,9 +280,6 @@ except:
     zeng = False
 
 
-# In[ ]:
-
-
 #@|#######--marcus et al. 2010 config--##########
 try:
     models_marcus = MODELS['models_marcus']
@@ -343,9 +287,6 @@ try:
     marcus = True
 except:
     marcus = False
-
-
-# In[ ]:
 
 
 #@|#######--turbet et al. 2020 config--##########
@@ -363,9 +304,6 @@ except:
     turb_2020 = False    
 
 
-# In[ ]:
-
-
 #@|#######--aguichine et al. 2020 config--##########
 try:
     x_core_aguich2021 = [float(x.strip()) for x in MODELS['x_core_aguich2021'].split(',')]
@@ -377,9 +315,6 @@ try:
     aguich2021_MR()
 except:
     aguich2021 = False
-
-
-# In[ ]:
 
 
 #@|#######--lopez & fortney et al. 2014 config--##########
@@ -395,9 +330,6 @@ except:
     lopez_fortney2014 = False
 
 
-# In[ ]:
-
-
 #@|#######--Isodensity config--##########
 try:
     density = [float(x.strip()) for x in MODELS['density'].split(',')]
@@ -407,9 +339,6 @@ try:
     isodensity = True
 except:
     isodensity = False 
-
-
-# In[ ]:
 
 
 #@|optional configuration
@@ -528,10 +457,6 @@ for i in range(1, 21):
         pass
     
 
-
-# In[ ]:
-
-
 def plot_low_density_SE_region():
     
     x = [1.55, 1.58,  2., 2.5, 3.5, 2.6, 1.9]
@@ -543,9 +468,6 @@ def plot_low_density_SE_region():
     basic_form = interpolate.splev(unew, tck)
     ax.plot(basic_form[0], basic_form[1], color='blue', lw=2,alpha = 0.7)
     ax.fill(basic_form[0], basic_form[1], color='dodgerblue', alpha=0.2)
-
-
-# In[ ]:
 
 
 ###########################
@@ -763,26 +685,6 @@ plt.savefig(f'output/{config_file[:-4]}.png', bbox_inches = 'tight', pad_inches 
 
 print('Your mass-radius diagram has been saved successfully!')
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
