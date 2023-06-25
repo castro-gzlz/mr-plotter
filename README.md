@@ -188,9 +188,9 @@ python mr-plotter.py example4.ini
 ![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7529aa53-40c0-4977-8a8d-fc12b3a5984a)
 
 
-### Example 5: More models and isodensity curves
+### Example 5: More models, isodensity curves, and two-columns plots
 
-In this example, we include the model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) corresponding to the **maximum density curve for a planet subjected to mantle stripping**. We highlight the earth-sized, mercurian-density planet [K2-229 b](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract), with the size of the Earth and density of Mercury, is located just above that curve. Besides, we illustrate **how to include isodensity curves**. 
+In this example, we include the model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) corresponding to the **maximum density curve for a planet subjected to mantle stripping**. We highlight the earth-sized, mercurian-density planet [K2-229 b](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract), with the size of the Earth and density of Mercury, is located just above that curve. Besides, we illustrate **how to include isodensity curves** as well as **how to prepare paper-ready plots in two-columns format**. 
 
 ```
 python mr-plotter.py example5.ini
