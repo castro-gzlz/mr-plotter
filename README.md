@@ -73,6 +73,19 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 <sup>**1**</sup> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. 
 
+#### [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract)
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| M_turb2020 | Any ($\rm M_{\oplus}$) | Mass of your planet |
+| R_turb2020 | Any ($\rm M_{\oplus}$) | Radius of your planet |
+| Seff_turb2020 | > 1.1 ($\rm S_{\oplus}$) | Insolation flux received by your planet |
+| WMFs_turb2020 | From 0 to 0.05 | Water mass fractions (WMFs) of steam water |
+| Core_turb2020 | earth, rock, or iron | Internal core composition over which the steam water hydrosphere will reside |
+| Core_turb2020 | Any color | Colors of each model |
+**Note:** To include several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models in the same plot, you can just include as many values as you want separated by commas, similar to [example2.ini]. 
+
+
 
 ## Usage examples
 
