@@ -12,7 +12,7 @@
 | zeng_2019_5_H2_onto_earth_like_300K | Earth + 5% $\rm H_{2}$ (300K)  |
 |...|...|
 |zeng_2019_50_H2O_300K| 50% $\rm H_{2}O$ (300K) |
-|...|...|
 |zeng_2019_100_H2O_300K| 100% $\rm H_{2}O$ (300K) |
+|...|...|
 
 **Note:** The $\rm H_{2}O$ models are valid for temperatures of **300K**, **500K**, **700K**, and **1000K**, while the $\rm H_{2}$ models are **also valid** for **2000K**. 
