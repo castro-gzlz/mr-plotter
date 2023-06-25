@@ -129,8 +129,8 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| color_min | Any value | Minimum value for the color-coded plots. If not specified, mr-plotter will choose the median of the 5% minimum values |
-| color_max | Any value | Maximum value for the color-coded plots. If not specified, mr-plotter will choose the median of the 5% maximum values |
+| color_min | Any | Minimum **value** for the color-coded plots. If not specified, mr-plotter will choose the median of the 5% minimum values |
+| color_max | Any | Maximum **value** for the color-coded plots. If not specified, mr-plotter will choose the median of the 5% maximum values |
 | log_x | True or False | Logarithmic scale on the $X$-axis. Default: True |
 | log_y | True of False| Logarithmic scale on the $Y$-axis. Default: True |
 | xlim | Any, Any | Limits of the plot on the X-axis. Default: 0.5, 21 |
