@@ -101,10 +101,10 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| density | Any ($\rm g cm^{-3}$) | Density |
+| density | Any ($\rm g \, cm^{-3}$) | Density |
 | colors_density | Any color | Colors of each curve |
 
-**Note:** To plot several Isodensity curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example5.ini). 
+**Note:** To plot several curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example5.ini). 
 
 
 
