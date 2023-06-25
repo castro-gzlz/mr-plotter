@@ -670,7 +670,6 @@ if shade_below_pure_iron:
     plt.fill_between(m_pure_iron, r_pure_iron, 0,  alpha = 0.3, color = 'grey', zorder = -1000)
     
     
-
 #plt.axhline(1.5)
 #plt.axhline(2.0)
 
