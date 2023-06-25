@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
+# In[ ]:
 
 
 ###########################
@@ -9,7 +9,7 @@
 ###########################
 
 
-
+# In[ ]:
 
 
 import os
@@ -24,20 +24,32 @@ import astropy.constants as const
 import argparse
 
 
-#@|for the mr-plotter.py version
-parser = argparse.ArgumentParser()
-parser.add_argument('config_file')
-args = parser.parse_args()
-config_file = args.config_file
+# In[ ]:
 
 
-#@|for the mr.plotter.ipynb version
+#@|Uncomment this for the mr-plotter.py version
+#parser = argparse.ArgumentParser()
+#parser.add_argument('config_file')
+#args = parser.parse_args()
+#config_file = args.config_file
+
+
+# In[ ]:
+
+
+#@|Uncomment this for the mr.plotter.ipynb version
 #@|#####--Configuration file--#########
-#config_file = 'example1.ini'
+config_file = 'example4.ini'
 #@|####################################
 
 
+# In[ ]:
+
+
 path_models = 'theoretical_models/'
+
+
+# In[ ]:
 
 
 #|Turbet et al. (2020) theoretical M-R models
@@ -111,6 +123,9 @@ def turbet2020_MR():
         
 
 
+# In[ ]:
+
+
 def aguich2021_MR():
     
     global R_aguich2021, M_aguich2021
@@ -127,6 +142,10 @@ def aguich2021_MR():
         R_aguich2021.append(r_aguich2021)
         M_aguich2021.append(m_aguich2021)
     
+
+
+# In[ ]:
+
 
 def lopez_fortney2014_MR():
     
@@ -148,6 +167,9 @@ def lopez_fortney2014_MR():
         M_lf2014.append(m_lf2014)
 
 
+# In[ ]:
+
+
 def iso_density():
     
     global Radii_iso, Masses_iso
@@ -163,9 +185,12 @@ def iso_density():
         Masses_iso.append(masses / const.M_earth.value)
 
 
+# In[ ]:
+
+
 #@|Read the configuration file 'config.ini' into a config_object
 config_object = ConfigParser()
-config_object.read(f"{config_file}")
+config_object.read(f"config/{config_file}")
 
 #@|Sections
 try:
@@ -184,6 +209,9 @@ try:
     OPTIONAL_CONFIG = config_object['OPTIONAL_CONFIG']
 except:
     pass
+
+
+# In[ ]:
 
 
 #@|Load data from the NASA Exoplanet Archive (Confirmed planets)
@@ -226,6 +254,9 @@ if web_or_local == 'local':
         df = pd.read_csv('NEA_data/'+list_composite[-1], comment = "#")
 
 
+# In[ ]:
+
+
 #@|We remove the planets with a precision in mass and radius lower than precision_radius and precision_mass
 
 precision_radius = float(NEA_DATA['precision_radius'])
@@ -244,6 +275,9 @@ idxs_R_pl_thres = np.where(R_pl_err / R_pl < (precision_radius / 100))[0]
 df = df.iloc[idxs_R_pl_thres]
 
 
+# In[ ]:
+
+
 #@|We remove the rows from the df that have not 'color_coding'
 color_coding = NEA_DATA['color_coding']
 
@@ -253,6 +287,9 @@ if color_coding in df_cols:
     df = df.iloc[idxs_not_nan]
     
 print('Your sample contains '+str(len(df))+' planets')
+
+
+# In[ ]:
 
 
 #@|Definition of the Mass and radius arrays
@@ -265,17 +302,26 @@ R_NEA_ERR = [(abs(R_NEA_err_down[i]), R_NEA_err_up[i]) for i in range(len(R_NEA)
 M_NEA_ERR = [(abs(M_NEA_err_down[i]), M_NEA_err_up[i]) for i in range(len(M_NEA))]
 
 
+# In[ ]:
+
+
 #@|zeng et al. (2016,2019) and marcus et al. (2010) colors and labels
 #@|data from https://lweb.cfa.harvard.edu/~lzeng/planetmodels.html
 
 models_dic_colors = {'zeng_2019_pure_iron':'black', 'zeng_2019_earth_like': 'red', 'zeng_2019_pure_rock': 'orange',                    'zeng_2019_0.1_H2_onto_earth_like_300K': 'darkslateblue',                    'zeng_2019_0.3_H2_onto_earth_like_300K':'mediumslateblue',                    'zeng_2019_1_H2_onto_earth_like_300K': 'mediumpurple',                    'zeng_2019_2_H2_onto_earth_like_300K': 'rebeccapurple',                    'zeng_2019_5_H2_onto_earth_like_300K': 'blueviolet',                    'zeng_2019_0.1_H2_onto_earth_like_500K': 'indigo',                    'zeng_2019_0.3_H2_onto_earth_like_500K': 'darkorchid',                    'zeng_2019_1_H2_onto_earth_like_500K': 'darkviolet',                    'zeng_2019_2_H2_onto_earth_like_500K': 'mediumorchid',                    'zeng_2019_5_H2_onto_earth_like_500K': 'thistle',                    'zeng_2019_0.1_H2_onto_earth_like_700K': 'plum',                    'zeng_2019_0.3_H2_onto_earth_like_700K': 'violet',                    'zeng_2019_1_H2_onto_earth_like_700K': 'purple',                    'zeng_2019_2_H2_onto_earth_like_700K': 'darkmagenta',                    'zeng_2019_5_H2_onto_earth_like_700K': 'fuchsia',                    'zeng_2019_0.1_H2_onto_earth_like_1000K': 'magenta',                    'zeng_2019_0.3_H2_onto_earth_like_1000K': 'orchid',                    'zeng_2019_1_H2_onto_earth_like_1000K': 'mediumvioletred',                    'zeng_2019_2_H2_onto_earth_like_1000K': 'deepping',                    'zeng_2019_5_H2_onto_earth_like_1000K': 'hotpink',                    'zeng_2019_0.1_H2_onto_earth_like_2000K': 'lavenderblush',                    'zeng_2019_0.3_H2_onto_earth_like_2000K': 'palevioletred',                    'zeng_2019_1_H2_onto_earth_like_2000K': 'crimson',                    'zeng_2019_2_H2_onto_earth_like_2000K': 'pink',                    'zeng_2019_5_H2_onto_earth_like_2000K': 'lightpink',                    'zeng_2019_50_H2O_300K': 'navy',                    'zeng_2019_50_H2O_500K': 'blue',                    'zeng_2019_50_H2O_700K': 'royalblue',                    'zeng_2019_50_H2O_1000K': 'deepskyblue',                    'zeng_2019_100_H2O_300K': 'darkcyan',                    'zeng_2019_100_H2O_500K': 'darkturquoise',                    'zeng_2019_100_H2O_700K': 'dodgerblue',                    'zeng_2019_100_H2O_1000K': 'cyan',                    'zeng_2016_20_Fe': 'brown',                    'marcus_2010_maximum_collision_stripping': 'green'
                     }
 
-models_dic_labels = {'zeng_2019_pure_iron':r'100% Fe (0% $\rm MgSiO_{3}$)',                    'zeng_2019_earth_like': r'33% Fe (66% $\rm MgSiO_{3}$)',                    'zeng_2019_pure_rock': r'0% Fe (100% $\rm MgSiO_{3}$)',                    'zeng_2019_0.1_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',                    'zeng_2019_0.3_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',                    'zeng_2019_1_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',                    'zeng_2019_2_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',                    'zeng_2019_5_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',                    'zeng_2019_0.1_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',                    'zeng_2019_0.3_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',                    'zeng_2019_1_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',                    'zeng_2019_2_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',                    'zeng_2019_5_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',                    'zeng_2019_0.1_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',                    'zeng_2019_0.3_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',                    'zeng_2019_1_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',                    'zeng_2019_2_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',                    'zeng_2019_5_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',                    'zeng_2019_0.1_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',                    'zeng_2019_0.3_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',                    'zeng_2019_1_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',                    'zeng_2019_2_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',                    'zeng_2019_5_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',                    'zeng_2019_0.1_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',                    'zeng_2019_0.3_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',                    'zeng_2019_1_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',                    'zeng_2019_2_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',                    'zeng_2019_5_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',                    'zeng_2016_20_Fe': r'20% Fe (80% $\rm MgSiO_{3}$)',                    'zeng_2019_50_H2O_700K': r'50% $\rm H_{2}O$ (700K)',                    'zeng_2019_100_H2O_700K': r'100% $\rm H_{2}O$ (700K)',                    'marcus_2010_maximum_collision_stripping': 'Max. collisional stripping'
+models_dic_labels = {'zeng_2019_pure_iron':r'100% Fe (0% $\rm MgSiO_{3}$)',                    'zeng_2019_earth_like': r'33% Fe (66% $\rm MgSiO_{3}$)',                    'zeng_2019_pure_rock': r'0% Fe (100% $\rm MgSiO_{3}$)',                    'zeng_2019_0.1_H2_onto_earth_like_300K': r'Earth + 0.1% $\rm H_{2}$ (300K)',                    'zeng_2019_0.3_H2_onto_earth_like_300K': r'Earth + 0.3% $\rm H_{2}$ (300K)',                    'zeng_2019_1_H2_onto_earth_like_300K': r'Earth + 1% $\rm H_{2}$ (300K)',                    'zeng_2019_2_H2_onto_earth_like_300K': r'Earth + 2% $\rm H_{2}$ (300K)',                    'zeng_2019_5_H2_onto_earth_like_300K': r'Earth + 5% $\rm H_{2}$ (300K)',                    'zeng_2019_0.1_H2_onto_earth_like_500K': r'Earth + 0.1% $\rm H_{2}$ (500K)',                    'zeng_2019_0.3_H2_onto_earth_like_500K': r'Earth + 0.3% $\rm H_{2}$ (500K)',                    'zeng_2019_1_H2_onto_earth_like_500K': r'Earth + 1% $\rm H_{2}$ (500K)',                    'zeng_2019_2_H2_onto_earth_like_500K': r'Earth + 2% $\rm H_{2}$ (500K)',                    'zeng_2019_5_H2_onto_earth_like_500K': r'Earth + 5% $\rm H_{2}$ (500K)',                    'zeng_2019_0.1_H2_onto_earth_like_700K': r'Earth + 0.1% $\rm H_{2}$ (700K)',                    'zeng_2019_0.3_H2_onto_earth_like_700K': r'Earth + 0.3% $\rm H_{2}$ (700K)',                    'zeng_2019_1_H2_onto_earth_like_700K': r'Earth + 1% $\rm H_{2}$ (700K)',                    'zeng_2019_2_H2_onto_earth_like_700K': r'Earth + 2% $\rm H_{2}$ (700K)',                    'zeng_2019_5_H2_onto_earth_like_700K': r'Earth + 5% $\rm H_{2}$ (700K)',                    'zeng_2019_0.1_H2_onto_earth_like_1000K': r'Earth + 0.1% $\rm H_{2}$ (1000K)',                    'zeng_2019_0.3_H2_onto_earth_like_1000K': r'Earth + 0.3% $\rm H_{2}$ (1000K)',                    'zeng_2019_1_H2_onto_earth_like_1000K': r'Earth + 1% $\rm H_{2}$ (1000K)',                    'zeng_2019_2_H2_onto_earth_like_1000K': r'Earth + 2% $\rm H_{2}$ (1000K)',                    'zeng_2019_5_H2_onto_earth_like_1000K': r'Earth + 5% $\rm H_{2}$ (1000K)',                    'zeng_2019_0.1_H2_onto_earth_like_2000K': r'Earth + 0.1% $\rm H_{2}$ (2000K)',                    'zeng_2019_0.3_H2_onto_earth_like_2000K': r'Earth + 0.3% $\rm H_{2}$ (2000K)',                    'zeng_2019_1_H2_onto_earth_like_2000K': r'Earth + 1% $\rm H_{2}$ (2000K)',                    'zeng_2019_2_H2_onto_earth_like_2000K': r'Earth + 2% $\rm H_{2}$ (2000K)',                    'zeng_2019_5_H2_onto_earth_like_2000K': r'Earth + 5% $\rm H_{2}$ (2000K)',                    'zeng_2016_20_Fe': r'20% Fe (80% $\rm MgSiO_{3}$)',                    'zeng_2019_50_H2O_300K': r'50% $\rm H_{2}O$',                    'zeng_2019_50_H2O_500K': r'50% $\rm H_{2}O$ (500K)',                    'zeng_2019_50_H2O_700K': r'50% $\rm H_{2}O$ (700K)',                    'zeng_2019_50_H2O_1000K': r'50% $\rm H_{2}O$ (1000K)',                    'zeng_2019_100_H2O_300K': r'100% $\rm H_{2}O$ (300K)',                    'zeng_2019_100_H2O_500K': r'100% $\rm H_{2}O$ (500K)',                    'zeng_2019_100_H2O_700K': r'100% $\rm H_{2}O$ (700K)',                    'zeng_2019_100_H2O_1000K': r'100% $\rm H_{2}O$ (1000K)',                    'marcus_2010_maximum_collision_stripping': 'Max. collisional stripping'
                     }
 
 
+# In[ ]:
+
+
 color_codings_label_dic = {'disc_year': 'Discovery year',                            'pl_orbper': 'Orbital period (days)',                           'pl_orbsmax': 'Semi-major axis (AU)',                           'pl_orbeccen': 'Eccentricity',                           'pl_insol': r'Insolation Flux $\rm (S_{\oplus})$',                            'pl_eqt': 'Equilibrium temperature (K)',                           'st_teff': 'Stellar effective temperature (K)',                           'st_rad': r'Stellar radius $\rm (R_{\odot})$' ,                           'st_mass':r'Stellar mass $\rm (M_{\odot})$' ,                           'st_met': r'Star metallicity (dex)',                           'st_logg': 'Stellar surface gravity (dex)',                           'sy_dist': 'Distance (pc)',                           'sy_vmag': r'$V$ (Johnson) magnitude',                           'sy_kmag': r'$K_{\rm s}$ (2MASS) magnitude',                           'sy_gaiamag': r'$Gaia$ magnitude' }
+
+
+# In[ ]:
 
 
 #@|#######--zeng et al. (2016,2019) config--##########
@@ -287,6 +333,9 @@ except:
     zeng = False
 
 
+# In[ ]:
+
+
 #@|#######--marcus et al. 2010 config--##########
 try:
     models_marcus = MODELS['models_marcus']
@@ -294,6 +343,9 @@ try:
     marcus = True
 except:
     marcus = False
+
+
+# In[ ]:
 
 
 #@|#######--turbet et al. 2020 config--##########
@@ -311,6 +363,9 @@ except:
     turb_2020 = False    
 
 
+# In[ ]:
+
+
 #@|#######--aguichine et al. 2020 config--##########
 try:
     x_core_aguich2021 = [float(x.strip()) for x in MODELS['x_core_aguich2021'].split(',')]
@@ -322,6 +377,9 @@ try:
     aguich2021_MR()
 except:
     aguich2021 = False
+
+
+# In[ ]:
 
 
 #@|#######--lopez & fortney et al. 2014 config--##########
@@ -337,6 +395,9 @@ except:
     lopez_fortney2014 = False
 
 
+# In[ ]:
+
+
 #@|#######--Isodensity config--##########
 try:
     density = [float(x.strip()) for x in MODELS['density'].split(',')]
@@ -348,7 +409,17 @@ except:
     isodensity = False 
 
 
+# In[ ]:
+
+
 #@|optional configuration
+
+#@|number of columns to make the plot (one or two)
+
+try:
+    n_cols = OPTIONAL_CONFIG['n_cols']
+except:
+    n_cols = 'one'
 
 #@|#####--color_max and color_min--###########
 
@@ -399,12 +470,15 @@ try:
 except:
     loc_legend = 'lower right'
     
-#@|############--plot the low-density super-Earths region--###############333
+#@|############--plot the low-density super-Earths region--###############
 
 try:
     low_d_sE = OPTIONAL_CONFIG['low_density_superEarths'] == 'True'
 except:
     low_d_sE = False
+    
+    
+#@|############--Markersize of the NEA and my planets--###############  
     
 try:
     size_NEA_planets = float(OPTIONAL_CONFIG['size_NEA_planets'])
@@ -412,6 +486,15 @@ try:
 except:
     size_my_planets = 200
     size_NEA_planets = 120
+    
+    
+#@|############--Grey shade below the 100% iron model by Zeng et al. (2019)--###############
+
+try:
+    shade_below_pure_iron = OPTIONAL_CONFIG['shade_below_pure_iron'] == 'True'
+except:
+    shade_below_pure_iron = True
+
     
     
 #@|###########--My planets--###############   
@@ -445,6 +528,10 @@ for i in range(1, 21):
         pass
     
 
+
+# In[ ]:
+
+
 def plot_low_density_SE_region():
     
     x = [1.55, 1.58,  2., 2.5, 3.5, 2.6, 1.9]
@@ -458,8 +545,11 @@ def plot_low_density_SE_region():
     ax.fill(basic_form[0], basic_form[1], color='dodgerblue', alpha=0.2)
 
 
+# In[ ]:
+
+
 ###########################
-#@|-----Main------#@|
+#@|--------Main---------#@|
 ###########################
 
 #@|plot config_object
@@ -475,19 +565,30 @@ except:
 #@|##########--NEA and my planets--###############
 
 if color_coding in df_cols:
-    plt.figure(figsize = (10, 6.56))
+    if n_cols == 'one':
+    
+        plt.figure(figsize = (10, 6.56))
+        
+    if n_cols == 'two':
+        
+        plt.figure(figsize = (20, 6.56))
+        
+    
+    
     #idx_color = np.where(df_cols==color_coding)[0]
     #@|NEA planets
     plt.scatter(M_NEA, R_NEA, c = df[color_coding].values, cmap = cmap, s = size_NEA_planets,                 vmin = color_min, vmax = color_max, lw = 1.5, ec = 'grey')
-    cbar = plt.colorbar(location = 'left', anchor=(2.95,0.95), aspect = 8, shrink=0.4)
+    
+    if n_cols == 'one':
+        cbar = plt.colorbar(location = 'left', anchor=(2.95,0.95), aspect = 8, shrink=0.4)
+    if n_cols == 'two':
+        cbar = plt.colorbar(location = 'left', anchor=(2.3,0.95), aspect = 8, shrink=0.4)
+        
     cbar.set_label(color_codings_label_dic[color_coding], fontsize = 12)
     cbar.ax.tick_params(labelsize=10)
     
-    
-    
     #cbar.set_ticks_position('left')
     plt.errorbar(M_NEA, R_NEA, yerr = np.array(R_NEA_ERR).T, xerr = np.array(M_NEA_ERR).T,                 linestyle = "None", ecolor = 'grey', zorder = -1, lw = 2, capsize = 2)
-    
     
     #@|My planets
     for i in range(1, 21):
@@ -498,17 +599,21 @@ if color_coding in df_cols:
 
             if text_boxes == True:
 
-
-
-                plt.text(globals()['m_p'+str(i)] +  globals()['dis_x_p'+str(i)],                  globals()['r_p'+str(i)] +  globals()['dis_y_p'+str(i)], globals()['name_p'+str(i)], fontsize=14,                 verticalalignment = 'bottom', horizontalalignment = 'center',                  bbox = {'facecolor': 'magenta', 'alpha': 1.0, 'pad': 2},                  c = 'white', weight='bold', zorder = 10000)
+                plt.text(globals()['m_p'+str(i)] +  globals()['dis_x_p'+str(i)],                  globals()['r_p'+str(i)] +  globals()['dis_y_p'+str(i)], globals()['name_p'+str(i)], fontsize=14,                 verticalalignment = 'bottom', horizontalalignment = 'center',                  bbox = {"boxstyle": "round", 'facecolor': 'magenta', 'alpha': 0.7, 'pad': 0.4},                  c = 'white', weight='bold', zorder = 10000)
                 
         except:
             pass
     
 
 if color_coding == 'none':
-    plt.figure(figsize = (8, 7))
-    #f plot_size = 'twocols':
+    if n_cols == 'one':
+    
+        plt.figure(figsize = (8, 7))
+        
+    if n_cols == 'two':
+        
+        plt.figure(figsize = (16, 7))
+        
         
     #@|NEA planets
     plt.scatter(M_NEA, R_NEA, c = 'lightgrey', s = size_NEA_planets, ec = "grey", lw = 1.5)
@@ -524,10 +629,7 @@ if color_coding == 'none':
             if text_boxes == True:
                 
                 
-                
-                plt.text(globals()['m_p'+str(i)] +  globals()['dis_x_p'+str(i)],                          globals()['r_p'+str(i)] +  globals()['dis_y_p'+str(i)], globals()['name_p'+str(i)], fontsize=14,                         verticalalignment = 'bottom', horizontalalignment = 'center',                          bbox = {'facecolor': globals()['c_p'+str(i)], 'alpha': 0.7, 'pad': 2},                          c = 'white', weight='bold', zorder = 10000)
-
-# plt.show()
+                plt.text(globals()['m_p'+str(i)] +  globals()['dis_x_p'+str(i)],                          globals()['r_p'+str(i)] +  globals()['dis_y_p'+str(i)], globals()['name_p'+str(i)], fontsize=14,                         verticalalignment = 'bottom', horizontalalignment = 'center',                          bbox = {"boxstyle": "round",'facecolor': globals()['c_p'+str(i)], 'alpha': 0.7, 'pad': 0.4},                          c = 'white', weight='bold', zorder = 10000)
  
         except:
             
@@ -628,21 +730,60 @@ else:
 plt.xlim(x_lims)
 plt.ylim(y_lims)
 
-plt.legend(loc = loc_legend, fontsize = 11)
+if n_cols == 'one':
+    plt.legend(loc = loc_legend, fontsize = 11)
+if n_cols == 'two':
+    plt.legend(loc = loc_legend, fontsize = 13)
+
+#@|low density super-Earths region
 
 if low_d_sE:
     plot_low_density_SE_region()
+    
+#@| Region below the 100% iron model by Zeng et al. (2019)
+    
+if shade_below_pure_iron:
+    r_pure_iron = pd.read_csv(path_models+'zeng_2019_pure_iron',  sep = '\t', header = None)[1].values
+    m_pure_iron = pd.read_csv(path_models+'zeng_2019_pure_iron',  sep = '\t', header = None)[0].values
+    plt.fill_between(m_pure_iron, r_pure_iron, 0,  alpha = 0.3, color = 'grey', zorder = -1000)
+    
     
 
 #plt.axhline(1.5)
 #plt.axhline(2.0)
 
 #x = [0,1000]
-#plt.fill_between(x, 1.8, 1.6, alpha = 0.2, color = 'grey', zorder = -1000)
+#plt.fill_between(x, 1.9, 1.6, alpha = 0.1, color = 'green', zorder = -1000, )
+
+#plt.plot(x, 2*[1.6], linestyle = "dashdot", c = 'green')
+#plt.plot(x, 2*[1.9], linestyle = "dashdot", c = 'green')
 
 plt.savefig(f'output/{config_file[:-4]}.pdf', bbox_inches = 'tight', pad_inches = 0.2)
 plt.savefig(f'output/{config_file[:-4]}.png', bbox_inches = 'tight', pad_inches = 0.2, dpi = 400)
 
 print('Your mass-radius diagram has been saved successfully!')
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
 
 
