@@ -71,7 +71,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 | ------------- | ------------- | ------------- |
 | models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc<sup>**1**</sup> | Models from Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) |
 
-<sup>**1**</sup> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. 
+<sup>**1**</sup> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. 
 
 
 ## Usage examples
