@@ -15,8 +15,4 @@
 |...|...|
 |zeng_2019_100_H2O_300K| 100% $\rm H_{2}O$ (300K) |
 
-```diff
-
-- text in red
-
-```
+**Note** The H20 models are valid for temperatures of **300K**, **500K**, **700K**, and **1000K**, while the H2 models are also valid for **2000K**. 
