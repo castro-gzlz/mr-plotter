@@ -129,6 +129,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
+| n_cols | one or two | Make the plot in one-column format or two-column format. **Default**: one |
 | color_min | Any | Minimum **value** for the color coding. **Default:** median of the 5% minimum values |
 | color_max | Any | Maximum **value** for the color coding. **Default:** median of the 5% maximum values |
 | log_x | True or False | Logarithmic scale on the $X$-axis. **Default:** True |
