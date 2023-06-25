@@ -162,7 +162,13 @@ In this example, we include three models computed from [Turbet et al. (2020)](ht
 ```
 python mr-plotter.py example2.ini
 ```
-![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/b9f98801-44b2-4182-8617-eb19687ff3a8) ![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/b9f98801-44b2-4182-8617-eb19687ff3a8)
+
+| AWS                                                   | Git                                           |
+| ----------------------------------------------------- | --------------------------------------------- |
+| ![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/b9f98801-44b2-4182-8617-eb19687ff3a8) | ![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/b9f98801-44b2-4182-8617-eb19687ff3a8) |
+
+
+
 
 
 ### Example 3: Custom color maps
