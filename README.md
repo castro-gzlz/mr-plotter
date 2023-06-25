@@ -129,7 +129,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| n_cols | one or two | Make the plot in one-column or two-columns. **Default**: one |
+| n_cols | one or two | Make the plot in one-column or two-column. **Default**: one |
 | color_min | Any | Minimum **value** for the color coding. **Default:** median of the 5% minimum values |
 | color_max | Any | Maximum **value** for the color coding. **Default:** median of the 5% maximum values |
 | log_x | True or False | Logarithmic scale on the $X$-axis. **Default:** True |
@@ -188,9 +188,9 @@ python mr-plotter.py example4.ini
 ![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7529aa53-40c0-4977-8a8d-fc12b3a5984a)
 
 
-### Example 5: More models, isodensity curves, and two-columns plots
+### Example 5: More models, isodensity curves, and two-column plots
 
-In this example, we include the model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) corresponding to the **maximum density curve for a planet subjected to mantle stripping**. We highlight the earth-sized, mercurian-density planet [K2-229 b](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract), with the size of the Earth and density of Mercury, is located just above that curve. Besides, we illustrate **how to include isodensity curves** as well as **how to prepare paper-ready plots in two-columns format**. 
+In this example, we include the model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) corresponding to the **maximum density curve for a planet subjected to mantle stripping**. We highlight the earth-sized, mercurian-density planet [K2-229 b](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract), with the size of the Earth and density of Mercury, is located just above that curve. Besides, we illustrate **how to include isodensity curves** as well as **how to prepare paper-ready plots in two-column format**. 
 
 ```
 python mr-plotter.py example5.ini
