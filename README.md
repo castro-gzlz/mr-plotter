@@ -71,7 +71,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 | ------------- | ------------- | ------------- |
 | models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc<sup>**1**</sup> | Models from Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) |
 
-<sup>**1**</sup> All the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models available here are included in the *mr-plotter* database. The names of the models are **self-descriptive**. In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models, including models for **water worlds** and **gas dwarfs**. 
+<sup>**1**</sup> All the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models are included in the *mr-plotter* database. In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/table.md) we include all the models for **rocky planets**, **water worlds** and **gas dwarfs** with their corresponding description. 
 
 
 ## Usage examples
