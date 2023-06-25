@@ -147,7 +147,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 If this is **your first time using *mr-plotter***, I invite you to **take a look at some examples** I have prepared to illustrate the operation of the package in diferent scenarios (some of them might be of interest for you! :smiley:).
 
 ### Example 1: The simplest case. Contextualizing a new planet
-In this example, we contextualize and highlight the location of a new planet ([TOI-244 b](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)) in the mass-radius diagram of known planets, and include the theoretical models for **rocky planets** and **water worlds** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
+In this example, we contextualize a new planet ([TOI-244 b](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)) in the mass-radius diagram of known planets, and include several theoretical models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
 ```
 python mr-plotter.py example1.ini
 ```
