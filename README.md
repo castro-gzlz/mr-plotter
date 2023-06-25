@@ -21,8 +21,6 @@ python mr-plotter.py my_config_file.ini
 ```
 The file *[my_config_file.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/my_config_file.ini)* should contain all the necessary information to make your plot, which will be saved into the *[output](https://github.com/castro-gzlz/mr-plotter/tree/main/output)* folder. In the [**Configuration file**](#configuration-file) section we describe **all the parameters** ([mandatory](#mandatory-parameters) and [optional](#optional-parameters)) that can be used in the configuration files.
 
-Aternativelly, you can also run the notebook **mr-plotter.ipynb**.
-
 ### Is this your first time using *mr-plotter*?
 
 If so, please don't be overwhelmed by the large number of parameters. In most cases you will only use a few! To **get familiarized** with the main parameters and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **diferent key scenarios** through didactic examples. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
