@@ -97,6 +97,16 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). 
 
+##### Isodensity curves
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| density | Any ($g\,cm^{-3}$) | Density |
+| colors_density | Any color | Colors of each curve |
+
+**Note:** To plot several Isodensity curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). 
+
+
 
 
 ## Usage examples
