@@ -97,6 +97,14 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). 
 
+##### Marcus et al. (2010)
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| models_marcus |  marcus_2010_maximum_collision_stripping | Maximum collision stripping model from Marcus et al. (2010) |
+
+
+
 ##### Isodensity curves
 
 | Option | Possible values | Description |
