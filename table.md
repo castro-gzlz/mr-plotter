@@ -15,4 +15,4 @@
 |zeng_2019_100_H2O_300K| 100% $\rm H_{2}O$ (300K) |
 |...|...|
 
-**Note:** The $\rm H_{2}O$ models are valid for temperatures of **300K**, **500K**, **700K**, and **1000K**, while the $\rm H_{2}$ models are **also valid** for **2000K**. To consider them, you just have to modify the model name accordingly.
+**Note:** The $\rm H_{2}O$ models are valid for temperatures of **300K**, **500K**, **700K**, and **1000K**, while the $\rm H_{2}$ models are **also valid** for **2000K**. To consider them, you just have to modify the model name accordingly (e.g. zeng_2019_0.3_H2_onto_earth_like_**700**K)
