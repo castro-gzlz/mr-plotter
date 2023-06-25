@@ -197,6 +197,10 @@ python mr-plotter.py example5.ini
 
 If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es).
 
+## Contributors
+
+A. Castro-González, J. Lillo-Box, and A. Aguichine.
+
 
 ## Credits
 
