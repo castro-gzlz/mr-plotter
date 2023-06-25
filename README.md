@@ -92,7 +92,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 | ------------- | ------------- | ------------- |
 | x_core_aguich2021 | From 0.0 to 0.9 in steps of 0.1 | Core mass fraction |
 | x_H2O_aguich2021 | From 0.1 to 1.0 in steps of 0.1 | Water mass fraction of the hydrosphere |
-| Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Insolation flux received by your planet |
+| Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Equilibrium temperature of your planet |
 
 
 
