@@ -73,7 +73,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 <sup>**1**</sup> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. 
 
-#### Turbet et al. (2020)
+##### Turbet et al. (2020)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -85,6 +85,15 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 | Core_turb2020 | Any color | Colors of each model |
 
 **Note:** To plot several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models you can include as many values as you want, separated by commas, similar to [example2.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example2.ini). 
+
+##### Aguichine et al. (2021)
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| x_core_aguich2021 | From 0.0 to 0.9 in steps of 0.1 | Core mass fraction |
+| x_H2O_aguich2021 | From 0.1 to 1.0 in steps of 0.1 | Water mass fraction of the hydrosphere |
+| Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Insolation flux received by your planet |
+
 
 
 
