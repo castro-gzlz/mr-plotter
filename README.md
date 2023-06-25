@@ -153,7 +153,7 @@ In this example, we contextualize a new planet ([TOI-244 b](https://ui.adsabs.ha
 ```
 python mr-plotter.py example1.ini
 ```
-![example1](https://github.com/castro-gzlz/mr-plotter/assets/132309889/6d963ad8-a623-4e96-bb63-88c057f2945a)
+![example1](https://github.com/castro-gzlz/mr-plotter/assets/132309889/e57421f3-df1f-49d2-b9b6-4e344cc86eb1)
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water models
@@ -165,12 +165,7 @@ In this example, we include three models computed from [Turbet et al. (2020)](ht
 python mr-plotter.py example2.ini
 ```
 
-| AWS                                                   | Git                                           |
-| ----------------------------------------------------- | --------------------------------------------- |
-| ![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/b9f98801-44b2-4182-8617-eb19687ff3a8) | ![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/b9f98801-44b2-4182-8617-eb19687ff3a8) |
-
-
-
+![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/f3fc554d-83e6-4c97-a137-58000d758a55)
 
 
 ### Example 3: Custom color maps
@@ -180,7 +175,7 @@ In this example, we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.
 ```
 python mr-plotter.py example3.ini
 ```
-![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/79d43010-3f8a-430f-ad75-d8a608f76256)
+![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/9b407bfa-8c66-4c50-84ec-8e8a8e2eb99d)
 
 
 ### Example 4: Exploring other theoretical models
@@ -190,7 +185,8 @@ Althogh in the [original paper](https://ui.adsabs.harvard.edu/abs/2023arXiv23050
 ```
 python mr-plotter.py example4.ini
 ```
-![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/f5ebda42-942e-467a-a8c6-53ec7fbe6b92)
+![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/3b59b8dd-21c2-4f48-8767-d00748a64eb3)
+
 
 ### Example 5: More models and isodensity curves
 
@@ -199,7 +195,8 @@ In this example, we include the model by [Marcus et al. (2010)](https://ui.adsab
 ```
 python mr-plotter.py example5.ini
 ```
-![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/22ebd49d-c337-4477-bf1e-c8e1b42c1a99)
+![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7c07326e-ea36-4084-9b2d-5c4cb99f4b2b)
+
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
