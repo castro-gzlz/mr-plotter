@@ -93,7 +93,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 | R_turb2020 | Any ($\rm M_{\oplus}$) | Radius of your planet |
 | Seff_turb2020 | > 1.1 ($\rm S_{\oplus}$) | Insolation flux received by your planet |
 | WMFs_turb2020 | From 0 to 0.05 | Water mass fractions (WMFs) of steam water |
-| Core_turb2020 | earth, rock, or iron | Internal core composition over which the steam water reside |
+| Core_turb2020 | earth, rock, or iron | Internal core composition over which the steam water resides |
 | colors_turb2020 | Any color | Colors of each model |
 
 **Note:** To plot several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models you can include as many values as you want, separated by commas, similar to [example2.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example2.ini). 
