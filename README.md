@@ -114,6 +114,17 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 **Note:** To plot several curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example5.ini). 
 
+##### Lopez & Fortney et al. (2014) 
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| age_lf2014 | 100Myr, 1Gyr, 10Gyr | Age of the system |
+| opacity_lf2014 | solar or enhanced | Opacity of the star |
+| Seff_lf2014 | 0.1, 10, 1000  ($\rm S_{\oplus}$) | Insolation received by the planet|
+| H_He |0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, and 20 (%) | H/He mass fraction of the planet|
+| colors_lf2014 | Any color | Colors of each curve |
+
+**Note:** To plot several [Lopez & Fortney et al. (2014))](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). 
 
 
 ## Usage examples
