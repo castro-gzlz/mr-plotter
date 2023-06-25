@@ -10,4 +10,7 @@
 | zeng_2019_2_H2_onto_earth_like_300K | Earth + 2% $\rm H_{2}$ (300K)  |
 | zeng_2019_5_H2_onto_earth_like_300K | Earth + 5% $\rm H_{2}$ (300K)  |
 |...|...|
-|zeng_2019_50_H2O_300K| 50% $\rm H_{2}O$, 50% Earth-like core  (300K) |
+|zeng_2019_50_H2O_300K| 50% $\rm H_{2}O$ (300K) |
+|...|...|
+|zeng_2019_100_H2O_300K| 100% $\rm H_{2}O$ (300K) |
+
