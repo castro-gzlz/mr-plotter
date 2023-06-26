@@ -1,4 +1,4 @@
-# **mr-plotter**
+# **mr-plotter: Mass-Radius Diagrams Plotter**
 **Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool that creates **paper-ready mass-radius diagrams** with your favorite theoretical models. It also includes the ability to **color-code diagrams** based on any published stellar or planetary property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/). 
 
 
