@@ -202,7 +202,7 @@ If your favorite model is not yet included in *mr-plotter*, you have any issues 
 
 ## Contributors
 
-A. Castro-González, J. Lillo-Box, and A. Aguichine.
+Amadeo Castro-González, Jorge Lillo-Box, Artem Aguichine, Léna Parc, and Katharine Hesse.
 
 
 ## Credits
