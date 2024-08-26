@@ -34,7 +34,7 @@ In this example, we contextualize a new planet (TOI-244 b; [Castro-González et 
 python mr-plotter.py example1_toi244.ini
 ```
 
-We can also contextualize planetary systems such as TOI-469 ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract); [Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)). In this case, we want to put the planet names in the legend instead of inside the figure. 
+We can also contextualize planetary systems such as TOI-469 ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract); [Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)). In this case, we want to show the planet names in the legend instead of inside the figure. 
 ```
 python mr-plotter.py example1_toi469.ini
 ```
