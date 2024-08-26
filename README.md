@@ -28,10 +28,15 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 
 ## Usage examples
 
-### Example 1: The simplest case. Contextualizing a new planet
-In this example, we contextualize a new planet ([TOI-244 b](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)) in the mass-radius diagram of known planets, and include several theoretical models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
+### Example 1: The simplest case. Contextualizing a new planetary system
+In this example, we contextualize a new planet (TOI-244 b; [Castro-González et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract)) in the mass-radius diagram of known planets, and include several theoretical models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
 ```
-python mr-plotter.py example1.ini
+python mr-plotter.py example1_toi244.ini
+```
+
+We can also contextualize planetary systems such as TOI-469 ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract); [Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)). In this case, we want to avoid including the planet names inside the figure, and instead put them in the legend. 
+```
+python mr-plotter.py example1_toi469.ini
 ```
 
 ![example1_joint](https://github.com/user-attachments/assets/75822391-418b-4a87-8937-0c93a874707a)
