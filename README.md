@@ -151,7 +151,7 @@ In this example, we contextualize a new planet ([TOI-244 b](https://ui.adsabs.ha
 ```
 python mr-plotter.py example1.ini
 ```
-![example1](src="https://github.com/castro-gzlz/mr-plotter/assets/132309889/e57421f3-df1f-49d2-b9b6-4e344cc86eb1" width = "48")
+![example1]("https://github.com/castro-gzlz/mr-plotter/assets/132309889/e57421f3-df1f-49d2-b9b6-4e344cc86eb1 | width = 100)
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water models
