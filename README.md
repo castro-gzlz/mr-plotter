@@ -26,6 +26,59 @@ The file *[my_config_file.ini](https://github.com/castro-gzlz/mr-plotter/blob/ma
 
 If so, please don't be overwhelmed by the large number of parameters. In most cases you will only use a few! To **get familiarized** with the main parameters and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **diferent key scenarios** through didactic examples. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
 
+## Usage examples
+
+### Example 1: The simplest case. Contextualizing a new planet
+In this example, we contextualize a new planet ([TOI-244 b](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)) in the mass-radius diagram of known planets, and include several theoretical models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
+```
+python mr-plotter.py example1.ini
+```
+
+![example1_joint](https://github.com/user-attachments/assets/75822391-418b-4a87-8937-0c93a874707a)
+
+
+### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water models
+
+In this example, we include three models computed from [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) equations, which consider a steam water atmosphere over a canonical rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extense hydrosphere would be enough to explain the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). Besides, **we include a color code** according to the stellar host metallicity. Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars!** For more insights on this, take a look at our paper [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
+
+
+```
+python mr-plotter.py example2.ini
+```
+
+![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/f3fc554d-83e6-4c97-a137-58000d758a55)
+
+
+### Example 3: Custom color maps
+
+In this example, we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract). The color code now indicates the received **insolation flux**, spanning from 1 to 2 Earth fluxes, which roughly correspond to fluxes received by planets in the habitable zone (HZ) of their stars. LHS 1140 b stands out as one of the only well-characterized HZ planets in the rocky domain. In this plot we have used the *summer* color map, but **any matplotlib color map can be easily selected**. 
+
+```
+python mr-plotter.py example3.ini
+```
+![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/9b407bfa-8c66-4c50-84ec-8e8a8e2eb99d)
+
+
+### Example 4: Exploring other theoretical models
+
+Althogh in the [original paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract) where *mr-plotter* was presented we have only used the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) and [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models, **we have included additional models from the literature**. For example, if you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). You might also want to discuss the possibility that your (highly irradiated) planet has a water-rich composition, but perhaps it is less dense than the density corresponding to a 5% water mass fraction (WMF), where [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models are no longer valid. In this case, you might want to use [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) mass-radius relationships, which are valid for any WMF. In this example, we use the [K2-3](https://ui.adsabs.harvard.edu/abs/2018A%26A...615A..69D/abstract) system to illustrate how these two sets of models can be used through *mr-plotter*. 
+
+```
+python mr-plotter.py example4.ini
+```
+![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7529aa53-40c0-4977-8a8d-fc12b3a5984a)
+
+
+### Example 5: More models, isodensity curves, and two-column plots
+
+In this example, we include the model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) corresponding to the **maximum density curve for a planet subjected to mantle stripping**. We highlight the earth-sized, mercurian-density planet [K2-229 b](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract), which having the size of the Earth and density of Mercury, is located just above that curve. Besides, we illustrate **how to include isodensity curves** as well as **how to prepare paper-ready plots in two-column format**. 
+
+```
+python mr-plotter.py example5.ini
+```
+![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7c07326e-ea36-4084-9b2d-5c4cb99f4b2b)
+
+
 ## Configuration file
 
 ### Mandatory parameters
@@ -144,58 +197,6 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 | loc_legend | best, upper left, center, etc | Location of the legend. **Default:** lower right|
 | cmap | Any [matplotlib colormap](https://matplotlib.org/stable/tutorials/colors/colormaps.html) | Color map for the color-coded diagrams. **Default:** rainbow |
 
-
-## Usage examples
-
-### Example 1: The simplest case. Contextualizing a new planet
-In this example, we contextualize a new planet ([TOI-244 b](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)) in the mass-radius diagram of known planets, and include several theoretical models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
-```
-python mr-plotter.py example1.ini
-```
-
-![example1_joint](https://github.com/user-attachments/assets/75822391-418b-4a87-8937-0c93a874707a)
-
-
-### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water models
-
-In this example, we include three models computed from [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) equations, which consider a steam water atmosphere over a canonical rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extense hydrosphere would be enough to explain the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). Besides, **we include a color code** according to the stellar host metallicity. Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars!** For more insights on this, take a look at our paper [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
-
-
-```
-python mr-plotter.py example2.ini
-```
-
-![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/f3fc554d-83e6-4c97-a137-58000d758a55)
-
-
-### Example 3: Custom color maps
-
-In this example, we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract). The color code now indicates the received **insolation flux**, spanning from 1 to 2 Earth fluxes, which roughly correspond to fluxes received by planets in the habitable zone (HZ) of their stars. LHS 1140 b stands out as one of the only well-characterized HZ planets in the rocky domain. In this plot we have used the *summer* color map, but **any matplotlib color map can be easily selected**. 
-
-```
-python mr-plotter.py example3.ini
-```
-![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/9b407bfa-8c66-4c50-84ec-8e8a8e2eb99d)
-
-
-### Example 4: Exploring other theoretical models
-
-Althogh in the [original paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract) where *mr-plotter* was presented we have only used the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) and [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models, **we have included additional models from the literature**. For example, if you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). You might also want to discuss the possibility that your (highly irradiated) planet has a water-rich composition, but perhaps it is less dense than the density corresponding to a 5% water mass fraction (WMF), where [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models are no longer valid. In this case, you might want to use [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) mass-radius relationships, which are valid for any WMF. In this example, we use the [K2-3](https://ui.adsabs.harvard.edu/abs/2018A%26A...615A..69D/abstract) system to illustrate how these two sets of models can be used through *mr-plotter*. 
-
-```
-python mr-plotter.py example4.ini
-```
-![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7529aa53-40c0-4977-8a8d-fc12b3a5984a)
-
-
-### Example 5: More models, isodensity curves, and two-column plots
-
-In this example, we include the model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) corresponding to the **maximum density curve for a planet subjected to mantle stripping**. We highlight the earth-sized, mercurian-density planet [K2-229 b](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract), which having the size of the Earth and density of Mercury, is located just above that curve. Besides, we illustrate **how to include isodensity curves** as well as **how to prepare paper-ready plots in two-column format**. 
-
-```
-python mr-plotter.py example5.ini
-```
-![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7c07326e-ea36-4084-9b2d-5c4cb99f4b2b)
 
 
 ## Inclusion of additional models, issues, improvements, and suggestions
