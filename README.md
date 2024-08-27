@@ -67,16 +67,6 @@ Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by m
 
 
 
-### Example 3: Custom color maps
-
-In this example, we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract). The color code now indicates the received **insolation flux**, spanning from 1 to 2 Earth fluxes, which roughly correspond to fluxes received by planets in the habitable zone (HZ) of their stars. LHS 1140 b stands out as one of the only well-characterized HZ planets in the rocky domain. In this plot we have used the *summer* color map, but **any matplotlib color map can be easily selected**. 
-
-```
-python mr-plotter.py example3.ini
-```
-![example3](https://github.com/castro-gzlz/mr-plotter/assets/132309889/9b407bfa-8c66-4c50-84ec-8e8a8e2eb99d)
-
-
 ### Example 4: Exploring other theoretical models
 
 TBC....
