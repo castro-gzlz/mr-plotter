@@ -103,7 +103,7 @@ python mr-plotter.py example5.ini
 
 ### Mandatory parameters
 
-#### Section [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
+#### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
 
 | Parameter  | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -118,7 +118,7 @@ python mr-plotter.py example5.ini
 
 ### Optional parameters 
 
-#### Section [MY_DATA] | Include data of your planets
+#### [MY_DATA] | Include data of your planets
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -137,7 +137,7 @@ python mr-plotter.py example5.ini
 
 **<sup>1</sup>** If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be **color-coded** as the rest of the NEA planets. <br /> **<sup>2</sup>** These options should be **only specified** if you want to include **text boxes** next to your planets with their names.
 
-#### Section [MODELS] | Include theoretical models
+#### [MODELS] | Include theoretical models
 
 ##### Zeng et al. (2016, 2019)
 
@@ -199,7 +199,7 @@ python mr-plotter.py example5.ini
 
 **Note:** To plot several curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example5.ini). 
 
-#### Section [OPTIONAL_CONFIG] | Optional configuration
+#### [OPTIONAL_CONFIG] | Optional configuration
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
