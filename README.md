@@ -63,8 +63,8 @@ Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by m
 
 ### Example 3: The PlanetS catalog, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
 
-**In Progress...**
 
+![example3_ac](https://github.com/user-attachments/assets/d273ab0f-a519-489c-8775-3119bd7f9d17)
 
 
 ### Example 4: Exploring other theoretical models
