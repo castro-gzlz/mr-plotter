@@ -56,7 +56,6 @@ We now run the same example, but including a color code based on the received st
 
 Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result you can take a look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
 
-
 ### Example 3: Custom color maps
 
 In this example, we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract). The color code now indicates the received **insolation flux**, spanning from 1 to 2 Earth fluxes, which roughly correspond to fluxes received by planets in the habitable zone (HZ) of their stars. LHS 1140 b stands out as one of the only well-characterized HZ planets in the rocky domain. In this plot we have used the *summer* color map, but **any matplotlib color map can be easily selected**. 
