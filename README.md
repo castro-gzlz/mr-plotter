@@ -60,6 +60,13 @@ python mr-plotter.py example2_insol.ini
 
 Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result you can take a look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
 
+
+### Example 3: The PlanetS catalog, empirical M-R relationships, and color coding based on the Transmission Spectroscopy Metric (TSM)
+
+**In Progres...**
+
+
+
 ### Example 3: Custom color maps
 
 In this example, we plot the iconic system [LHS 1140](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract). The color code now indicates the received **insolation flux**, spanning from 1 to 2 Earth fluxes, which roughly correspond to fluxes received by planets in the habitable zone (HZ) of their stars. LHS 1140 b stands out as one of the only well-characterized HZ planets in the rocky domain. In this plot we have used the *summer* color map, but **any matplotlib color map can be easily selected**. 
@@ -72,7 +79,9 @@ python mr-plotter.py example3.ini
 
 ### Example 4: Exploring other theoretical models
 
-Althogh in the [original paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract) where *mr-plotter* was presented we have only used the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) and [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models, **we have included additional models from the literature**. For example, if you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). You might also want to discuss the possibility that your (highly irradiated) planet has a water-rich composition, but perhaps it is less dense than the density corresponding to a 5% water mass fraction (WMF), where [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models are no longer valid. In this case, you might want to use [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) mass-radius relationships, which are valid for any WMF. In this example, we use the [K2-3](https://ui.adsabs.harvard.edu/abs/2018A%26A...615A..69D/abstract) system to illustrate how these two sets of models can be used through *mr-plotter*. 
+TBC....
+
+If you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract).
 
 ```
 python mr-plotter.py example4.ini
