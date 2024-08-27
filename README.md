@@ -71,29 +71,11 @@ python mr-plotter.py example3.ini
 
 ![example3_ac](https://github.com/user-attachments/assets/d273ab0f-a519-489c-8775-3119bd7f9d17)
 
-### Example 4: Exploring other theoretical models
-
-%TBC....
-
- %If you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract).
-
-```
-python mr-plotter.py example4.ini
-```
-![example4](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7529aa53-40c0-4977-8a8d-fc12b3a5984a)
+### Example 4:
 
 
-### Example 5: More models, isodensity curves, and two-column plots
+### Example 5: 
 
-In this example, we include the model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) corresponding to the **maximum density curve for a planet subjected to mantle stripping**. We highlight the earth-sized, mercurian-density planet [K2-229 b](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract), which having the size of the Earth and density of Mercury, is located just above that curve. Besides, we illustrate **how to include isodensity curves** as well as **how to prepare paper-ready plots in two-column format**. 
-
-```
-python mr-plotter.py example5.ini
-```
-![example5](https://github.com/castro-gzlz/mr-plotter/assets/132309889/7c07326e-ea36-4084-9b2d-5c4cb99f4b2b)
-
-
-## Configuration file
 
 ### Mandatory parameters
 
