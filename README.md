@@ -44,14 +44,17 @@ python mr-plotter.py example1_toi469.ini
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
 
-In this example, we include three models computed from [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) equations, which consider a steam water atmosphere over a canonical rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extense hydrosphere would be enough to explain the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). Besides, **we include a color code** according to the stellar host metallicity. Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars!** For more insights on this, take a look at our paper [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
-
+We **include a color code** according to the stellar host metallicity. Besides, we include three models obtained based on [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) equations. These models consider a steam water atmosphere over a canonical rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extense hydrosphere could explain very well the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). These models are valid up to 5% water mass fractions (WMF). Above this value, you might want to use the models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract), which have a validity range between 10% and 100% core mass fractions (CMF) and WMF. We also include two models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) in this example: 30% CMF & 10 WMF (400K), and 30% CMF & 20% WMF (400K). 
 
 ```
-python mr-plotter.py example2.ini
+python mr-plotter.py example2_met.ini
 ```
 
-![example2](https://github.com/castro-gzlz/mr-plotter/assets/132309889/f3fc554d-83e6-4c97-a137-58000d758a55)
+We now run the same example, but including a color code based on the received stellar insolation flux. We customized the maximum and minimum values of the color map through the *color_min* and *color_max* keyworkds (see the example2_insol.ini file!).
+
+![example2_joint](https://github.com/user-attachments/assets/0760bf6e-527b-4f1b-8850-7db54b31f6fd)
+
+Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result you can take a look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
 
 
 ### Example 3: Custom color maps
