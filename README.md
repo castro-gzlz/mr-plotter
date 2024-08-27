@@ -50,7 +50,7 @@ We now **include a color code** according to the stellar host metallicity. We al
 python mr-plotter.py example2_met.ini
 ```
 
-We now run the same example by including a color code based on the received stellar insolation flux. We note than in both examples we customized the size of the planets through the *size_catalog_planets* keyword and the maximum and minimum values of the color map through the *color_min* and *color_max* keyworkds.
+We now run the same example by including a color code based on the received stellar insolation flux. We note that in both examples we customized the size of the planets through the *size_catalog_planets* keyword and the maximum and minimum values of the color map through the *color_min* and *color_max* keyworkds.
 
 ```
 python mr-plotter.py example2_insol.ini
