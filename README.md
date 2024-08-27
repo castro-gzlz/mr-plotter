@@ -73,9 +73,9 @@ python mr-plotter.py example3.ini
 
 ### Example 4: Exploring other theoretical models
 
-TBC....
+%TBC....
 
- #If you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract).
+ %If you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract).
 
 ```
 python mr-plotter.py example4.ini
