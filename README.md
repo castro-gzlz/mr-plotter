@@ -103,7 +103,7 @@ python mr-plotter.py example5.ini
 
 ### Mandatory parameters
 
-#### Section [NEA_DATA] | Include data from the [*Nasa Exoplanet Archive (NEA)*](https://exoplanetarchive.ipac.caltech.edu/index.html)
+#### Section [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
 
 | Parameter  | Possible values | Description |
 | ------------- | ------------- | ------------- |
