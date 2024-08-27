@@ -61,17 +61,21 @@ python mr-plotter.py example2_insol.ini
 Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result you can take a look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
 
 
-### Example 3: The PlanetS catalog, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
+### Example 3: The *PlanetS catalog*, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
 
+In this example we make a *two-column plot* based on the [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)). *PlanetS* contains all planets characterized robustly and accurately (relative error in mas < 25% and relative error in radius < 8%). It collects many published parameters from the NEA, and also includes stellar parameters from *Gaia* DR3 and homogeneous calculations of $S_{\rm eff}$, $T_{\rm eq}$, TSM, ESM, etc. In this example, we plot the entire *PlanetS* catalog color coded according to the TSM of the planets. We also show how we can include a new planetary system (TOI-5005; Castro-González et al. 2024) following the color code of a catalog. In addition, we plot the empirical M-R relationships for small, intermediate, and giant planets derived by [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). You might have noticed that we have changed the color code! By default, *mr-plotter* uses *rainbow*, but any [matplotlib's color map](https://matplotlib.org/stable/users/explain/colors/colormaps.html) can be easily chosen. 
+
+```
+python mr-plotter.py example3.ini
+```
 
 ![example3_ac](https://github.com/user-attachments/assets/d273ab0f-a519-489c-8775-3119bd7f9d17)
-
 
 ### Example 4: Exploring other theoretical models
 
 TBC....
 
-If you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract).
+ #If you have a puffy sub-Neptune planet, you might want to consider the H/He atmosphere models by [Lopez & Fortney (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract).
 
 ```
 python mr-plotter.py example4.ini
