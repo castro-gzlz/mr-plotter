@@ -79,6 +79,8 @@ python mr-plotter.py example3_ESM.ini
 
 ### Example 4: Non-numerical color codings
 
+### Example 5: Graphic and practical details
+
 ### Mandatory parameters
 
 #### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
