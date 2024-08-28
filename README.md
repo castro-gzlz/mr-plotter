@@ -71,7 +71,7 @@ python mr-plotter.py example3.ini
 
 ![example3_joint](https://github.com/user-attachments/assets/2929b1ea-a154-46fa-8a7c-482834bbce2f)
 
-
+### Example 4: Non-numerical color codings
 
 ### Mandatory parameters
 
