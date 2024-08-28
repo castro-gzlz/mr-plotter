@@ -75,7 +75,8 @@ Of course, we can do the same for the ESM!
 python mr-plotter.py example3_ESM.ini
 ```
 
-![example3_joint](https://github.com/user-attachments/assets/2929b1ea-a154-46fa-8a7c-482834bbce2f)
+![example3_joint](https://github.com/user-attachments/assets/8fbbcfb0-c035-4138-8d67-ea2c276eab00)
+
 
 ### Example 4: Non-numerical color codings
 
