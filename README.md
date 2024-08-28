@@ -69,7 +69,8 @@ In this example we make a **two-column plot** based on the [*PlanetS*](https://d
 python mr-plotter.py example3.ini
 ```
 
-![example3_ac](https://github.com/user-attachments/assets/d273ab0f-a519-489c-8775-3119bd7f9d17)
+![example3_joint](https://github.com/user-attachments/assets/2929b1ea-a154-46fa-8a7c-482834bbce2f)
+
 
 
 ### Mandatory parameters
