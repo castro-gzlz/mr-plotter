@@ -217,7 +217,7 @@ July 2023     -->  *mr-plotter* v0 release. Quick and fancy M-R diagrams based o
 August 2024   -->  *mr-plotter* v1 is compatible with the Exoplanets.eu, PlanetS, TEPCat, and ExoplANETS-A catalogs. <br />
 
 
-## Credits
+## Credits to the package
 
 **If you use *mr-plotter*, please give credit to the following [paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)**: 
 
@@ -243,7 +243,13 @@ archivePrefix = {arXiv},
 **and add the following sentence within the acknowledgements section**:
 > This work made use of \texttt{mr-plotter} (https://github.com/castro-gzlz/mr-plotter), which has been developed with financial support from the Spanish Ministry of Science through MCIN/AEI/10.13039/501100011033 grant PID2019-107061GB-C61.
 
+## Credits to the exoplanet catalogs
+
+Please also give credit to the specific used catalog: [Nasa Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/) ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), [Exoplanet.eu](https://exoplanet.eu/home/) ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)), and [ExoplANETS-A](http://svo2.cab.inta-csic.es/vocats/v2/exostars/index.php?action=search) ([Morales-Calderón](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..45M/abstract)).
+
 ## Credits to the models used
+
+Similarly, 
 
 #### Marcus et al. (2010)
 
