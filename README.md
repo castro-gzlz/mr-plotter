@@ -77,7 +77,7 @@ python mr-plotter.py example3_ESM.ini
 ![example3_joint](https://github.com/user-attachments/assets/8fbbcfb0-c035-4138-8d67-ea2c276eab00)
 
 
-### Example 4: Non-numerical color codings | The TESS legacy.
+### Example 4: Non-numerical color codings | The TESS legacy
 
 ### Example 5: Graphic options
 
@@ -206,6 +206,13 @@ If your favorite model is not yet included in *mr-plotter*, you have any issues 
 ## Contributors
 
 [Amadeo Castro-González](https://github.com/castro-gzlz), [Jorge Lillo-Box](https://github.com/jlillo), [Artem Aguichine](https://github.com/an0wen), [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse).
+
+## Change log
+
+*mr-plotter* is actively mantained by including (generally minor) improvements or fixing issues. However, from time to time some bigger changes are implemented (e.g. iclusion of new catalogs or models from the literature, etc). Below we incude a summary of those more significant updates. 
+
+**July 2023**     : mr-plotter v0 release. Quick and fancy M-R diagrams based on the Nasa Exoplanet Archive confirmed planets (and composite) catalog. 
+**August 2024**   : mr-plotter v1 is compatible with the Exoplanets.eu, PlanetS, TEPCat, and ExoplANETS-A catalogs. 
 
 
 ## Credits
