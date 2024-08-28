@@ -245,7 +245,7 @@ archivePrefix = {arXiv},
 
 ## Credits to the exoplanet catalogs
 
-Please also give credit to the specific used catalog: Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)), and ExoplANETS-A ([Morales-Calderón](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..45M/abstract)).
+Please also give credit to the catalog used: Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)), and ExoplANETS-A ([Morales-Calderón et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..45M/abstract)).
 
 ## Credits to the models used
 
