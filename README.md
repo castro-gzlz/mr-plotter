@@ -66,7 +66,13 @@ Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by m
 In this example we make a **two-column plot** based on the [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)). This catalog contains published planets characterized robustly and accurately (relative error in mass < 25% and relative error in radius < 8%). It collects many published parameters from the NEA, stellar parameters from *Gaia* DR3, and also includes homogeneous calculations of $S_{\rm eff}$, $T_{\rm eq}$, TSM, ESM, etc. In this example, we plot the entire catalog color coded according to the planetary TSM. We also show how we can include a new planetary system (TOI-5005; Castro-González et al. 2024) consistent with the existent color code. In addition, we plot the empirical relationships for small, intermediate, and giant planets derived by [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). You might have noticed that we have changed the color code! By default, *mr-plotter* uses *rainbow*, but any [matplotlib's color map](https://matplotlib.org/stable/users/explain/colors/colormaps.html) can be easily chosen. 
 
 ```
-python mr-plotter.py example3.ini
+python mr-plotter.py example3_TSM.ini
+```
+
+Of course, we can do the same for the ESM!
+
+```
+python mr-plotter.py example3_ESM.ini
 ```
 
 ![example3_joint](https://github.com/user-attachments/assets/2929b1ea-a154-46fa-8a7c-482834bbce2f)
