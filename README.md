@@ -79,7 +79,7 @@ python mr-plotter.py example3_ESM.ini
 ![example3_joint](https://github.com/user-attachments/assets/8fbbcfb0-c035-4138-8d67-ea2c276eab00)
 
 
-### Example 4: Non-numerical color codings and the TESS legacy
+### Example 4: Non-numerical color codings and dark poster-ready plots
 
 ### Example 5: Graphic options
 
