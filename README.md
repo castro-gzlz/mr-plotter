@@ -79,7 +79,7 @@ python mr-plotter.py example3_ESM.ini
 
 ### Example 4: Non-numerical color codings
 
-### Example 5: Graphic and practical details
+### Example 5: Graphic options
 
 ### Mandatory parameters
 
