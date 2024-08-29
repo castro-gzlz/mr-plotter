@@ -42,7 +42,9 @@ In this example, we contextualize a new planet (TOI-244 b; [Castro-González et 
 python mr-plotter.py example1_toi244.ini
 ```
 
-We can also contextualize planetary systems such as TOI-469 ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract); [Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)). In this case, we want to show the planet names in the legend instead of inside the figure. 
+We can also contextualize different planets from the same or different systems. In this example use a **faint layout** to better visualize our planets HD 21520 b ([Nies et al. 2024(https://ui.adsabs.harvard.edu/abs/2024arXiv240609595N/abstract)]), TOI-469b&d ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract); [Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)), and LHS 1140 c ([Lillo-Box et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract); [Cardieux et al. 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...960L...3C/abstract)).
+
+planetary systems such as TOI-469 ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract); [Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)) and plot them together with other systems . In this case, we want to show the planet names in the legend instead of inside the figure. 
 ```
 python mr-plotter.py example1_misc.ini
 ```
