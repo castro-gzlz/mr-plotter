@@ -88,7 +88,7 @@ python mr-plotter.py example3_ESM.ini
 
 ### Example 4: Non-numerical color codings, dark plots, and upper mass limits
 
-![exmple4_joint](https://github.com/user-attachments/assets/d1f66944-4dc1-4d61-a775-0d41feac8e6d)
+![exmple4_joint](https://github.com/user-attachments/assets/a30f332f-a5c8-47af-b1c8-4e33926b6d44)
 
 
 ### Example 5: Two-column plots and more interior models
