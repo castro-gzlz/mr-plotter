@@ -86,7 +86,7 @@ python mr-plotter.py example3_ESM.ini
 ![example3_joint](https://github.com/user-attachments/assets/8fbbcfb0-c035-4138-8d67-ea2c276eab00)
 
 
-### Example 4: Non-numerical color codings and poster-ready dark plots
+### Example 4: Non-numerical color codings, poster-ready dark plots, and upper mass limits
 
 ![exmple4_joint](https://github.com/user-attachments/assets/d1f66944-4dc1-4d61-a775-0d41feac8e6d)
 
