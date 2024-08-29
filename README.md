@@ -106,8 +106,15 @@ This plot evidences the invaluable legacy that *TESS* is providing thanks to its
 
 ### Example 5: Two-column plots and more interior models
 
+*mr-plotter* can also produce paper-ready two-column plots and include a wide range of state-of-the-art interior models. In this example we simply contextualize the super-dense super-Earth K2-229 b by including the maximum mantle collisional stripping model by X and some isodensity lines. However, the procedure to include new models from the literature is the same as that shown in the previous examples. In Section X we detail each model implemente in *mr-plotter* to date. If you miss any, do not hesitate in contacting me!  
+
+```
+python mr-plotter.py example5.ini
+```
+
 ![example5](https://github.com/user-attachments/assets/a91d56cd-0392-4426-9d5e-0f102d1f7e7b)
 
+Enjoy *mr-plotter* :-D
 
 ## Configuration file
 
