@@ -44,10 +44,11 @@ python mr-plotter.py example1_toi244.ini
 
 We can also contextualize planetary systems such as TOI-469 ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract); [Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)). In this case, we want to show the planet names in the legend instead of inside the figure. 
 ```
-python mr-plotter.py example1_toi469.ini
+python mr-plotter.py example1_misc.ini
 ```
 
-![example1_joint](https://github.com/user-attachments/assets/75822391-418b-4a87-8937-0c93a874707a)
+![example1_joint](https://github.com/user-attachments/assets/ef8b6bb1-976e-4752-8149-25377c910345)
+
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
