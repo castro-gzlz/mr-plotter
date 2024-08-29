@@ -112,7 +112,8 @@ This plot evidences the invaluable legacy that *TESS* is providing thanks to its
 python mr-plotter.py example5.ini
 ```
 
-![example5](https://github.com/user-attachments/assets/a91d56cd-0392-4426-9d5e-0f102d1f7e7b)
+![example5](https://github.com/user-attachments/assets/863365c7-35f7-4e2c-b69a-e1367c2ec92f)
+
 
 
 ## Configuration file
