@@ -87,7 +87,7 @@ python mr-plotter.py example3_ESM.ini
 
 ### Example 4: Non-numerical color codings and dark plots | The TESS legacy
 
-There are several parameters such as the discovery year, discovery facility or technique, etc, that you might want to **separate by groups** instead of considering a color map. This is now possible to implement in *mr-plotter* (v1+). In this example, we first build the mass-radius diagram of small planets colored according to their discovery year. 
+There are several parameters such as the discovery year, facility, or technique, that you might want to **separate by groups**. This is now possible to implement in *mr-plotter* (v1+). In this example, we first build the mass-radius diagram of small planets colored according to their discovery year. 
 
 ```
 python mr-plotter.py example4_year.ini
@@ -97,6 +97,8 @@ It's amazing to see the exciting era we live on, righ?! We can also make the sam
 ```
 python mr-plotter.py example4_facility.ini
 ```
+
+
 
 ![example4_joint](https://github.com/user-attachments/assets/a2601b0e-810d-4024-833e-299549b56f75)
 
