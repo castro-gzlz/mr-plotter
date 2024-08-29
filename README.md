@@ -47,8 +47,7 @@ We can also contextualize planetary systems such as TOI-469 ([Damasso et al. 202
 python mr-plotter.py example1_misc.ini
 ```
 
-![example1_joint](https://github.com/user-attachments/assets/ef8b6bb1-976e-4752-8149-25377c910345)
-
+![example1_joint](https://github.com/user-attachments/assets/8436b5a6-8e58-43f5-a779-8df7b41854d8)
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
