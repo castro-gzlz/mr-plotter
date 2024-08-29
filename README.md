@@ -88,7 +88,7 @@ python mr-plotter.py example3_ESM.ini
 
 ### Example 4: Non-numerical color codings and dark plots | The TESS legacy
 
-![exmple4_joint](https://github.com/user-attachments/assets/a30f332f-a5c8-47af-b1c8-4e33926b6d44)
+![example4_joint](https://github.com/user-attachments/assets/a2601b0e-810d-4024-833e-299549b56f75)
 
 
 ### Example 5: Two-column plots and more interior models
