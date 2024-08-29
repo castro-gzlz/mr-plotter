@@ -91,7 +91,7 @@ python mr-plotter.py example3_ESM.ini
 ![exmple4_joint](https://github.com/user-attachments/assets/d1f66944-4dc1-4d61-a775-0d41feac8e6d)
 
 
-### Example 5: Graphic options
+### Example 5: Two-column plots and more interior models
 
 
 ## Configuration file
