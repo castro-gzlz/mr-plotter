@@ -28,7 +28,7 @@ The file *[my_config_file.ini](https://github.com/castro-gzlz/mr-plotter/blob/ma
 
 Since August 2024 (v1+), *mr-plotter* can be used via Jupyter notebook (mr-plotter.ipynb). Similarly to the Python terminal version, you just need to select a configuration file (config_file) and run all cells.
 
-### Is this your first time using *mr-plotter*?
+## Is this your first time using *mr-plotter*?
 
 If so, please don't be overwhelmed by the large number of parameters. In most cases you will only use a few! To **get familiarized** with the main parameters and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **diferent key scenarios** through didactic examples. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
 
