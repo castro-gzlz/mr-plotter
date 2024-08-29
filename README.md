@@ -83,6 +83,9 @@ python mr-plotter.py example3_ESM.ini
 
 ### Example 5: Graphic options
 
+
+## Configuration file
+
 ### Mandatory parameters
 
 #### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
