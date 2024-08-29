@@ -98,7 +98,7 @@ It's amazing to see the exciting era we live on, righ?! We can also make the sam
 python mr-plotter.py example4_facility.ini
 ```
 
-This plot evidences the invaluable legacy that *TESS* is providing thanks to its incessant monitoring of the bright sky. This plot also serves as an example to make poster-ready or presentation-ready diagrams to show in conferences!
+This plot evidences the invaluable legacy that *TESS* is providing thanks to its incessant monitoring of the bright sky. This plot also serves as an example to make dark poster-ready/presentation-ready diagrams to show in conferences!
 
 ![example4_joint](https://github.com/user-attachments/assets/a2601b0e-810d-4024-833e-299549b56f75)
 
