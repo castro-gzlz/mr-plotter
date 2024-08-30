@@ -131,7 +131,7 @@ python mr-plotter.py example5.ini
 The catalog data can be accessed locally in the corresponding folder inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to mantain the *mr-plotter* catalogs as much updated as possible, but if you do not clone the repository frequently we recommend to download the most updated catalogs from: <br />
 
 [NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (in **.csv** format) <br />
-[NEA Composite Data] (in **.csv** format)  <br />
+[NEA Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) (in **.csv** format)  <br />
 [Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format) <br />
 [PlanetS catalog](https://dace.unige.ch/exoplanets/) (in **VOTable** format) <br />
 
