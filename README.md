@@ -263,7 +263,9 @@ If your favorite model is not yet included in *mr-plotter*, you have any issues 
 July 2023 (v0)         -->  *mr-plotter* release. Quick and fancy M-R diagrams based on the Nasa Exoplanet Archive confirmed planets (and composite) catalog. <br />
 September 2024 (v1)    -->  *mr-plotter* is also compatible with the Exoplanets.eu and PlanetS catalogs. Inclusion of several suggestions from [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse).  <br />
 
-# Credits to the package
+## Credits
+
+### To the package
 
 **If you use *mr-plotter*, please give credit to the following [paper](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract)**: 
 
@@ -289,7 +291,7 @@ archivePrefix = {arXiv},
 **and add the following sentence within the acknowledgements section**:
 > This work made use of \texttt{mr-plotter} (https://github.com/castro-gzlz/mr-plotter), which has been developed with financial support from the Spanish Ministry of Science through MCIN/AEI/10.13039/501100011033 grant PID2019-107061GB-C61.
 
-## Credits to the exoplanet catalogs and theoretical models
+### To the exoplanet catalogs and theoretical models
 
 Please also give credit to the **catalog(s)** used:  <br />
 
