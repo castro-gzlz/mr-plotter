@@ -265,7 +265,7 @@ September 2024 (v1)    -->  *mr-plotter* is also compatible with the Exoplanets.
 
 ## Credits
 
-### To the package
+### The package
 
 If you use *mr-plotter*, please give credit to the following [work](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract): 
 
@@ -291,7 +291,7 @@ archivePrefix = {arXiv},
 and add the following sentence within the acknowledgements section:
 > This work made use of \texttt{mr-plotter} (https://github.com/castro-gzlz/mr-plotter), which has been developed with financial support from the Spanish Ministry of Science through MCIN/AEI/10.13039/501100011033 grant PID2019-107061GB-C61.
 
-### And to the exoplanet catalogs and theoretical models
+### The exoplanet catalogs and theoretical models
 
 Please also give credit to the catalog(s) used: Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), and PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)).  <br />
 
