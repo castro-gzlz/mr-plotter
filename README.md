@@ -170,7 +170,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 #### [MODELS] | Include theoretical models
 
-##### Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract))
+##### [Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract) and [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
