@@ -130,13 +130,14 @@ python mr-plotter.py example5.ini
 
 The catalog data can be accessed locally in the corresponding folder inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to mantain the *mr-plotter* catalogs as much updated as possible, but if you do not clone the repository frequently we recommend to download the most updated catalogs from: <br />
 
-[NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) or [NEA Composite Data]() (in .csv format) <br />
-[Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in .csv format) <br />
-[PlanetS catalog](https://dace.unige.ch/exoplanets/) (in VOTable format) <br />
+[NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (in **.csv** format) <br />
+[NEA Composite Data] (in **.csv** format)  <br />
+[Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format) <br />
+[PlanetS catalog](https://dace.unige.ch/exoplanets/) (in **VOTable** format) <br />
 
 and place them in their corresponding folders. <br />
 
-Alternatively, the NEA data can be also accesed through a TAP protocol. Therefore, when using this catalog, the *web_or_local* keyword has to be determined (see below). Also, with the NEA catalog it is possible to either use the Planetary Systems or Composite Data catalogs, so that the *ps_or_composite* keyword has to be also specified (see below). 
+Alternatively, the NEA data can be also accesed through a **TAP protocol**. Therefore, when using this catalog, the *web_or_local* keyword has to be determined (see below). Also, with the NEA catalog it is possible to either use the Planetary Systems or Composite Data catalogs, so that the *ps_or_composite* keyword has to be also specified (see below). 
 
 | Parameter  | Possible values | Description |
 | ------------- | ------------- | ------------- |
