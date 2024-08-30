@@ -293,11 +293,6 @@ and add the following sentence within the acknowledgements section:
 
 ### And to the exoplanet catalogs and theoretical models
 
-Please also give credit to the **catalog(s)** used:  <br />
+Please also give credit to the **catalog(s)** used:  Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), and PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)).  <br />
 
-Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), and PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)).  <br />
-
-And **models**:   <br />
-
-The **ADS site** of each work can be accessed by clicking on the **header hyperlinks** of Section [[**MODELS**]](#models--include-theoretical-models).
-
+And **models**: The **ADS site** of each work can be accessed by clicking on the **header hyperlinks** of Section [[**MODELS**]](#models--include-theoretical-models).
