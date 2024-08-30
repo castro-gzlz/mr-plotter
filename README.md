@@ -99,8 +99,7 @@ python mr-plotter.py example4_facility.ini
 
 This plot evidences the invaluable legacy that *TESS* is providing thanks to its incessant monitoring of the bright sky. This example also shows how to make dark poster-ready and presentation-ready diagrams for conferences!
 
-![example4_joint](https://github.com/user-attachments/assets/a2601b0e-810d-4024-833e-299549b56f75)
-
+![example4_joint](https://github.com/user-attachments/assets/df1a263c-4603-4aa1-8f97-a74d48aa9e85)
 
 
 ### Example 5: Two-column plots and more interior models
