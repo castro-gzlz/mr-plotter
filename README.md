@@ -170,7 +170,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 #### [MODELS] | Include theoretical models
 
-##### Zeng et al. (2016, 2019)
+##### Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract))
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -178,7 +178,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 <sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. </sub>
 
-##### Lopez & Fortney et al. (2014) 
+##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -190,7 +190,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 <sub> **Note:** To plot several [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
-##### Turbet et al. (2020)
+##### [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -203,7 +203,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 <sub> **Note:** To plot several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models you can include as many values as you want, separated by commas, similar to [example2.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example2.ini).  </sub>
 
-##### Aguichine et al. (2021)
+##### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/exportcitation)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -248,7 +248,6 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | cmap | Any [matplotlib colormap](https://matplotlib.org/stable/tutorials/colors/colormaps.html) | Color map for the color-coded diagrams. **Default:** rainbow |
 
 
-
 ## Inclusion of additional models, issues, improvements, and suggestions
 
 If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es).
@@ -290,7 +289,7 @@ archivePrefix = {arXiv},
 **and add the following sentence within the acknowledgements section**:
 > This work made use of \texttt{mr-plotter} (https://github.com/castro-gzlz/mr-plotter), which has been developed with financial support from the Spanish Ministry of Science through MCIN/AEI/10.13039/501100011033 grant PID2019-107061GB-C61.
 
-## Credits to the exoplanet catalogs and models
+## Credits to the exoplanet catalogs and theoretical models
 
 Please also give credit to the **catalog(s)** used:  <br />
 
@@ -298,122 +297,5 @@ Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2
 
 And **models**:   <br />
 
-The ADS site of each work can be accesed by clicking on the header hyperlinks of Section [[MODELS]](#models--include-theoretical-models).
-
-## Credits to the models used
-
-
-#### Lopez & Fortney et al. (2014)
-
-```
-@ARTICLE{2014ApJ...792....1L,
-       author = {{Lopez}, Eric D. and {Fortney}, Jonathan J.},
-        title = "{Understanding the Mass-Radius Relation for Sub-neptunes: Radius as a Proxy for Composition}",
-      journal = {\apj},
-     keywords = {planets and satellites: composition, planets and satellites: formation, planets and satellites: interiors, planets and satellites: physical evolution, Astrophysics - Earth and Planetary Astrophysics},
-         year = 2014,
-        month = sep,
-       volume = {792},
-       number = {1},
-          eid = {1},
-        pages = {1},
-          doi = {10.1088/0004-637X/792/1/1},
-archivePrefix = {arXiv},
-       eprint = {1311.0329},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
-
-#### Zeng et al. (2016)
-
-```
-@ARTICLE{2016ApJ...819..127Z,
-       author = {{Zeng}, Li and {Sasselov}, Dimitar D. and {Jacobsen}, Stein B.},
-        title = "{Mass-Radius Relation for Rocky Planets Based on PREM}",
-      journal = {\apj},
-     keywords = {planets and satellites: composition, planets and satellites: general, planets and satellites: interiors, Astrophysics - Earth and Planetary Astrophysics},
-         year = 2016,
-        month = mar,
-       volume = {819},
-       number = {2},
-          eid = {127},
-        pages = {127},
-          doi = {10.3847/0004-637X/819/2/127},
-archivePrefix = {arXiv},
-       eprint = {1512.08827},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
-#### Zeng et al. (2019)
-
-```
-@ARTICLE{2019PNAS..116.9723Z,
-       author = {{Zeng}, Li and {Jacobsen}, Stein B. and {Sasselov}, Dimitar D. and {Petaev}, Michail I. and {Vanderburg}, Andrew and {Lopez-Morales}, Mercedes and {Perez-Mercader}, Juan and {Mattsson}, Thomas R. and {Li}, Gongjie and {Heising}, Matthew Z. and {Bonomo}, Aldo S. and {Damasso}, Mario and {Berger}, Travis A. and {Cao}, Hao and {Levi}, Amit and {Wordsworth}, Robin D.},
-        title = "{Growth model interpretation of planet size distribution}",
-      journal = {Proceedings of the National Academy of Science},
-     keywords = {Astrophysics - Earth and Planetary Astrophysics, Physics - Geophysics},
-         year = 2019,
-        month = may,
-       volume = {116},
-       number = {20},
-        pages = {9723-9728},
-          doi = {10.1073/pnas.1812905116},
-archivePrefix = {arXiv},
-       eprint = {1906.04253},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
-
-#### Turbet et al. (2020)
-
-```
-@ARTICLE{2020A&A...638A..41T,
-       author = {{Turbet}, Martin and {Bolmont}, Emeline and {Ehrenreich}, David and {Gratier}, Pierre and {Leconte}, J{\'e}r{\'e}my and {Selsis}, Franck and {Hara}, Nathan and {Lovis}, Christophe},
-        title = "{Revised mass-radius relationships for water-rich rocky planets more irradiated than the runaway greenhouse limit}",
-      journal = {\aap},
-     keywords = {planets and satellites: terrestrial planets, planets and satellites: composition, planets and satellites: atmospheres, planets and satellites: individual: TRAPPIST-1, planets and satellites: interiors, methods: numerical, Astrophysics - Earth and Planetary Astrophysics, Physics - Atmospheric and Oceanic Physics, Physics - Geophysics},
-         year = 2020,
-        month = jun,
-       volume = {638},
-          eid = {A41},
-        pages = {A41},
-          doi = {10.1051/0004-6361/201937151},
-archivePrefix = {arXiv},
-       eprint = {1911.08878},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2020A&A...638A..41T},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
-
-#### Aguichine et al. (2021)
-
-```
-@ARTICLE{2021ApJ...914...84A,
-       author = {{Aguichine}, Artyom and {Mousis}, Olivier and {Deleuil}, Magali and {Marcq}, Emmanuel},
-        title = "{Mass-Radius Relationships for Irradiated Ocean Planets}",
-      journal = {\apj},
-     keywords = {Exoplanets, Hydrosphere, Planetary interior, Planetary theory, Exoplanet astronomy, Exoplanet structure, Computational methods, 498, 770, 1248, 1258, 486, 495, 1965, Astrophysics - Earth and Planetary Astrophysics},
-         year = 2021,
-        month = jun,
-       volume = {914},
-       number = {2},
-          eid = {84},
-        pages = {84},
-          doi = {10.3847/1538-4357/abfa99},
-archivePrefix = {arXiv},
-       eprint = {2105.01102},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
-
-
+The ADS site of each work can be accessed by clicking on the header hyperlinks of Section [[MODELS]](#models--include-theoretical-models).
 
