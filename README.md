@@ -138,6 +138,8 @@ and place them in their corresponding folders. <br />
 
 Alternatively, the NEA data can be also accesed through a TAP protocol. Therefore, when using this catalog, the *web_or_local* keyword has to be determined (see below). Also, with the NEA catalog it is possible to either use the Planetary Systems or Composite Data catalogs, so that the *ps_or_composite* keyword has to be also specified (see below). 
 
+| Parameter  | Possible values | Description |
+| ------------- | ------------- | ------------- |
 | web_or_local  | web or local  | Download the data from the [*Nasa Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *[NEA_data](https://github.com/castro-gzlz/mr-plotter/tree/main/NEA_data)* folder (**local**)**<sup>3</sup>** |
 | ps_or_composite | ps or composite  | Indicates which table to use: *[Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0)* (**ps**) or *[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)* (**composite**)**<sup>4</sup>** |
 
