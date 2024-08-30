@@ -117,7 +117,7 @@ python mr-plotter.py example5.ini
 
 ### Mandatory parameters
 
-#### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
+#### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](https://exoplanet.eu/home/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
 
 | Parameter  | Possible values | Description |
 | ------------- | ------------- | ------------- |
