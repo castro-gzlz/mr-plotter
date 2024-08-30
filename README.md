@@ -45,7 +45,7 @@ We can also contextualize different planets from the same or different systems. 
 python mr-plotter.py example1_misc.ini
 ```
 
-![example1_joint](https://github.com/user-attachments/assets/8436b5a6-8e58-43f5-a779-8df7b41854d8)
+![example1_joint](https://github.com/user-attachments/assets/0ffb28b8-7fb2-48ea-987d-af0d3cc348c7)
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
