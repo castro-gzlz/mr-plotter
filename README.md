@@ -120,12 +120,6 @@ python mr-plotter.py example5.ini
 #### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](https://exoplanet.eu/home/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
 
 
-<style scoped>
-table {
-  font-size: 13px;
-}
-</style>
-
 | Parameter  | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | catalog | NEA, Exoplanet.eu, or PlanetS | Exoplanet catalog to visualize |
