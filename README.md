@@ -176,7 +176,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | ------------- | ------------- | ------------- |
 | models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc<sup>**1**</sup> | Models from Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) |
 
-<sup>**1**</sup> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. 
+<sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. </sub>
 
 ##### Lopez & Fortney et al. (2014) 
 
@@ -188,7 +188,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | H_He |0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, and 20 (%) | H/He mass fraction of the planet|
 | colors_lf2014 | Any color | Colors of each curve |
 
-**Note:** To plot several [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). 
+<sub> **Note:** To plot several [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
 ##### Turbet et al. (2020)
 
@@ -201,7 +201,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | Core_turb2020 | earth, rock, or iron | Internal core composition over which the steam water resides |
 | colors_turb2020 | Any color | Colors of each model |
 
-**Note:** To plot several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models you can include as many values as you want, separated by commas, similar to [example2.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example2.ini). 
+<sub> **Note:** To plot several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models you can include as many values as you want, separated by commas, similar to [example2.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example2.ini).  </sub>
 
 ##### Aguichine et al. (2021)
 
@@ -212,14 +212,13 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Equilibrium temperature of your planet |
 | colors_aguich2021 | Any color | Colors of each model |
 
-**Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). 
+<sub> **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
 ##### Marcus et al. (2010)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | models_marcus |  marcus_2010_maximum_collision_stripping | Maximum collision stripping model from [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) |
-
 
 ##### Isodensity curves
 
@@ -228,7 +227,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | density | Any ($\rm g \cdot cm^{-3}$) | Density |
 | colors_density | Any color | Colors of each curve |
 
-**Note:** To plot several curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example5.ini). 
+<sub> **Note:** To plot several curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example5.ini).  </sub>
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
