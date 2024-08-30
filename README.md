@@ -137,7 +137,7 @@ The package can acces the catalog data locally from different folders inside [*c
 
 and place them in their corresponding folders. <br />
 
-Alternatively, the NEA data can be also accesed through a **TAP protocol**. Therefore, when using this catalog, the *web_or_local* keyword has to be determined (see below). Also, with the NEA catalog it is possible to either use the Planetary Systems or Composite Data catalogs, so that the *ps_or_composite* keyword has to be also specified (see below). 
+Alternatively, the NEA data can be also accesed through a **TAP protocol**. Therefore, when using this catalog, the *web_or_local* keyword has to be determined (see below). Also, with the NEA catalog it is possible to either use the Planetary Systems or Composite Data catalogs, so the *ps_or_composite* keyword has to be also specified (see below). 
 
 | Parameter  | Possible values | Description |
 | ------------- | ------------- | ------------- |
