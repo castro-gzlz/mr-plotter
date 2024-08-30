@@ -35,7 +35,7 @@ If so, please don't be overwhelmed by the large number of parameters. In most ca
 ## Usage examples
 
 ### Example 1: The simplest case. Contextualizing a new planetary system
-In this example, we contextualize a new planet (TOI-244 b; [Castro-González et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract)) in the NEA catalog and include several theoretical models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
+In this example, we contextualize a new planet (TOI-244 b; [Castro-González et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract)) in the [NEA catalog](https://exoplanetarchive.ipac.caltech.edu/) and include several theoretical models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
 ```
 python mr-plotter.py example1_toi244.ini
 ```
