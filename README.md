@@ -214,7 +214,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 <sub> **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
-##### Marcus et al. (2010)
+##### [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -261,9 +261,8 @@ If your favorite model is not yet included in *mr-plotter*, you have any issues 
 
 *mr-plotter* is actively mantained by including (generally minor) improvements or fixing issues. However, from time to time some bigger changes are implemented (e.g. iclusion of new catalogs or models from the literature, etc). Below we incude a summary of those more significant updates. 
 
-July 2023     -->  *mr-plotter* v0 release. Quick and fancy M-R diagrams based on the Nasa Exoplanet Archive confirmed planets (and composite) catalog. <br />
-August 2024   -->  *mr-plotter* v1 is compatible with the Exoplanets.eu, PlanetS, TEPCat, and ExoplANETS-A catalogs. <br />
-
+July 2023 (v0)         -->  *mr-plotter* release. Quick and fancy M-R diagrams based on the Nasa Exoplanet Archive confirmed planets (and composite) catalog. <br />
+September 2024 (v1)    -->  *mr-plotter* is also compatible with the Exoplanets.eu and PlanetS catalogs. Inclusion of several suggestions from [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse).  <br />
 
 ## Credits to the package
 
@@ -291,35 +290,18 @@ archivePrefix = {arXiv},
 **and add the following sentence within the acknowledgements section**:
 > This work made use of \texttt{mr-plotter} (https://github.com/castro-gzlz/mr-plotter), which has been developed with financial support from the Spanish Ministry of Science through MCIN/AEI/10.13039/501100011033 grant PID2019-107061GB-C61.
 
-## Credits to the exoplanet catalogs
+## Credits to the exoplanet catalogs and models
 
-Please also give credit to the catalog(s) used: Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)), and ExoplANETS-A ([Morales-Calderón et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..45M/abstract)).
+Please also give credit to the **catalog(s)** used:  <br />
+
+Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), and PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)).  <br />
+
+And **models**:   <br />
+
+The ADS site of each work can be accesed by clicking on the header hyperlinks of Section [[MODELS]](#models--include-theoretical-models).
 
 ## Credits to the models used
 
-And models: 
-
-#### Marcus et al. (2010)
-
-```
-@ARTICLE{2010ApJ...712L..73M,
-       author = {{Marcus}, Robert A. and {Sasselov}, Dimitar and {Hernquist}, Lars and {Stewart}, Sarah T.},
-        title = "{Minimum Radii of Super-Earths: Constraints from Giant Impacts}",
-      journal = {\apjl},
-     keywords = {planetary systems, planets and satellites: formation, Astrophysics - Earth and Planetary Astrophysics},
-         year = 2010,
-        month = mar,
-       volume = {712},
-       number = {1},
-        pages = {L73-L76},
-          doi = {10.1088/2041-8205/712/1/L73},
-archivePrefix = {arXiv},
-       eprint = {1003.0451},
- primaryClass = {astro-ph.EP},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-```
 
 #### Lopez & Fortney et al. (2014)
 
