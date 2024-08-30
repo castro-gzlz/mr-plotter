@@ -289,7 +289,8 @@ archivePrefix = {arXiv},
 }
 ```
 and add the following sentence within the acknowledgements section:
-> This work made use of \texttt{mr-plotter} (https://github.com/castro-gzlz/mr-plotter), which has been developed with financial support from the Spanish Ministry of Science through MCIN/AEI/10.13039/501100011033 grant PID2019-107061GB-C61.
+
+> This work made use of \texttt{mr-plotter}, which is available in [https://github.com/castro-gzlz/mr-plotter](https://github.com/castro-gzlz/mr-plotter).
 
 ### The exoplanet catalogs and theoretical models
 
