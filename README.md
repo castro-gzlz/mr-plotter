@@ -173,7 +173,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 ##### [Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract) and [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)
 
-Models for **rocky planets**, **water worlds** (silicates + condensed water), and **gas dwarfs** (H<sub>**2**</sub>/He atmospheres)
+Models for **rocky planets**, **water worlds** (silicates + condensed water), and **gas dwarfs** (H<sub>2</sub>/He atmospheres)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -195,27 +195,19 @@ Models for **rocky planets**, **water worlds** (silicates + condensed water), an
 
 ##### [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract)
 
-**Rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md). Example. 
-
+Rocky planets surrounded by an extensive atmosphere of steam and supercritical water | [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md) | Example 
 
 ##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
 
-Rocky planets with H<sub>**2**</sub>/He atmospheres. [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md). Example. 
+Rocky planets with H<sub>2</sub>/He atmospheres | [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md) | Example 
 
 ##### [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract)
 
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| models_marcus |  marcus_2010_maximum_collision_stripping | Maximum collision stripping model from [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) |
+Maximum collisional stripping of a planetary mantle | [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/marcus_2010.md) | Example
 
 ##### Isodensity curves
 
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| density | Any ($\rm g \cdot cm^{-3}$) | Density |
-| colors_density | Any color | Colors of each curve |
-
-<sub> **Note:** To plot several curves you can include as many values as you want, separated by commas, similar to [example5.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example5.ini).  </sub>
+[Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
