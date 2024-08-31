@@ -1,12 +1,12 @@
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| models_haldemann2024 | C0, C1, R0, R1, etc<sup>**1**<\sup>. | Core mass fraction |
+| models_haldemann2024 | C0, C1, R0, R1, etc<sup>**1**</sup>. | Core mass fraction |
 | T_out_haldemann2024 | 50, 300, 800, 1500, or 2000 | Outer boundary temperature (K) |
 | colors_haldemann2024 | Any color | Colors of each model |
 
 **Notes**: The pressure at which the integration of the internal structure was started was always set to 1 mbar. It is possible that for some combinations no transit radius is provided. This is the case if the radius of the planet is so big that the outermost layers would not be bound to the planet, for example,in the case of very small masses, high equilibrium temperatures and volatile rich compositions.
 
-<sup>**1**<\sup> Below you can find all the possible models from Haldemann et al. (2024) available in *mr-plotter*. Just choose the one you think it might better fit with the observed properties of your planet! The table has been extracted from [https://github.com/mnijh/BICEPS_mass_radius](https://github.com/mnijh/BICEPS_mass_radius).
+<sup>**1**</sup> Below you can find all the possible models from Haldemann et al. (2024) available in *mr-plotter*. Just choose the one you think it might better fit with the observed properties of your planet! The table has been extracted from [https://github.com/mnijh/BICEPS_mass_radius](https://github.com/mnijh/BICEPS_mass_radius).
 
 | Model | w<sub>Core</sub> | w<sub>Rock</sub> | w<sub>H<sub>2</sub>O</sub> | w<sub>H/He</sub> | x<sub>Fe,Core</sub> | x<sub>S,Core</sub> | x<sub>MgO,Mantle</sub> | x<sub>SiO<sub>2</sub>,Mantle</sub> | x<sub>FeO,Mantle</sub> |
 | ----- | ---------------- | ---------------- | -------------------------- | ---------------- | ------------------- | ------------------ | ---------------------- | ---------------------------------- | ---------------------- |
