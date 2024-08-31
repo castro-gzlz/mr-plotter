@@ -195,14 +195,8 @@ Models for **rocky planets** surrounded by an **extensive atmosphere of steam an
 
 ##### [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract)
 
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| M_turb2020 | Any ($\rm M_{\oplus}$) | Mass of your planet |
-| R_turb2020 | Any ($\rm M_{\oplus}$) | Radius of your planet |
-| Seff_turb2020 | > 1.1 ($\rm S_{\oplus}$) | Insolation flux received by your planet |
-| WMFs_turb2020 | From 0 to 0.05 | Water mass fractions (WMFs) of steam water |
-| Core_turb2020 | earth, rock, or iron | Internal core composition over which the steam water resides |
-| colors_turb2020 | Any color | Colors of each model |
+Models for **rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md)
+
 
 ##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
 
