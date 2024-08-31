@@ -194,7 +194,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 [**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of planetary mantles | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/marcus_2010.md) | Example <br />
 
-[**Isodensity curves**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/iso_density.md). [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
+[**Isodensity curves**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/iso_density.md). Mass-radius relations corresponding to a constant density | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
 
 ### [OPTIONAL_CONFIG] | Optional configuration
 
