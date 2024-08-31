@@ -1,6 +1,6 @@
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| models_haldemann2024 | C0, C1, R0, R1, etc<sup>**1**</sup>. | Core mass fraction |
+| models_haldemann2024 | C0, C1, R0, R1, etc<sup>**1**</sup>. | Iso-composition curve |
 | T_out_haldemann2024 | 50, 300, 800, 1500, or 2000 | Outer boundary temperature (K) |
 | colors_haldemann2024 | Any color | Colors of each model |
 
