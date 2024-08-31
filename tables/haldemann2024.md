@@ -4,7 +4,7 @@
 | T_out_haldemann2024 | 50, 300, 800, 1500, or 2000 | Outer boundary temperature (K) |
 | colors_haldemann2024 | Any color | Colors of each model |
 
-**Notes**: The pressure at which the integration of the internal structure was started was always set to 1 mbar. It is possible that for some combinations no transit radius is provided. This is the case if the radius of the planet is so big that the outermost layers would not be bound to the planet, for example,in the case of very small masses, high equilibrium temperatures and volatile rich compositions.
+**Notes from Haldemann et al.**: The pressure at which the integration of the internal structure was started was always set to 1 mbar. It is possible that for some combinations no transit radius is provided. This is the case if the radius of the planet is so big that the outermost layers would not be bound to the planet, for example,in the case of very small masses, high equilibrium temperatures and volatile rich compositions.
 
 <sup>**1**</sup> Below you can find all the iso-composition curves from [Haldemann et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract) available now (v1+) in *mr-plotter*. Just try and choose the one that better fits with the properties of your planet! This table was obtained from [https://github.com/mnijh/BICEPS_mass_radius](https://github.com/mnijh/BICEPS_mass_radius).
 
