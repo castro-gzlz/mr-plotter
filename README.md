@@ -169,11 +169,9 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 ### [MODELS] | Include theoretical models
 
-In this section we list the complete set of models implemented in *mr-plotter*. Their inclusion into your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc. In some cases, a model is simply defined by one **Option**. In other cases, it is defined by a combination of **a few Options**. In the following we show an example of both kinds of operation: the models from  Zeng et al. 2016&2019 (sinlge option) and Aguichine et al. 2021 (several options). For the remaining models, their corresponding tables with the **Options**, **Possibe values**, and **Descriptions** can be accesed through the corresonding **hyperlinks**. 
+In this section we list the complete set of models implemented in *mr-plotter*. Their inclusion into your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc. In some cases, a model is simply defined by one **Option**. In other cases, it is defined by a combination of **a few Options**. In the following we show an example of both kinds of operation: the models from  Zeng et al. 2016&2019 (sinlge option) and Aguichine et al. 2021 (several options). For the remaining models, their corresponding configuration tables with the **Options**, **Possibe values**, and **Descriptions** can be accesed through the corresonding **hyperlinks**. 
 
-#### [Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract) and [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)
-
-Models for **rocky planets**, **water worlds** (silicates + condensed water), and **gas dwarfs** (H<sub>2</sub>/He atmospheres)
+**Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract))**. Rocky planets, water worlds (silicates + condensed water), and gas dwarfs (H<sub>2</sub>/He atmospheres) | Example
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -181,9 +179,7 @@ Models for **rocky planets**, **water worlds** (silicates + condensed water), an
 
 <sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/zeng_2016_2019.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models. </sub>
 
-#### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract)
-
-**Rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. 
+[**Aguichine et al. (2021)**](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract). Rocky planets with an extensive atmosphere of steam and supercritical water | Example 
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -193,13 +189,13 @@ Models for **rocky planets**, **water worlds** (silicates + condensed water), an
 | colors_aguich2021 | Any color | Colors of each model |
 
 
-[**Turbet et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). Rocky planets with an atmosphere of steam and supercritical water | [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md) | Example <br />
+[**Turbet et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). Rocky planets with an atmosphere of steam and supercritical water | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md) | Example <br />
 
-[**Lopez & Fortney et al. (2014)**](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). Rocky planets with H<sub>2</sub>/He atmospheres | [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md) | Example <br />
+[**Lopez & Fortney et al. (2014)**](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). Rocky planets with H<sub>2</sub>/He atmospheres | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md) | Example <br />
 
-[**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of a planetary mantle | [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/marcus_2010.md) | Example <br />
+[**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of a planetary mantle | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/marcus_2010.md) | Example <br />
 
-**Isodensity curves**. [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
+**Isodensity curves**. [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
 
 ### [OPTIONAL_CONFIG] | Optional configuration
 
