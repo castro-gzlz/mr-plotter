@@ -7,4 +7,4 @@
 | Core_turb2020 | earth, rock, or iron | Internal core composition over which the steam water resides |
 | colors_turb2020 | Any color | Colors of each model |
 
-**You can plot as many models as you want**. You just need to include different **Possible values** separated by commas. 
+You can plot as many models as you want. You only need to include different **Possible values** separated by commas. 
