@@ -169,7 +169,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 #### [MODELS] | Include theoretical models
 
-In this section we list the complete set of models implemented in *mr-plotter*. Their inclusion to your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc.
+In this section we list the complete set of models implemented in *mr-plotter*. Their inclusion into your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc. In some cases, a model is simply defined by one **Option**. In other cases, it is defined by a combination of **a few Options**. In the following we show an example of both kinds of operation: the models from  Zeng et al. 2016&2019 (sinlge option) and Aguichine et al. 2021 (several options). For the remaining models, their corresponding tables with the **Options**, **Possibe values**, and **Descriptions** can be accesed through the corresonding **hyperlinks**. 
 
 ##### [Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract) and [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)
 
@@ -191,8 +191,6 @@ Models for **rocky planets** surrounded by an **extensive atmosphere of steam an
 | x_H2O_aguich2021 | From 0.1 to 1.0 in steps of 0.1 | Water mass fraction of the hydrosphere |
 | Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Equilibrium temperature of your planet |
 | colors_aguich2021 | Any color | Colors of each model |
-
-<sub> **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
 
 ##### [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract)
