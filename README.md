@@ -179,7 +179,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 <sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/zeng_2016_2019.md) we include all the **Possible values** corresponding to the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models. </sub>
 
-[**Aguichine et al. (2021)**](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract). Rocky planets with extensive atmospheres of steam and supercritical water | Example 
+- [**Aguichine et al. (2021)**](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract). Rocky planets with extensive atmospheres of steam and supercritical water | Example 
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -189,13 +189,13 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 | colors_aguich2021 | Any color | Colors of each model |
 
 
-[**Turbet et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). Rocky planets with atmospheres of steam and supercritical water | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md) | Example <br />
+- [**Turbet et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). Rocky planets with atmospheres of steam and supercritical water | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md) | Example <br />
 
-[**Lopez & Fortney et al. (2014)**](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). Rocky planets with H<sub>2</sub>/He atmospheres | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md) | Example <br />
+- [**Lopez & Fortney et al. (2014)**](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). Rocky planets with H<sub>2</sub>/He atmospheres | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md) | Example <br />
 
-[**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of planetary mantles | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/marcus_2010.md) | Example <br />
+- [**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of planetary mantles | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/marcus_2010.md) | Example <br />
 
-**Isodensity curves**. [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
+- **Isodensity curves**. [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
 
 ### [OPTIONAL_CONFIG] | Optional configuration
 
