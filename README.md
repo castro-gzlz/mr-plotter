@@ -181,7 +181,7 @@ Models for **rocky planets**, **water worlds** (silicates + condensed water), an
 
 <sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/zeng_2016_2019.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models. </sub>
 
-##### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/exportcitation)
+##### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract)
 
 **Rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. 
 
@@ -200,14 +200,7 @@ Models for **rocky planets**, **water worlds** (silicates + condensed water), an
 
 ##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
 
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| age_lf2014 | 100Myr, 1Gyr, 10Gyr | Age of the system |
-| opacity_lf2014 | solar or enhanced | Opacity of the star |
-| Seff_lf2014 | 0.1, 10, 1000  ($\rm S_{\oplus}$) | Insolation received by the planet|
-| H_He |0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, and 20 (%) | H/He mass fraction of the planet|
-| colors_lf2014 | Any color | Colors of each curve |
-
+Rocky planets with H<sub>**2**</sub>/He atmospheres. [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md). Example. 
 
 ##### [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract)
 
