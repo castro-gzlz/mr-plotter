@@ -171,11 +171,27 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 ##### [Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract) and [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)
 
+Models for rocky worlds, water worlds (silicates + condensed water), and gas dwarfs (H<sub>**2**</sub> atmospheres)
+
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc<sup>**1**</sup> | Models from Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) |
 
 <sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. </sub>
+
+##### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/exportcitation)
+
+Models for rocky worlds surrounded by an atmosphere of steam and supercritical water.
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| x_core_aguich2021 | From 0.0 to 0.9 in steps of 0.1 | Core mass fraction |
+| x_H2O_aguich2021 | From 0.1 to 1.0 in steps of 0.1 | Water mass fraction of the hydrosphere |
+| Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Equilibrium temperature of your planet |
+| colors_aguich2021 | Any color | Colors of each model |
+
+<sub> **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
+
 
 ##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
 
@@ -201,17 +217,6 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | colors_turb2020 | Any color | Colors of each model |
 
 <sub> **Note:** To plot several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models you can include as many values as you want, separated by commas, similar to [example2.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example2.ini).  </sub>
-
-##### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/exportcitation)
-
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| x_core_aguich2021 | From 0.0 to 0.9 in steps of 0.1 | Core mass fraction |
-| x_H2O_aguich2021 | From 0.1 to 1.0 in steps of 0.1 | Water mass fraction of the hydrosphere |
-| Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Equilibrium temperature of your planet |
-| colors_aguich2021 | Any color | Colors of each model |
-
-<sub> **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
 ##### [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract)
 
