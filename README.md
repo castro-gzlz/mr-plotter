@@ -183,7 +183,7 @@ Models for **rocky planets**, **water worlds** (silicates + condensed water), an
 
 ##### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/exportcitation)
 
-Models for **rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. 
+**Rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. 
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -195,7 +195,7 @@ Models for **rocky planets** surrounded by an **extensive atmosphere of steam an
 
 ##### [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract)
 
-Models for **rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md)
+**Rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. [Table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md). Example. 
 
 
 ##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
