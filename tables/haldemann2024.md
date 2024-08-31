@@ -4,7 +4,7 @@
 | T_out_haldemann2024 | 50, 300, 800, 1500, or 2000 | Outer boundary temperature (K) |
 | colors_haldemann2024 | Any color | Colors of each model |
 
-**Notes**: The pressure at which the integration of the internal structure was started was always set to 1 barye. Note: it is possible that for some combinations no transit radius is provided. This is the case if the radius of the planet is so big that the outermost layers would not be bound to the planet, for example,in the case of very small masses, high equilibrium temperatures and volatile rich compositions.
+**Notes**: The pressure at which the integration of the internal structure was started was always set to 1 barye. It is possible that for some combinations no transit radius is provided. This is the case if the radius of the planet is so big that the outermost layers would not be bound to the planet, for example,in the case of very small masses, high equilibrium temperatures and volatile rich compositions.
 
 | Label | w<sub>Core</sub> | w<sub>Rock</sub> | w<sub>H<sub>2</sub>O</sub> | w<sub>H/He</sub> | x<sub>Fe,Core</sub> | x<sub>S,Core</sub> | x<sub>MgO,Mantle</sub> | x<sub>SiO<sub>2</sub>,Mantle</sub> | x<sub>FeO,Mantle</sub> |
 | ----- | ---------------- | ---------------- | -------------------------- | ---------------- | ------------------- | ------------------ | ---------------------- | ---------------------------------- | ---------------------- |
