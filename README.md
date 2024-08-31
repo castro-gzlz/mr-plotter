@@ -169,19 +169,21 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 #### [MODELS] | Include theoretical models
 
+In this section we list the complete set of models implemented in *mr-plotter*. Their inclusion to your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc.
+
 ##### [Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract) and [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)
 
-Models for rocky worlds, water worlds (silicates + condensed water), and gas dwarfs (H<sub>**2**</sub>/He atmospheres)
+Models for **rocky planets**, **water worlds** (silicates + condensed water), and **gas dwarfs** (H<sub>**2**</sub>/He atmospheres)
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | models_zeng | zeng_2019_earth_like, zeng_2019_pure_rock, etc<sup>**1**</sup> | Models from Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) |
 
-<sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models for **rocky planets**, **water worlds**, and **gas dwarfs**. </sub>
+<sup>**1**</sup> <sub> In [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/zeng_2016_2019_table.md) we include all the Zeng et al. ([2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract), [2019](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)) models. </sub>
 
 ##### [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/exportcitation)
 
-Models for rocky worlds surrounded by an atmosphere of steam and supercritical water.
+Models for **rocky planets** surrounded by an **extensive atmosphere of steam and supercritical water**. 
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -192,18 +194,6 @@ Models for rocky worlds surrounded by an atmosphere of steam and supercritical w
 
 <sub> **Note:** To plot several [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
-
-##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
-
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| age_lf2014 | 100Myr, 1Gyr, 10Gyr | Age of the system |
-| opacity_lf2014 | solar or enhanced | Opacity of the star |
-| Seff_lf2014 | 0.1, 10, 1000  ($\rm S_{\oplus}$) | Insolation received by the planet|
-| H_He |0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, and 20 (%) | H/He mass fraction of the planet|
-| colors_lf2014 | Any color | Colors of each curve |
-
-<sub> **Note:** To plot several [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) models you can include as many values as you want, separated by commas, similar to [example4.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example4.ini). </sub>
 
 ##### [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract)
 
@@ -216,7 +206,16 @@ Models for rocky worlds surrounded by an atmosphere of steam and supercritical w
 | Core_turb2020 | earth, rock, or iron | Internal core composition over which the steam water resides |
 | colors_turb2020 | Any color | Colors of each model |
 
-<sub> **Note:** To plot several [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) models you can include as many values as you want, separated by commas, similar to [example2.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/example2.ini).  </sub>
+##### [Lopez & Fortney et al. (2014)](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract) 
+
+| Option | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| age_lf2014 | 100Myr, 1Gyr, 10Gyr | Age of the system |
+| opacity_lf2014 | solar or enhanced | Opacity of the star |
+| Seff_lf2014 | 0.1, 10, 1000  ($\rm S_{\oplus}$) | Insolation received by the planet|
+| H_He |0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, and 20 (%) | H/He mass fraction of the planet|
+| colors_lf2014 | Any color | Colors of each curve |
+
 
 ##### [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract)
 
