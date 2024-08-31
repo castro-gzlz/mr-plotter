@@ -6,7 +6,9 @@
 
 **Notes**: The pressure at which the integration of the internal structure was started was always set to 1 mbar. It is possible that for some combinations no transit radius is provided. This is the case if the radius of the planet is so big that the outermost layers would not be bound to the planet, for example,in the case of very small masses, high equilibrium temperatures and volatile rich compositions.
 
-| Label | w<sub>Core</sub> | w<sub>Rock</sub> | w<sub>H<sub>2</sub>O</sub> | w<sub>H/He</sub> | x<sub>Fe,Core</sub> | x<sub>S,Core</sub> | x<sub>MgO,Mantle</sub> | x<sub>SiO<sub>2</sub>,Mantle</sub> | x<sub>FeO,Mantle</sub> |
+Below you can find all the possible models from Haldemann et al. (2024) available in *mr-plotter*. Table extracted from [https://github.com/mnijh/BICEPS_mass_radius](https://github.com/mnijh/BICEPS_mass_radius).
+
+| Model | w<sub>Core</sub> | w<sub>Rock</sub> | w<sub>H<sub>2</sub>O</sub> | w<sub>H/He</sub> | x<sub>Fe,Core</sub> | x<sub>S,Core</sub> | x<sub>MgO,Mantle</sub> | x<sub>SiO<sub>2</sub>,Mantle</sub> | x<sub>FeO,Mantle</sub> |
 | ----- | ---------------- | ---------------- | -------------------------- | ---------------- | ------------------- | ------------------ | ---------------------- | ---------------------------------- | ---------------------- |
 | C0    | 1                | 0                | 0                          | 0                | 1                   | 0                  | N/A                    | N/A                                | N/A                    |
 | C1    | 1                | 0                | 0                          | 0                | 0.87                | 0.13               | N/A                    | N/A                                | N/A                    |
