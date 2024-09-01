@@ -194,9 +194,13 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 [**Lopez & Fortney et al. (2014)**](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). Rocky planets with H<sub>2</sub>/He atmospheres | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/lopez&fortney_2014.md) | Example <br />
 
+[**Otegi et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract). Empirical mass-radius relationships based on the PlanetS catalog | [Config]() | Example() <br />
+
 [**Turbet et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). Rocky planets with atmospheres of steam and supercritical water | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md) | Example <br />
 
 [**Haldemann et al. (2024)**](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract). Iron core + silicate mantle + volatile-rich envelope | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/haldemann2024.md) | Example <br />
+
+[**Parc et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). Revised empirical mass-radius relationships based on the PlanetS catalog | [Config]() | Example() <br />
 
 [**Isodensity curves**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/iso_density.md). Mass-radius relations corresponding to a constant density | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
 
