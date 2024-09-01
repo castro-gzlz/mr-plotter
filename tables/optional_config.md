@@ -7,8 +7,8 @@
 | log_y | True of False| Logarithmic scale on the $Y$-axis. **Default:** True |
 | color_min | Any | Minimum **value** for the color coding. **Default:** median of the 5% minimum values |
 | color_max | Any | Maximum **value** for the color coding. **Default:** median of the 5% maximum values |
-| size_NEA_planets | Any | Size of NEA planets. **Default:** 120 |
-| size_my_planets | Any | Size of my planets. **Default:** 200 |
+| size_catalog_planets | Any | Size of the catalog planets. **Default:** 35 |
+| size_my_planets | Any | Size of my planets. **Default:** 150 |
 | cmap | Any [matplotlib colormap](https://matplotlib.org/stable/tutorials/colors/colormaps.html) | Color map for the color-coded diagrams. **Default:** rainbow |
 | shade_below_pure_iron | True or False | Include a grey shade below the 100% iron model. **Default**: True |
 | loc_legend | best, upper left, center, etc | Location of the legend. **Default:** lower right|
