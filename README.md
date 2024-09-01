@@ -133,7 +133,7 @@ python mr-plotter.py example5.ini
 
 **<sup>1</sup>** <sub> Possible color codes: **none** (None),  **disc_year** (Discovery year), **disc_facility** (Discovery facility), **discoverymethod** (Discovery method),  **pl_orbper** (Orbital period in days), **pl_orbsmax** (Semi-major axis  in AU), **pl_orbeccen** (Eccentricity), **pl_insol** (Insolation Flux in $\rm S_{\oplus}$), **pl_eqt** (Eq. temperature  in K), **pl_rvamp** (Radial Velocity semi-amplitude in m/s), **pl_trandep** (Transit depth), **st_teff** (Stellar effective temperature in K), **st_rad** (Stellar radius in $\rm R_{\odot}$), **st_mass** (Stellar mass in $\rm M_{\odot}$), **st_met** (Stellar metallicity in dex), **st_logg** (Stellar surface gravity in dex), **st_lum** (Stellar Luminosity in Log($\rm L_{\odot}$)), **st_age** (Stellar Age in Gyr), **sy_dist** (Distance in pc), **sy_vmag** ($V$ magnitude), **sy_kmag** ($K_{\rm s}$ magnitude), **sy_gaiamag** ($Gaia$ magnitude). <br /> **<sup>2</sup>** The [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog has additional color coding options such as **TSM** (Transmission Spectroscopy Metric) and **ESM** (Emission Spectroscopy Metric). It also includes different parameters extracted from the [*Gaia* DR3](https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract) catalog: **st_teff_gaia** (Stellar effective temperature in K), **st_met_gaia** (Stellar metallicity in dex), **st_logg_gaia** (Stellar surface gravity in dex), **st_age_gaia** (Stellar Age in Gyr), and **st_lum_gaia** (Stellar Luminosity in Log($\rm L_{\odot}$)). </sub> 
 
-The package can acces the catalog data locally from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to maintain the catalogs updated, but we recommend to download the most recent ones from: <br />
+The package can acces the catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to maintain the catalogs updated, but we recommend to download the most recent ones from: <br />
 
 [NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (in **.csv** format) <br />
 [Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format) <br />
@@ -141,15 +141,7 @@ The package can acces the catalog data locally from different folders inside [*c
 
 and place them in their corresponding folders. <br />
 
-Alternatively, the NEA data can be also accesed through a **TAP protocol**. Therefore, when using this catalog, the *web_or_local* keyword has to be determined. Also, with the NEA catalog it is possible to either use the Planetary Systems or Composite Data catalogs, so the *ps_or_composite* keyword has to be also specified (see below). 
-
-| Parameter  | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| web_or_local  | web or local  | Download the data from the [*Nasa Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/index.html) (**web**) or pick it up from the *[catalog_data/NEA](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data/NEA)* folder (**local**)**<sup>3</sup>** |
-| ps_or_composite | ps or composite  | Indicates which table to use: *[Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0)* (**ps**) or *[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)* (**composite**)**<sup>4</sup>** |
-
-**<sup>3</sup>** <sub> If **web**, *mr-plotter* will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *[catalog_data/NEA](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data/NEA)* folder. Please do not change the default name of the downloaded tables. If you have several NEA tables, *mr-plotter* will automatically select the most recently downloaded. <br /> **<sup>4</sup>** If you want to use the **composite** data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first.  <br />  </sub>
-
+Alternatively, the NEA data can be also accesed through a **TAP protocol** (see how). We note that when selecting the NEA option the [**Planetary Systems**](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catlog will be considered by default. However, it is also possible to use the [**Planetary Systems Composite Data**](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog (see how). 
 
 ### Optional parameters 
 
