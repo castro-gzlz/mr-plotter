@@ -214,7 +214,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 ## Contributors and Change log
 
-This package has been developed and mantained by [Amadeo Castro-González](https://github.com/castro-gzlz) with important contributions from [Jorge Lillo-Box](https://github.com/jlillo), [Artem Aguichine](https://github.com/an0wen), [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse). Check out the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md) with the major updates!
+This package has been developed and is mantained by [Amadeo Castro-González](https://github.com/castro-gzlz) with important contributions from [Jorge Lillo-Box](https://github.com/jlillo), [Artem Aguichine](https://github.com/an0wen), [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse). Check out the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md) with the major updates!
 
 ## Credits
 
