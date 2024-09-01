@@ -5,7 +5,7 @@
 
 It can be used to **contextualize your favorite planets and infer their possible internal structures**. It can also be used to **search for correlations** at a population level thanks to its **color-coding option** based on any property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*PlanetS*](https://dace.unige.ch/exoplanets/), [*Exoplanet.eu*](http://www.exoplanet.eu/), TEPCat, and ExoPLANETS-A catalogs. 
 
-If your favorite model is not yet included in *mr-plotter*, you have any usage problems, or you came up with an improvement, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es). Mister plotter is open to [contributors](https://github.com/castro-gzlz/mr-plotter/blob/main/README.md#contributors-and-change-log)! 
+If your favorite model is not yet included in *mr-plotter*, you have any usage problems, or you came up with an improvement, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es). Mister plotter is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log)! 
 
 ## Installation & Requirements
 
