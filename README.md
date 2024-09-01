@@ -206,13 +206,11 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
-*mr-plotter* has been desiged to 
-
-[this table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/optional_config.md)
+*mr-plotter* has been desiged to have a default graphic configuration able to generate paper-quality plots. However, there are some particular aspects such as the X- and Y-axis limits, size of the new planets and catalog planets, color map, etc, that you might want to modify at your ease. This is also possible with the [OPTIONAL_CONFIG] section of *mr-plotter*! Check out **all the available options** in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/optional_config.md) :smiley:.
 
 ## Inclusion of additional models, issues, improvements, and suggestions
 
-If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es).
+If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es) 
 
 ## Contributors
 
