@@ -76,7 +76,7 @@ In this example, we use the [*PlanetS*](https://dace.unige.ch/exoplanets/) catal
 python mr-plotter.py example3_TSM.ini
 ```
 
-Of course, we can do the same for the ESM! In this case, we use the updated empirical relationships for small, intermediate, and giant planets derived by [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract).
+Of course, we can do the same for the ESM! In this case, we use the **updated empirical relationships** for small, intermediate, and giant planets derived by [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract).
 
 ```
 python mr-plotter.py example3_ESM.ini
