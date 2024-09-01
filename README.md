@@ -139,7 +139,7 @@ The package can access the catalog data **locally** from different folders insid
 [Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format) <br />
 [PlanetS catalog](https://dace.unige.ch/exoplanets/) (in **VOTable** format) <br />
 
-and place them in their corresponding folders. The NEA data can be also accesed through a **TAP protocol** ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/TAP_NEA.md)). We note that when selecting the NEA option the [**Planetary Systems**](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catlog will be selected by default. However, it is also possible to use the [**Planetary Systems Composite Data**](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/composite_NEA_data.md)). 
+and place them in their corresponding folders. The NEA data can be also accesed through a **TAP protocol** ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/TAP_NEA.md)). We note that when selecting the NEA option, the [**Planetary Systems**](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catlog will be considered by default. However, it is also possible to use the [**Planetary Systems Composite Data**](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/composite_NEA_data.md)). 
 
 ### Optional parameters 
 
