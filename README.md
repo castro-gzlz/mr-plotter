@@ -135,7 +135,9 @@ python mr-plotter.py example5.ini
 
 The package can access the catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to maintain the catalogs updated, but we recommend to download the most recent ones from: <br />
 
-[NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (in **.csv** format), [Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format), and [PlanetS catalog](https://dace.unige.ch/exoplanets/) (in **VOTable** format) <br />
+[NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (in **.csv** format)  <br /> 
+[Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format)  <br />
+[PlanetS catalog](https://dace.unige.ch/exoplanets/) (in **VOTable** format) <br />
 
 The NEA data can be also accesed through a **TAP protocol** ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/TAP_NEA.md)). We note that when selecting the NEA option, the [Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catlog will be considered by default. However, it is also possible to use the [Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/composite_NEA_data.md)). 
 
