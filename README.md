@@ -200,7 +200,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
-*mr-plotter* has been desiged to have a default graphic configuration able to generate paper-quality plots. However, there are some particular aspects such as the **X- and Y-axis limits**, **size of the catalog (and your) data**, **color map**, **etc**, that you might want to modify at your ease. This is also possible with [OPTIONAL_CONFIG]! Check out **all the available options** in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/optional_config.md) (most of them were used in the [**Usage examples**](#usage-examples) section).
+*mr-plotter* has been desiged to have a default graphic configuration able to generate paper-quality plots. However, there are some particular aspects such as the **X- and Y-axis limits**, **size of the datapoints**, **color map**, **etc**, that you might want to modify at your ease. This is also possible with [OPTIONAL_CONFIG]! Check out **all the available options** in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/optional_config.md) (most of them were used in the [**Usage examples**](#usage-examples) section).
 
 ## Contributors and Change log
 
