@@ -13,6 +13,8 @@ Just **clone or download** this folder on your computer. All the dependencies ar
 ```
 pip install -r requirements.txt
 ```
+If you have any problems with the installation, you can drop an issue [here](https://github.com/castro-gzlz/mr-plotter/issues).
+
 ## 
 
 #### Python through the terminal
