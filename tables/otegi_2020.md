@@ -1,6 +1,6 @@
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| **relations_otegi2020** | **small, intermediate** | **Empirical relationships for small and intermediate planets** |
+| **relations_otegi2020** | **small, intermediate** | **Empirical relationships for small and intermediate planets based on PlanetS** |
 | colors_otegi2020 | Any color | Colors of each curve |
 | linestyles_otegi2020 | solid, dashed, dotted, dashdot, etc. | Colors of each curve |
 
