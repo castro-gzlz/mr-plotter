@@ -112,11 +112,11 @@ python mr-plotter.py example5.ini
 ![example5](https://github.com/user-attachments/assets/863365c7-35f7-4e2c-b69a-e1367c2ec92f)
 
 
-# Configuration file
+## Configuration file
 
-## Mandatory parameters
+### Mandatory parameters
 
-### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](https://exoplanet.eu/home/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
+#### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](https://exoplanet.eu/home/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
 
 
 | Parameter  | Possible values | Description |
@@ -147,9 +147,9 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 **<sup>3</sup>** <sub> If **web**, *mr-plotter* will connect to the NEA through a TAP protocol, which might last a bit (i.e., a couple of minutes). If **local**, you should have a comma-separated table downloaded from the NEA inside the *[catalog_data/NEA](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data/NEA)* folder. Please do not change the default name of the downloaded tables. If you have several NEA tables, *mr-plotter* will automatically select the most recently downloaded. <br /> **<sup>4</sup>** If you want to use the **composite** data in your research, please read [this](https://exoplanetarchive.ipac.caltech.edu/docs/pscp_about.html) first.  <br />  </sub>
 
 
-## Optional parameters 
+### Optional parameters 
 
-### [MY_DATA] | Include data of your planets
+#### [MY_DATA] | Include data of your planets
 
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
@@ -167,7 +167,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 
 **<sup>1</sup>** <sub> If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be **color-coded** as the rest of the catalog planets. <br /> **<sup>2</sup>** If not defined, the name of the planet(s) will be included in the legend of the plot. </sub>
 
-### [MODELS] | Include theoretical models
+#### [MODELS] | Include theoretical models
 
 In this section we list the complete set of models implemented in *mr-plotter*. Their inclusion into your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc. In some cases, a model is simply defined by **one Option**. In other cases, it is defined by a combination of **a few Options**. In the following we show an example of both kinds of operation: the models from  Zeng et al. 2016&2019 (sinlge option) and Aguichine et al. 2021 (several options). For the remaining models, their corresponding **configuration tables** with the **Options**, **Possibe values**, and **Descriptions** can be accesed through the corresonding **hyperlinks**. 
 
@@ -204,29 +204,29 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 [**Isodensity curves**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/iso_density.md). Mass-radius relations corresponding to a constant density | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/isodensity.md) | Example
 
-### [OPTIONAL_CONFIG] | Optional configuration
+#### [OPTIONAL_CONFIG] | Optional configuration
 
 *mr-plotter* has been desiged to 
 
 [this table](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/optional_config.md)
 
-# Inclusion of additional models, issues, improvements, and suggestions
+## Inclusion of additional models, issues, improvements, and suggestions
 
 If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es).
 
-# Contributors
+## Contributors
 
 [Amadeo Castro-González](https://github.com/castro-gzlz), [Jorge Lillo-Box](https://github.com/jlillo), [Artem Aguichine](https://github.com/an0wen), [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse).
 
-# Change log
+## Change log
 
 *mr-plotter* is actively mantained by including (generally minor) improvements or fixing issues. However, from time to time some bigger changes are implemented (e.g. iclusion of new catalogs or models from the literature, etc). Below we incude a summary of those more significant updates. 
 
 July 2023 (v0)         -->  *mr-plotter* release. Quick and fancy M-R diagrams based on the Nasa Exoplanet Archive confirmed planets (and composite) catalog. <br />
 September 2024 (v1)    -->  *mr-plotter* is also compatible with the Exoplanets.eu and PlanetS catalogs.
-# Credits
+## Credits
 
-## The package
+### The package
 
 If you use *mr-plotter*, please give credit to the following [work](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract): 
 
@@ -253,7 +253,7 @@ and add the following sentence within the acknowledgements section:
 
 > This work made use of \texttt{mr-plotter}, which is available in [https://github.com/castro-gzlz/mr-plotter](https://github.com/castro-gzlz/mr-plotter).
 
-## The exoplanet catalogs and theoretical models
+### The exoplanet catalogs and theoretical models
 
 Please also give credit to the catalog(s) used: Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), and PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)).  <br />
 
