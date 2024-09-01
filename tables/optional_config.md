@@ -1,6 +1,6 @@
 | Option | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| n_cols | one or two | Make the plot in one-column or two-column. **Default**: one |
+| n_cols | one or two | Make the plot in one-column or two-columns. **Default**: one |
 | xlim | Any, Any | Limits of the plot on the $X$-axis. **Default:** 0.5, 21 |
 | ylim | Any, Any | Limits of the plot on the $Y$-axis. **Default:** 0.9, 2.8 |
 | log_x | True or False | Logarithmic scale on the $X$-axis. **Default:** True |
