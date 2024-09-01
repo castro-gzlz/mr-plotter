@@ -162,7 +162,7 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | r_p1_err_up | Any ($\rm R_{\oplus}$) | Upper uncertainty on the radius of your planet 1 |
 | r_p1_err_down | Any ($\rm R_{\oplus}$) | Lower uncertainty on the radius of your planet 1 |
 | c_p1 | Any color or number<sup>**1**</sup>  | Color for your planet 1 |
-| name_p1| Any name (e.g. TOI-244 b) | Name of your planet 1 |
+| name_p1| Any name | Name of your planet 1 (e.g. TOI-244 b) |
 | dis_x_p1<sup>**2**</sup>  | Any ($\rm M_{\oplus}$)  | Location of a text box with the planet's name in terms of the distance from the planet (*X*-axis) |
 | dis_y_p1<sup>**2**</sup> | Any ($\rm R_{\oplus}$)  | Location of a text box with the planet's name in terms of the distance from the planet (*Y*-axis) |
 |....|....|....|
