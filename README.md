@@ -218,7 +218,7 @@ Mister plotter has been developed by [Amadeo Castro-González](https://github.co
 
 ## Credits
 
-If you use *mr-plotter*, please give credit to the following [work](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract): 
+If you use *mr-plotter*, please give credit to the [work](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract) where we present it: 
 
 ```
 @ARTICLE{2023A&A...675A..52C,
