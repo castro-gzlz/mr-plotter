@@ -129,7 +129,7 @@ python mr-plotter.py example5.ini
 | catalog | NEA, Exoplanet.eu, or PlanetS | Exoplanet catalog to visualize |
 | precision_mass | From 0 to 100 (%) | Minimum precision in mass |
 | precision_radius | From 0 to 100 (%) | Minimum precision in radius |
-| color_coding | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>**1, 2**</sup> | Color coding of the plot |
+| color_coding | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>**1**</sup> | Color coding of the plot |
 
 **<sup>1</sup>** The full list of parameters that you can use to color your *mr-plots* can be found [here](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/color_codes.md). 
 
