@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 If you have any problems with the installation, you can drop an issue [here](https://github.com/castro-gzlz/mr-plotter/issues).
 
-## 
+## Usage
 
 #### Python through the terminal
 
