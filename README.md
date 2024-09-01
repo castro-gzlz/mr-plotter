@@ -161,13 +161,13 @@ Alternatively, the NEA data can be also accesed through a **TAP protocol**. Ther
 | r_p1  | Any ($\rm R_{\oplus}$) | Radius of your planet 1 |
 | r_p1_err_up | Any ($\rm R_{\oplus}$) | Upper uncertainty on the radius of your planet 1 |
 | r_p1_err_down | Any ($\rm R_{\oplus}$) | Lower uncertainty on the radius of your planet 1 |
-| c_p1<sup>**1**</sup>   | Any color/number| Color of your planet 1 |
+| c_p1<sup>**1**</sup>   | Any color/value| Color of your planet 1 |
 | name_p1| Any name | Name of your planet 1 (e.g. TOI-244 b) |
 | dis_x_p1<sup>**2**</sup>  | Any ($\rm M_{\oplus}$)  | Location of a text box in terms of distance from the planet (*X*-axis) |
 | dis_y_p1<sup>**2**</sup> | Any ($\rm R_{\oplus}$)  | Location of a text box in terms of distance from the planet (*Y*-axis) |
 |....|....|....|
 
-**<sup>1</sup>** <sub> If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, just type the corresponding **value** for your planet so it can be **color-coded** as the rest of the catalog planets. <br /> **<sup>2</sup>** If not defined, the name of the planet(s) will be included in the legend of the plot. </sub>
+**<sup>1</sup>** <sub> If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, type the corresponding **value** for your planet so it can be **color-coded** as the rest of the catalog planets. <br /> **<sup>2</sup>** If not defined, the name of the planet(s) will be included in the legend of the plot. </sub>
 
 #### [MODELS] | Include theoretical models
 
