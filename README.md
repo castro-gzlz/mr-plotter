@@ -3,7 +3,7 @@
 
 ![mr-plotter_logo_v1-cropped](https://github.com/user-attachments/assets/46b08ef3-1d05-4020-9992-5cf7477ada28)
 
-It is ideal to **contextualize your favorite planets** and **search for correlations** at a population level thanks to its **color-coding option** based on any property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), and [*PlanetS*](https://dace.unige.ch/exoplanets/). 
+It is ideal to **contextualize your favorite planets** and **search for correlations** at a population level thanks to its **color-coding option** based on any stellar or planetary property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), [*PlanetS*](https://dace.unige.ch/exoplanets/), TEPCat, and ExoPLANETS-A catalogs. 
 
 ## Installation & Requirements
 
