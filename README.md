@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 If you have any problems with the installation, you can drop me an issue [here](https://github.com/castro-gzlz/mr-plotter/issues).
 
-## Usage
+## 
 
 #### Python through the terminal
 
@@ -200,7 +200,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 [**Turbet et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). Rocky planets with atmospheres of steam and supercritical water | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/turbet_2020.md) | Example <br />
 
-[**Haldemann et al. (2024)**](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract). Iron core + silicate mantle + volatile-rich envelope | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/haldemann2024.md) | Example <br />
+[**Haldemann et al. (2024)**](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract). Iron core + silicate mantle + volatile-rich envelope | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/haldemann_2024.md) | Example <br />
 
 [**Parc et al. (2024)**](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). Revised empirical mass-radius relationships based on the PlanetS catalog | [Usage]() | Example() <br />
 
