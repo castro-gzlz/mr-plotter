@@ -212,16 +212,10 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 If your favorite model is not yet included in *mr-plotter*, you have any issues when using the package, or you think it can be improved in any way, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es) 
 
-## Contributors
+## Contributors and Change log
 
-[Amadeo Castro-González](https://github.com/castro-gzlz), [Jorge Lillo-Box](https://github.com/jlillo), [Artem Aguichine](https://github.com/an0wen), [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse).
+This package has been developed by [Amadeo Castro-González](https://github.com/castro-gzlz) with important contributions from [Jorge Lillo-Box](https://github.com/jlillo), [Artem Aguichine](https://github.com/an0wen), [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse). Check out the Change log with the major updates!
 
-## Change log
-
-*mr-plotter* is actively mantained by including (generally minor) improvements or fixing issues. However, from time to time some bigger changes are implemented (e.g. iclusion of new catalogs or models from the literature, etc). Below we incude a summary of those more significant updates. 
-
-July 2023 (v0)         -->  *mr-plotter* release. Quick and fancy M-R diagrams based on the Nasa Exoplanet Archive confirmed planets (and composite) catalog. <br />
-September 2024 (v1)    -->  *mr-plotter* is also compatible with the Exoplanets.eu and PlanetS catalogs.
 ## Credits
 
 ### The package
