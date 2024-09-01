@@ -194,7 +194,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 [**Haldemann et al. (2024)**](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract). Iron core + silicate mantle + volatile-rich envelope | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/haldemann2024.md) | Example <br />
 
-[**Seager et al. (2007)**](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). 100% iron, 100% silicates, and 100% (condensed) water models | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/seager_2007.md) | [Example]() <br />
+[**Seager et al. (2007)**](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). 100% iron, 100% silicates, and 100% condensed water models | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/seager_2007.md) | [Example]() <br />
 
 [**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of planetary mantles | [Config](https://github.com/castro-gzlz/mr-plotter/blob/main/tables/marcus_2010.md) | Example <br />
 
