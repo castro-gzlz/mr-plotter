@@ -1,5 +1,5 @@
 # **mr-plotter: Mass-Radius Diagrams Plotter**
-**Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool that creates **paper-ready mass-radius diagrams** with a wide range of **theoretical models and empirical relationships**. It can also **color-code diagrams** based on any stellar or planetary property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), and [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
+**Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool that creates **paper-quality mass-radius diagrams** with a **wide range of** [**theoretical models and empirical relationships**](#models--include-theoretical-models). It can also **color-code diagrams** based on any stellar or planetary property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), and [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
 
 ![mr-plotter_logo_v1-cropped](https://github.com/user-attachments/assets/46b08ef3-1d05-4020-9992-5cf7477ada28)
 
@@ -103,7 +103,7 @@ This plot evidences the invaluable legacy that *TESS* is providing thanks to its
 
 ### Example 5: Two-column plots and more interior models
 
-*mr-plotter* can also produce paper-ready two-column plots and include a wide range of state-of-the-art interior models. In this example we simply contextualize the super-dense super-Earth K2-229 b ([Santerne et al. 2018](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract)) by including the maximum mantle collisional stripping model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) and some isodensity lines. The procedure to include new models from the literature is the same as that shown in the previous examples. In Section [[MODELS]](#models--include-theoretical-models) we detail each model implemented in *mr-plotter*. Enjoy :smiley:.
+*mr-plotter* can also produce paper-quality two-column plots and include a wide range of [state-of-the-art interior models](#models--include-theoretical-models). In this example we simply contextualize the super-dense super-Earth K2-229 b ([Santerne et al. 2018](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract)) by including the maximum mantle collisional stripping model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract) and some isodensity lines. The procedure to include new models from the literature is the same as that shown in the previous examples. In Section [[MODELS]](#models--include-theoretical-models) we detail each model implemented in *mr-plotter*. Enjoy :smiley:.
 
 ```
 python mr-plotter.py example5.ini
