@@ -30,9 +30,9 @@ from configparser import ConfigParser
 
 
 #@|+++++++++++++++++We load the dictionaries+++++++++++++++++++++++++
-zeng_models_colors = json.load(open('dicts/zeng_models_colors.txt'))
-zeng_models_labels = json.load(open('dicts/zeng_models_labels.txt'))
-color_coding_labels = json.load(open('dicts/color_coding_labels.txt'))
+zeng_models_colors = json.load(open('misc/dicts/zeng_models_colors.txt'))
+zeng_models_labels = json.load(open('misc/dicts/zeng_models_labels.txt'))
+color_coding_labels = json.load(open('misc/dicts/color_coding_labels.txt'))
 
 
 # In[ ]:
@@ -484,7 +484,7 @@ except:
     pass
 
 try:
-    colors = [str(x.strip()) for x in CATALOG_DATA['colors'].split(',')]
+    colors_groups = [str(x.strip()) for x in CATALOG_DATA['colors_groups'].split(',')]
 except:
     pass
 
@@ -928,6 +928,22 @@ except:
     appearance = 'standard'
     
     
+    
+#@|###########----ec_catalog for the plots with no color code-------#############  
+
+try:
+    ec_catalog = str(OPTIONAL_CONFIG['ec_catalog'])
+except:
+    ec_catalog = 'grey' 
+    
+#@|###########----ec_catalog for the color coded plots-------#############  
+
+try:
+    ec_catalog_cc = str(OPTIONAL_CONFIG['ec_catalog_cc'])
+except:
+    ec_catalog_cc = 'whitesmoke'    
+    
+    
 #@|###########--My planets--###############   
     
 text_boxes = False    
@@ -1015,11 +1031,14 @@ def plot_low_density_SE_region():
 #@|plot config_object
 zorder_lines = -100
 
+
 ec_my_planets = 'black'
+  
+    
 if dark_background:
     plt.style.use("dark_background")
     ec_my_planets = 'white'
-
+    zeng_models_colors['zeng_2019_pure_iron'] = 'white'
 
 try:
     cmap = OPTIONAL_CONFIG['cmap']
@@ -1027,7 +1046,9 @@ except:
     cmap = 'rainbow'
 
 
-#@|##########--Catalog and my planets--###############
+#@|+++++++++++++++++++++++ 
+#@|+++++Color coding++++++            
+#@|+++++++++++++++++++++++ 
 
     
 if color_coding in cols:
@@ -1040,10 +1061,14 @@ if color_coding in cols:
         plt.figure(figsize = (20, 6.56))
         
     
+    #@|+++++++++++++++++++++++++++++++++ 
+    #@|+++++Numerical Color coding++++++            
+    #@|+++++++++++++++++++++++++++++++++ 
+    
     if numerical_color_coding:
 
     
-        plt.scatter(M_catalog, R_catalog, c = df[color_coding].values, cmap = cmap, s = size_catalog_planets,                     vmin = color_min, vmax = color_max, lw = 1.5, ec = 'grey')
+        plt.scatter(M_catalog, R_catalog, c = df[color_coding].values, cmap = cmap, s = size_catalog_planets,                     vmin = color_min, vmax = color_max, lw = 1.1, ec = ec_catalog_cc)
         
 
 
@@ -1052,11 +1077,31 @@ if color_coding in cols:
         if n_cols == 'two':
             cbar = plt.colorbar(location = 'left', anchor=(2.3,0.95), aspect = 8, shrink=0.4)
 
+        
+        #@|plt.errorbar(M_catalog, R_catalog, yerr = np.array(R_catalog_ERR).T, xerr = np.array(M_catalog_ERR).T,\
+                     #@|linestyle = "None", ecolor = 'grey', zorder = -1, lw = 1.8, capsize = capsize, alpha = 1)
+        
+        #@|++++++++++++++++++++++++++++++++++++++++++++
+        #@|Error bars of the same color of data points
+        #@|++++++++++++++++++++++++++++++++++++++++++++
+        #convert time to a color tuple using the colormap used for scatter
+        import matplotlib
+        import matplotlib.cm as cm
+        norm = matplotlib.colors.Normalize(vmin=color_min, vmax=color_max, clip=True)
+        mapper = cm.ScalarMappable(norm=norm, cmap=cmap)
+        time_color = np.array([(mapper.to_rgba(v)) for v in df[color_coding].values])
+
+        #loop over each data point to plot
+        for x, y, e1, e2, color in zip(M_catalog, R_catalog,                                        (abs(R_catalog_err_up) + abs(R_catalog_err_down)) / 2,                                        (abs(M_catalog_err_up) + abs(M_catalog_err_down)) / 2, time_color):
+            #plt.scatter(x, y, color=color)
+            plt.errorbar(x, y, yerr = e1, xerr=e2, lw = 1.8, capsize = capsize, color = color, zorder = -1)
+            
+            
+        #@|++++Color bar++++#@|    
         cbar.set_label(color_coding_labels[color_coding], fontsize = 12)
         cbar.ax.tick_params(labelsize=10)
-
         #cbar.set_ticks_position('left')
-        plt.errorbar(M_catalog, R_catalog, yerr = np.array(R_catalog_ERR).T, xerr = np.array(M_catalog_ERR).T,                     linestyle = "None", ecolor = 'grey', zorder = -1, lw = 1.8, capsize = capsize, alpha = 1)
+
 
         #@|My planets
         for i in range(1, 21):
@@ -1067,15 +1112,18 @@ if color_coding in cols:
 
                 if text_boxes == True:
 
-                    plt.text(globals()['m_p'+str(i)] +  globals()['dis_x_p'+str(i)],                      globals()['r_p'+str(i)] +  globals()['dis_y_p'+str(i)], globals()['name_p'+str(i)], fontsize=13,                     verticalalignment = 'bottom', horizontalalignment = 'center',                      bbox = {"boxstyle": "round", 'facecolor': 'k', 'alpha': 0.7, 'pad': 0.4},                      c = 'white', weight='bold', zorder = 10000)
+                    plt.text(globals()['m_p'+str(i)] +  globals()['dis_x_p'+str(i)],                      globals()['r_p'+str(i)] +  globals()['dis_y_p'+str(i)], globals()['name_p'+str(i)], fontsize=12.5,                     verticalalignment = 'bottom', horizontalalignment = 'center',                      bbox = {"boxstyle": "round", 'facecolor': 'k', 'alpha': 0.7, 'pad': 0.4},                      c = 'white', weight='bold', zorder = 10000)
 
             except:
                 pass
             
             
-    else:  #@|Non-numerical color coding
+    #@|+++++++++++++++++++++++++++++++++++++ 
+    #@|+++++Non numerical Color coding++++++            
+    #@|+++++++++++++++++++++++++++++++++++++         
+            
+    else:  
         
-        #@|-----no colorbar -> similar figure size to color_code: none----
         if n_cols == 'one':
     
             plt.figure(figsize = (8, 7))
@@ -1095,14 +1143,14 @@ if color_coding in cols:
                 groups[i] = 'TESS'
             
             
-            plt.scatter(M_catalog[idxs_ac], R_catalog[idxs_ac], c = colors[i],                         s = size_catalog_planets, lw = 1.5, ec = 'grey', label = groups[i], zorder = i)
+            plt.scatter(M_catalog[idxs_ac], R_catalog[idxs_ac], c = colors_groups[i],                         s = size_catalog_planets, lw = 1.1, ec = ec_catalog_cc, label = groups[i], zorder = i)
             
-            plt.errorbar(M_catalog[idxs_ac], R_catalog[idxs_ac], yerr = np.array(R_catalog_ERR)[idxs_ac].T,                         xerr = np.array(M_catalog_ERR)[idxs_ac].T,                     linestyle = "None", ecolor = colors[i], zorder = i-1, lw = 2, capsize = capsize)
+            plt.errorbar(M_catalog[idxs_ac], R_catalog[idxs_ac], yerr = np.array(R_catalog_ERR)[idxs_ac].T,                         xerr = np.array(M_catalog_ERR)[idxs_ac].T,                     linestyle = "None", ecolor = colors_groups[i], zorder = i-1, lw = 2, capsize = capsize)
                      
             
         if plot_all_planets:
             
-            plt.scatter(M_catalog, R_catalog, c = 'lightgrey', s = size_catalog_planets,                         ec = "grey", lw = 0.7, alpha = 0.6, zorder = -5, label  = 'Other')
+            plt.scatter(M_catalog, R_catalog, c = 'lightgrey', s = size_catalog_planets,                         ec = ec_catalog_cc, lw = 0.7, alpha = 0.6, zorder = -5, label  = 'Other')
             plt.errorbar(M_catalog, R_catalog, yerr = np.array(R_catalog_ERR).T,                         xerr = np.array(M_catalog_ERR).T,                          linestyle = "None", ecolor = 'grey',                          zorder = -6, lw = 1.3, capsize = capsize, alpha = 0.6)
             
             
@@ -1128,6 +1176,11 @@ if color_coding in cols:
             
                 pass
             
+
+#@|+++++++++++++++++++++++ 
+#@|++++No color coding++++            
+#@|+++++++++++++++++++++++ 
+    
 elif color_coding == 'none':
     if n_cols == 'one':
     
@@ -1137,7 +1190,7 @@ elif color_coding == 'none':
         
         plt.figure(figsize = (16, 7))
         
-    #@|My planets (no color coding)
+    #@|My planets 
     
     for i in range(1, 21):
         try:
@@ -1166,13 +1219,13 @@ elif color_coding == 'none':
     
     if appearance == 'standard':
     
-        plt.scatter(M_catalog, R_catalog, c = 'lightgrey', s = size_catalog_planets, ec = "grey",                     lw = 0.7, alpha = 1, zorder = 0)
+        plt.scatter(M_catalog, R_catalog, c = 'lightgrey', s = size_catalog_planets, ec = ec_catalog,                     lw = 0.7, alpha = 1, zorder = 0)
         plt.errorbar(M_catalog, R_catalog, yerr = np.array(R_catalog_ERR).T, xerr = np.array(M_catalog_ERR).T,                      linestyle = "None", ecolor = 'grey', zorder = -1, lw = 1.45, capsize = capsize, alpha = 1)
      
     if appearance == 'faint':
-        plt.scatter(M_catalog, R_catalog, c = 'lightgrey', s = size_catalog_planets, ec = "grey",                     lw = 0.7, alpha = 0.5, zorder = 0)
-        plt.errorbar(M_catalog, R_catalog, yerr = np.array(R_catalog_ERR).T, xerr = np.array(M_catalog_ERR).T,                      linestyle = "None", ecolor = 'grey', zorder = -1, lw = 1.45, capsize = capsize, alpha = 0.20)
-    
+        plt.scatter(M_catalog, R_catalog, c = 'lightgrey', s = size_catalog_planets, ec = ec_catalog,                     lw = 0.7, alpha = 0.5, zorder = 0)
+        plt.errorbar(M_catalog, R_catalog, yerr = np.array(R_catalog_ERR).T, xerr = np.array(M_catalog_ERR).T,                      linestyle = "None", ecolor = 'grey', zorder = -1, lw = 1.45, capsize = capsize, alpha = 0.2)
+        
         
         
 
@@ -1385,9 +1438,9 @@ plt.ylim(y_lims)
 
 
 if n_cols == 'one':
-    plt.legend(loc = loc_legend, fontsize = 11, markerscale = 0.9, ncol = n_cols_legend)
+    plt.legend(loc = loc_legend, fontsize = 10, markerscale = 1, ncol = n_cols_legend)
 if n_cols == 'two':
-    plt.legend(loc = loc_legend, fontsize = 14, ncol = n_cols_legend)
+    plt.legend(loc = loc_legend, fontsize = 12.5, ncol = n_cols_legend)
 
 #@|low density super-Earths region
 
@@ -1455,11 +1508,16 @@ print('\033[0m')
 print('     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 print('      Thank you for using Mister plotter :-D We hope to see you again soon!')
 print('     ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+print('')
 
 
 # In[ ]:
 
 
+
+
+
+# In[ ]:
 
 
 
