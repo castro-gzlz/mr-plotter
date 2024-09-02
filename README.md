@@ -50,7 +50,7 @@ We can also contextualize different planets in the same plot. In this example, w
 python mr-plotter.py example1_misc.ini
 ```
 
-![example1_joint](https://github.com/user-attachments/assets/e482311a-08be-4787-b5ca-777f10392811)
+![example1_joint](https://github.com/user-attachments/assets/2457c704-9e5d-47d5-9a02-33683583e0db)
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
@@ -66,7 +66,8 @@ We now run the same example by including a color code based on the received stel
 ```
 python mr-plotter.py example2_insol.ini
 ```
-![example2_joint](https://github.com/user-attachments/assets/4a046625-fd7b-49f5-9485-a05b55fa4da2)
+
+![example2_joint](https://github.com/user-attachments/assets/a2e09bee-5949-421b-bae0-79bc7ebbbf77)
 
 
 Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result I invite you to look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
@@ -86,8 +87,7 @@ Of course, we can do the same for the ESM! In this case, we use the **updated em
 python mr-plotter.py example3_ESM.ini
 ```
 
-![example3_joint](https://github.com/user-attachments/assets/840e8c07-1ecc-43c4-b7ec-e2c92d7740f3)
-
+![example3_joint](https://github.com/user-attachments/assets/eafd18a4-cdda-4605-b60c-a6bd0a963c3c)
 
 
 ### Example 4: Non-numerical color codings and dark plots | The TESS legacy
@@ -105,7 +105,7 @@ python mr-plotter.py example4_facility.ini
 
 This plot evidences the invaluable legacy that *TESS* is providing thanks to its incessant monitoring of the bright sky. This example also shows how to make dark poster-ready and presentation-ready diagrams for conferences!
 
-![example4_joint](https://github.com/user-attachments/assets/8cf140ac-1ca3-471c-b0cc-d0bb22e15ac6)
+![example4_joint](https://github.com/user-attachments/assets/b7cf7e8c-695d-4728-8e53-1aeb33fc1492)
 
 In this example, we can also see how to contextualize a planet (in this case L 98-59 d; [Demangeon et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..41D/abstract)) with a new color not included in the color map (left panel), and a color following the non-numerical color code (right panel; L 98-59 d was discovered by TESS).
 
@@ -118,8 +118,7 @@ In this example, we can also see how to contextualize a planet (in this case L 9
 python mr-plotter.py example5.ini
 ```
 
-![example5](https://github.com/user-attachments/assets/1db16be2-e2bc-4109-8d47-53dfea194e6d)
-
+![example5](https://github.com/user-attachments/assets/85a72cd7-36e5-448e-8cf0-4510f4d6d0ca)
 
 
 ## Configuration file
