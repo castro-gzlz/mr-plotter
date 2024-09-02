@@ -66,7 +66,7 @@ We now run the same example by including a color code based on the received stel
 ```
 python mr-plotter.py example2_insol.ini
 ```
-![example2_joint](https://github.com/user-attachments/assets/6d50f736-0aa6-489d-9680-188307f43dce)
+![example2_joint](https://github.com/user-attachments/assets/4a046625-fd7b-49f5-9485-a05b55fa4da2)
 
 
 Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result I invite you to take a look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
