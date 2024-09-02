@@ -1,0 +1,1 @@
+-> Give the possibility to the user to select the line style (dashed, dotter, dashdot, solid) for each model they use. Also include a default option to not further complicate the operation. 
