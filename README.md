@@ -117,7 +117,8 @@ In this example we can also see how to contextualize a planet (in this case L 98
 python mr-plotter.py example5.ini
 ```
 
-![example5](https://github.com/user-attachments/assets/b60ef50d-1f54-41df-89ff-df52e33cb6cc)
+![example5](https://github.com/user-attachments/assets/1db16be2-e2bc-4109-8d47-53dfea194e6d)
+
 
 
 ## Configuration file
