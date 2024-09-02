@@ -132,7 +132,7 @@ python mr-plotter.py example5.ini
 | color_coding | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>**1,2**</sup> | Color coding of the plot |
 
 **<sup>1</sup>** <sub> The full list of parameters that you can use to color your *mr-plots* can be found [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/color_codes.md). <br /> 
-**<sup>2</sup>** If a non-numerical color code is chosen (e.g. disc_year, disc_facility, disc_method), the particular grups to display and their colors have to be defined (see how here).  </sub>
+**<sup>2</sup>** If a non-numerical color code is chosen (e.g. disc_year, disc_facility, etc), the grups to display and their colors have to be defined (see how [here]()).  </sub>
 
 The package can access the catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to maintain the catalogs updated, but we recommend to download the most recent ones from: <br />
 
