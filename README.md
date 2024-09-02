@@ -50,7 +50,8 @@ We can also contextualize different planets in the same plot. In this example, w
 python mr-plotter.py example1_misc.ini
 ```
 
-![example1_joint](https://github.com/user-attachments/assets/0ffb28b8-7fb2-48ea-987d-af0d3cc348c7)
+![example2_joint](https://github.com/user-attachments/assets/8966cf4c-34dc-49f1-9fed-483af36bc35c)
+
 
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
