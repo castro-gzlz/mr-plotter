@@ -8,6 +8,8 @@
 | log_y | True of False| Logarithmic scale on the $Y$-axis. **Default:** True |
 | color_min | Any | Minimum **value** for the color coding. **Default:** median of the 5% minimum values |
 | color_max | Any | Maximum **value** for the color coding. **Default:** median of the 5% maximum values |
+| ec_catalog | Any | Edge color of the catalog datapoints. **Default:** grey |
+| ec_catalog_cc | Any | Same as ec_catalog but for the color-coded plots. **Default:** whitesmoke |
 | size_catalog_planets | Any | Size of the catalog planets. **Default:** 35 |
 | size_my_planets | Any | Size of my planets. **Default:** 150 |
 | lw_models | Any | Line width of the models. **Default:** 1.6 |
