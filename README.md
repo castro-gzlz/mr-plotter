@@ -30,11 +30,11 @@ The file *[my_config_file.ini](https://github.com/castro-gzlz/mr-plotter/blob/ma
 
 #### Python through Jupyter notebook
 
-Since September 2024 (v1+), *mr-plotter* can be also used via Jupyter notebook (mr-plotter.ipynb). Similarly to the terminal version, you just need to select a configuration file (config_file) and run all cells.
+Since September 2024 (v1+), *mr-plotter* can also be used via Jupyter notebook (mr-plotter.ipynb). Similarly to the terminal version, you just need to select a configuration file (config_file) and run all cells.
 
 ## Is this your first time using *mr-plotter*?
 
-If so, please don't be overwhelmed by the large number of parameters. In most cases you will only use a few! To **get familiarized** with the main options and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **diferent key scenarios**. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
+If so, please don't be overwhelmed by the large number of parameters. In most cases you will only use a few! To **get familiarized** with the main options and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **different key scenarios**. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
 
 ## Usage examples
 
@@ -55,7 +55,7 @@ python mr-plotter.py example1_misc.ini
 
 ### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
 
-We now **include a color code** according to the stellar host metallicity. We also include three models based on [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) equations. These models consider a steam water atmosphere over a rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extense hydrosphere can explain very well the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). These models are valid up to a 5% water mass fraction (WMF). Above this value, you might want to use the models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract), which have a validity range between 10% and 100% core mass fractions (CMF) and WMF. In this example, we also include two models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract): 30% CMF & 10 WMF (400K), and 30% CMF & 20% WMF (400K). 
+We now **include a color code** according to the stellar host metallicity. We also include three models based on [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) equations. These models consider a steam water atmosphere over a rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extensive hydrosphere can explain very well the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). These models are valid up to a 5% water mass fraction (WMF). Above this value, you might want to use the models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract), which have a validity range between 10% and 100% core mass fractions (CMF) and WMF. In this example, we also include two models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract): 30% CMF & 10 WMF (400K), and 30% CMF & 20% WMF (400K). 
 
 ```
 python mr-plotter.py example2_met.ini
@@ -69,7 +69,7 @@ python mr-plotter.py example2_insol.ini
 ![example2_joint](https://github.com/user-attachments/assets/4a046625-fd7b-49f5-9485-a05b55fa4da2)
 
 
-Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result I invite you to take a look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
+Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result I invite you to look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
 
 
 ### Example 3: The *PlanetS catalog*, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
@@ -97,7 +97,7 @@ There are several parameters such as the discovery year, facility, or technique,
 ```
 python mr-plotter.py example4_year.ini
 ```
-It's amazing to see the exciting era we live on, righ?! We can also make the same plot by differentiating between the three main space-based planet-hunting missions: *Kepler*, *K2*, and *TESS*.
+It's amazing to see the exciting era we live in, right?! We can also make the same plot by differentiating between the three main space-based planet-hunting missions: *Kepler*, *K2*, and *TESS*.
 
 ```
 python mr-plotter.py example4_facility.ini
@@ -107,7 +107,7 @@ This plot evidences the invaluable legacy that *TESS* is providing thanks to its
 
 ![example4_joint](https://github.com/user-attachments/assets/8cf140ac-1ca3-471c-b0cc-d0bb22e15ac6)
 
-In this example we can also see how to contextualize a planet (in this case L 98-59 d; [Demangeon et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..41D/abstract)) with a new color not included in the color map (left panel), and a color following the non-numerical color code (right panel; L 98-59 d was discovered by TESS).
+In this example, we can also see how to contextualize a planet (in this case L 98-59 d; [Demangeon et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..41D/abstract)) with a new color not included in the color map (left panel), and a color following the non-numerical color code (right panel; L 98-59 d was discovered by TESS).
 
 
 ### Example 5: Two-column plots, isodensity curves and more interior models!
@@ -139,13 +139,13 @@ python mr-plotter.py example5.ini
 **<sup>1</sup>** <sub> The full list of parameters that you can use to color your *mr-plots* can be found [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/color_codes.md). <br /> 
 **<sup>2</sup>** If a non-numerical color code is chosen (e.g. disc_year, disc_facility, etc), the grups to display and their colors have to be defined (see how [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/non_numerical_config.md)).  </sub>
 
-The package can access the catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to maintain the catalogs updated, but we recommend to download the most recent ones from: <br />
+The package can access the catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to maintain the catalogs updated, but we recommend downloading the most recent ones from: <br />
 
 [NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (in **.csv** format)  <br /> 
 [Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format)  <br />
 [PlanetS catalog](https://dace.unige.ch/exoplanets/) (in **VOTable** format) <br />
 
-The NEA data can be also accesed through a **TAP protocol** ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/TAP_NEA.md)). We note that when selecting the NEA option, the [Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catlog will be considered by default. However, it is also possible to use the [Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/composite_NEA_data.md)). 
+The NEA data can be also accessed through a **TAP protocol** ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/TAP_NEA.md)). We note that when selecting the NEA option, the [Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catlog will be considered by default. However, it is also possible to use the [Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/composite_NEA_data.md)). 
 
 ### Optional parameters 
 
@@ -169,7 +169,7 @@ The NEA data can be also accesed through a **TAP protocol** ([see how](https://g
 
 #### [MODELS] | Include theoretical models
 
-In this section we list the complete set of models implemented in *mr-plotter*. Their inclusion into your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc. In some cases, a model is simply defined by **one Option**, and in others it is defined by a combination of **a few Options**. In the following, we show an example of both kinds of operation: the models from  Zeng et al. 2016,2019 (sinlge option) and Aguichine et al. 2021 (several options). For the remaining models, their corresponding tables with the **Options**, **Possibe values**, and **Descriptions** can be accessed through the corresonding **hyperlinks**. 
+In this section, we list the complete set of models implemented in *mr-plotter*. Their inclusion into your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc. In some cases, a model is simply defined by **one Option**, and in others it is defined by a combination of **a few Options**. In the following, we show an example of both kinds of operation: the models from  Zeng et al. 2016,2019 (single option) and Aguichine et al. 2021 (several options). For the remaining models, their corresponding tables with the **Options**, **Possible values**, and **Descriptions** can be accessed through the corresponding **hyperlinks**. 
 
 **[Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract)** and **[Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)**. Rocky planets, water worlds, and gas dwarfs | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-1-the-simplest-case-contextualizing-a-new-planetary-system)
 
@@ -206,7 +206,7 @@ In this section we list the complete set of models implemented in *mr-plotter*. 
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
-*mr-plotter* has been desiged to have a default graphic configuration able to generate paper-quality plots. However, there are some particular aspects such as the **X- and Y-axis limits**, **size of the datapoints**, **color map**, **etc**, that you might want to modify at your ease. This is also possible with [OPTIONAL_CONFIG]! Check out **all the available options** in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/optional_config.md) (most of them were used in the [**Usage examples**](#usage-examples) section).
+*mr-plotter* has been designed to have a default graphic configuration able to generate paper-quality plots. However, there are some particular aspects such as the **X- and Y-axis limits**, **size of the data points**, **color map**, **etc**, that you might want to modify at your ease. This is also possible with [OPTIONAL_CONFIG]! Check out **all the available options** in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/optional_config.md) (most of them were used in the [**Usage examples**](#usage-examples) section).
 
 ## Contributors and Change log
 
