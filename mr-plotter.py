@@ -289,7 +289,7 @@ def parc2024_MR():
     
     global R_parc_small, M_parc_small, R_parc_intermediate,    M_parc_intermediate, R_parc_giant, M_parc_giant,    R_parc_small_upper, R_parc_small_lower,    R_parc_intermediate_upper, R_parc_intermediate_lower,    R_parc_giant_upper, R_parc_giant_lower
     
-    M_parc_small = np.linspace(0, 10, 100)
+    M_parc_small = np.linspace(0, 15, 100)
     M_parc_intermediate = np.linspace(6, 138, 100)
     M_parc_giant = np.linspace(138, 10000, 100)
     
@@ -682,7 +682,7 @@ try:
     wmf_luo2024 = [float(x.strip()) for x in MODELS['wmf_luo2024'].split(',')]
     teq_luo2024 = [float(x.strip()) for x in MODELS['teq_luo2024'].split(',')]
     colors_luo2024 = [x.strip() for x in MODELS['colors_luo2024'].split(',')]
-    df_luo_2024 = pd.read_csv('theoretical_models/luo2024', comment = "#", sep = '\t')
+    df_luo_2024 = pd.read_csv('theoretical_models/luo_2024.txt', comment = "#", sep = '\t')
     luo2024 = True
     luo2024_MR()
 except:
@@ -1344,7 +1344,7 @@ if luo2024:
 
     for i in range(len(wmf_luo2024)):
         label_wmf = wmf_luo2024[i]
-        plt.plot(M_luo2024[i], R_luo2024[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = "Earth + " + str(label_wmf*100)+"% "+r'$\rm H_{2}O$ ('+str(int(teq_luo2024[i]))+'K)', c = colors_luo2024[i])
+        plt.plot(M_luo2024[i], R_luo2024[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = "Earth + " + str(label_wmf*100)+"% "+r"$\rm H_{2}O$ ("+str(int(teq_luo2024[i]))+'K)', c = colors_luo2024[i])
 
 
 #@|Lopez & Fortney et al. (2014)
@@ -1442,7 +1442,7 @@ if parc2024:
 
         if uncertainties_parc2024:
             
-            plt.fill_between(M_parc_small, R_parc_small_lower, R_parc_small_upper, c=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
+            plt.fill_between(M_parc_small, R_parc_small_lower, R_parc_small_upper, color=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
         
     if 'intermediate' in models_parc2024:
         
@@ -1451,7 +1451,7 @@ if parc2024:
         
         if uncertainties_parc2024:
             
-            plt.fill_between(M_parc_intermediate, R_parc_intermediate_lower, R_parc_intermediate_upper, c=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
+            plt.fill_between(M_parc_intermediate, R_parc_intermediate_lower, R_parc_intermediate_upper, color=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
         
     if 'giant' in models_parc2024:
         
@@ -1460,11 +1460,11 @@ if parc2024:
 
         if uncertainties_parc2024:
             
-            plt.fill_between(M_parc_giant, R_parc_giant_lower, R_parc_giant_upper, c=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx]) 
+            plt.fill_between(M_parc_giant, R_parc_giant_lower, R_parc_giant_upper, color=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx]) 
 
     if ('small' in models_parc2024) & ('intermediate' in models_parc2024):
 
-        sep_small_inter = pd.read_csv('theoretical_models/MR-Water20_650K_DORN.txt')
+        sep_small_inter = np.genfromtxt('/Users/lenaparc/mr-plotter-main/theoretical_models/MR-Water20_650K_DORN.txt', dtype=[('x', float), ('y', float)],skip_header=1)
         plt.plot(sep_small_inter['x'], sep_small_inter['y'], linestyle = 'dotted', color = 'k', lw= 1.7)
     
         
