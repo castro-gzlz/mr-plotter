@@ -287,7 +287,7 @@ def otegi2020_MR():
 
 def parc2024_MR():
     
-    global R_parc_small, M_parc_small, R_parc_intermediate,    M_parc_intermediate, R_parc_giant, M_parc_giant
+    global R_parc_small, M_parc_small, R_parc_intermediate,    M_parc_intermediate, R_parc_giant, M_parc_giant,    R_parc_small_upper, R_parc_small_lower,    R_parc_intermediate_upper, R_parc_intermediate_lower,    R_parc_giant_upper, R_parc_giant_lower,
     
     M_parc_small = np.linspace(0, 10, 100)
     M_parc_intermediate = np.linspace(6, 138, 100)
@@ -298,6 +298,17 @@ def parc2024_MR():
     R_parc_intermediate = 0.61 * M_parc_intermediate**0.67
     R_parc_giant = 11.9 * M_parc_giant**0.01
 
+    R_parc_small_upper = (1.02+0.01) * M_parc_small**(0.28+0.01)
+    R_parc_small_lower = (1.02-0.01) * M_parc_small**(0.28-0.01)
+    
+    R_parc_intermediate_upper = (0.61+0.04) * M_parc_intermediate**(0.67+0.02)
+    R_parc_intermediate_lower = (0.61-0.04) * M_parc_intermediate**(0.67-0.02)
+    
+    R_parc_giant_upper = (11.9+0.7) * M_parc_giant**(0.01+0.01)
+    R_parc_giant_lower = (11.9-0.7) * M_parc_giant**(0.01-0.01)
+    
+
+    
 
 # In[ ]:
 
@@ -787,7 +798,15 @@ try:
         linestyles_parc2024[0] = 'dashed'
         linestyles_parc2024[1] = 'dashed'
         linestyles_parc2024[2] = 'dashed'
-         
+
+    try:
+
+        uncertainties_parc2024 = MODELS['uncertainties_parc2024']
+
+    except:
+        
+         uncertainties_parc2024 = False
+        
 except:
     
     parc2024 = False
@@ -1420,16 +1439,34 @@ if parc2024:
         
         idx = np.where(np.array(models_parc2024)=='small')[0][0]
         plt.plot(M_parc_small, R_parc_small, lw = 2.5, c = colors_parc2024[idx],                  linestyle = linestyles_parc2024[idx])
+
+        if uncertainties_parc2024:
+            
+            plt.fill_between(M_parc_small, R_parc_small_lower, R_parc_small_upper, c=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
         
     if 'intermediate' in models_parc2024:
         
         idx = np.where(np.array(models_parc2024)=='intermediate')[0][0]
         plt.plot(M_parc_intermediate, R_parc_intermediate, lw = 2.5, c = colors_parc2024[idx],                  linestyle =  linestyles_parc2024[idx])
         
+        if uncertainties_parc2024:
+            
+            plt.fill_between(M_parc_intermediate, R_parc_intermediate_lower, R_parc_intermediate_upper, c=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
+        
     if 'giant' in models_parc2024:
         
         idx = np.where(np.array(models_parc2024)=='giant')[0][0]
         plt.plot(M_parc_giant, R_parc_giant, lw = 2.5, c = colors_parc2024[idx],                  linestyle = linestyles_parc2024[idx])
+
+        if uncertainties_parc2024:
+            
+            plt.fill_between(M_parc_giant, R_parc_giant_lower, R_parc_giant_upper, c=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx]) 
+
+    if ('small' in models_parc2024) & ('intermediate' in models_parc2024):
+
+        sep_small_inter = pd.read_csv('theoretical_models/MR-Water20_650K_DORN.txt')
+        plt.plot(sep_small_inter['x'], sep_small_inter['y'], linestyle = 'dotted', color = 'k', lw= 1.7)
+    
         
         
     #@|vertical lines (only between intermediate and giant planets)
