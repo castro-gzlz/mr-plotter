@@ -7,4 +7,3 @@ scipy==1.7.3
 configparser==5.2.0
 astropy==4.3.1
 pyvo==1.2.1
-dace-query==1.1.0
