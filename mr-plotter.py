@@ -1344,7 +1344,7 @@ if luo2024:
 
     for i in range(len(wmf_luo2024)):
         label_wmf = wmf_luo2024[i]
-        plt.plot(M_luo2024[i], R_luo2024[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = "Earth + " str(label_wmf*100)+"% "+r'$\rm H_{2}O$ ('+str(int(teq_luo2024[i]))+'K)', c = colors_luo2024[i])
+        plt.plot(M_luo2024[i], R_luo2024[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = "Earth + " + str(label_wmf*100)+"% "+r'$\rm H_{2}O$ ('+str(int(teq_luo2024[i]))+'K)', c = colors_luo2024[i])
 
 
 #@|Lopez & Fortney et al. (2014)
