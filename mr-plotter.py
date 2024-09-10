@@ -153,6 +153,26 @@ def aguich2021_MR():
         M_aguich2021.append(m_aguich2021)
     
 
+# In[ ]:
+
+
+def luo2024_MR():
+    
+    global R_luo2024, M_luo2024
+
+    R_luo2024, M_luo2024 = [], []
+    for i in range(len(wmf_luo2024)):
+
+        idxs_luo2024 = np.where((np.round(df_luo_2024['total WMF'],2) == wmf_luo2024[i]) &                                    (df_luo_2024['Teq [K]'] == teq_luo2024[i])                                
+
+        r_luo2024 = df_luo_2024['Radius [Rearth]'].values[idxs_luo2024]
+        m_luo2024 = df_luo_2024['Mass [Mearth]'].values[idxs_luo2024]
+
+
+        R_luo2024.append(r_luo2024)
+        M_luo2024.append(m_luo2024)
+
+
 
 # In[ ]:
 
@@ -641,6 +661,21 @@ try:
     aguich2021_MR()
 except:
     aguich2021 = False
+
+
+# In[ ]:
+
+
+#@|#######--luo et al. 2024 config--##########
+try:
+    wmf_luo2024 = [float(x.strip()) for x in MODELS['wmf_luo2024'].split(',')]
+    teq_luo2024 = [float(x.strip()) for x in MODELS['teq_luo2024'].split(',')]
+    colors_luo2024 = [x.strip() for x in MODELS['colors_luo2024'].split(',')]
+    df_luo_2024 = pd.read_csv('theoretical_models/luo2024', comment = "#", sep = '\t')
+    luo2024 = True
+    luo2024_MR()
+except:
+    luo2024 = False
 
 
 # In[ ]:
@@ -1284,7 +1319,15 @@ if aguich2021:
     for i in range(len(x_core_aguich2021)):
 
         plt.plot(M_aguich2021[i], R_aguich2021[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = str(int(x_core_aguich2021[i]*100))+'% CMF & '+str(int(x_H2O_aguich2021[i]*100))+                 r'% WMF ('+str(int(Tirr_aguich2021[i]))+'K)', c = colors_aguich2021[i])
-        
+
+#@|Luo et al. (2024)
+if luo2024:
+
+    for i in range(len(wmf_luo2024)):
+        label_wmf = wmf_luo2024[i]
+        plt.plot(M_luo2024[i], R_luo2024[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = "Earth + " str(label_wmf*100)+"% "+r'$\rm H_{2}O$ ('+str(int(teq_luo2024[i]))+'K)', c = colors_luo2024[i])
+
+
 #@|Lopez & Fortney et al. (2014)
 if lopez_fortney2014:
     
