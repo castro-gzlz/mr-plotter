@@ -163,7 +163,7 @@ def luo2024_MR():
     R_luo2024, M_luo2024 = [], []
     for i in range(len(wmf_luo2024)):
 
-        idxs_luo2024 = np.where((np.round(df_luo_2024['total WMF'],2) == wmf_luo2024[i]) &                                    (df_luo_2024['Teq [K]'] == teq_luo2024[i])                                
+        idxs_luo2024 = np.where((np.round(df_luo_2024['total WMF'],2) == wmf_luo2024[i]) &                                    (df_luo_2024['Teq [K]'] == teq_luo2024[i]))                                
 
         r_luo2024 = df_luo_2024['Radius [Rearth]'].values[idxs_luo2024]
         m_luo2024 = df_luo_2024['Mass [Mearth]'].values[idxs_luo2024]
@@ -287,7 +287,7 @@ def otegi2020_MR():
 
 def parc2024_MR():
     
-    global R_parc_small, M_parc_small, R_parc_intermediate,    M_parc_intermediate, R_parc_giant, M_parc_giant,    R_parc_small_upper, R_parc_small_lower,    R_parc_intermediate_upper, R_parc_intermediate_lower,    R_parc_giant_upper, R_parc_giant_lower,
+    global R_parc_small, M_parc_small, R_parc_intermediate,    M_parc_intermediate, R_parc_giant, M_parc_giant,    R_parc_small_upper, R_parc_small_lower,    R_parc_intermediate_upper, R_parc_intermediate_lower,    R_parc_giant_upper, R_parc_giant_lower
     
     M_parc_small = np.linspace(0, 10, 100)
     M_parc_intermediate = np.linspace(6, 138, 100)
