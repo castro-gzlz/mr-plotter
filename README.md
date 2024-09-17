@@ -7,6 +7,8 @@ It can be used to **contextualize your favorite planets and infer their possible
 
 If your favorite model is not yet included in *mr-plotter*, you have any usage problems, or you came up with an improvement, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es). Mister plotter is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log)! 
 
+Also, for an interactive manipulation of mass-radius diagrams with sliders check out **MADRIGAS**!
+
 
 ## Installation & Requirements
 
