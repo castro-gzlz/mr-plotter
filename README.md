@@ -1,5 +1,5 @@
 # **mr-plotter: Mass-Radius Diagrams Plotter**
-**Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool developed to create **paper-quality mass-radius diagrams** based on a **wide range of** [**state-of-the-art models**](#models--include-theoretical-models) **of planetary interiors and atmospheres**.
+**Mr. plotter** (*mr-plotter*) is a **user-friendly** Python tool developed to create **paper-quality mass-radius diagrams** based on a **wide range of** [**state-of-the-art models**](#models--include-theoretical-models) **of planetary interiors and atmospheres**.
 
 ![mr-plotter_logo_v1-cropped](https://github.com/user-attachments/assets/46b08ef3-1d05-4020-9992-5cf7477ada28)
 
