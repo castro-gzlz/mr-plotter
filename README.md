@@ -36,7 +36,7 @@ Since September 2024 (v1+), *mr-plotter* can also be used via Jupyter notebook (
 
 ## Is this your first time using *mr-plotter*?
 
-If so, please don't be overwhelmed by the large number of parameters. In most cases you will only use a few! To **get familiarized** with the main options and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **different key scenarios**. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
+If so, please don't be overwhelmed by the large number of parameters. In most cases, you will only use a few! To **get familiarized** with the main options and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **different key scenarios**. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
 
 ## Usage examples
 
