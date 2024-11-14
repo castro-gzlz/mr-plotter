@@ -89,7 +89,7 @@ Of course, we can do the same for the ESM! In this case, we use the **updated em
 python mr-plotter.py example3_ESM.ini
 ```
 
-![example3_joint](https://github.com/user-attachments/assets/eafd18a4-cdda-4605-b60c-a6bd0a963c3c)
+![example3_joint](https://github.com/user-attachments/assets/75d18651-4b05-4552-a6ae-7c71c6f6429a)
 
 
 ### Example 4: Non-numerical color codings and dark plots | The TESS legacy
