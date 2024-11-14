@@ -49,7 +49,7 @@ config_file = args.config_file
 
 
 #@|++++Uncomment this for the mr.plotter.ipynb version+++++
-#config_file = 'example5.ini'
+#config_file = 'example3_TSM.ini'
 #@|++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -153,17 +153,20 @@ def aguich2021_MR():
         M_aguich2021.append(m_aguich2021)
     
 
+
 # In[ ]:
 
 
 def luo2024_MR():
     
+    #@|added by L.Párc on sept 2024
+
     global R_luo2024, M_luo2024
 
     R_luo2024, M_luo2024 = [], []
     for i in range(len(wmf_luo2024)):
 
-        idxs_luo2024 = np.where((np.round(df_luo_2024['total WMF'],2) == wmf_luo2024[i]) &                                    (df_luo_2024['Teq [K]'] == teq_luo2024[i]))                                
+        idxs_luo2024 = np.where((np.round(df_luo_2024['total WMF'],2) == wmf_luo2024[i]) & (df_luo_2024['Teq [K]'] == teq_luo2024[i]))                                
 
         r_luo2024 = df_luo_2024['Radius [Rearth]'].values[idxs_luo2024]
         m_luo2024 = df_luo_2024['Mass [Mearth]'].values[idxs_luo2024]
@@ -171,7 +174,6 @@ def luo2024_MR():
 
         R_luo2024.append(r_luo2024)
         M_luo2024.append(m_luo2024)
-
 
 
 # In[ ]:
@@ -287,7 +289,7 @@ def otegi2020_MR():
 
 def parc2024_MR():
     
-    global R_parc_small, M_parc_small, R_parc_intermediate,    M_parc_intermediate, R_parc_giant, M_parc_giant,    R_parc_small_upper, R_parc_small_lower,    R_parc_intermediate_upper, R_parc_intermediate_lower,    R_parc_giant_upper, R_parc_giant_lower
+    global R_parc_small, M_parc_small, R_parc_intermediate,     M_parc_intermediate, R_parc_giant, M_parc_giant,     R_parc_small_upper, R_parc_small_lower,     R_parc_intermediate_upper, R_parc_intermediate_lower,     R_parc_giant_upper, R_parc_giant_lower
     
     M_parc_small = np.linspace(0, 15, 100)
     M_parc_intermediate = np.linspace(6, 138, 100)
@@ -297,18 +299,19 @@ def parc2024_MR():
     R_parc_small = 1.02 * M_parc_small**0.28
     R_parc_intermediate = 0.61 * M_parc_intermediate**0.67
     R_parc_giant = 11.9 * M_parc_giant**0.01
-
+    
+    
+    #@|added by L.Párc (uncertainties)
     R_parc_small_upper = (1.02+0.01) * M_parc_small**(0.28+0.01)
     R_parc_small_lower = (1.02-0.01) * M_parc_small**(0.28-0.01)
-    
+
     R_parc_intermediate_upper = (0.61+0.04) * M_parc_intermediate**(0.67+0.02)
     R_parc_intermediate_lower = (0.61-0.04) * M_parc_intermediate**(0.67-0.02)
-    
+
     R_parc_giant_upper = (11.9+0.7) * M_parc_giant**(0.01+0.01)
     R_parc_giant_lower = (11.9-0.7) * M_parc_giant**(0.01-0.01)
     
 
-    
 
 # In[ ]:
 
@@ -678,6 +681,9 @@ except:
 
 
 #@|#######--luo et al. 2024 config--##########
+
+#@|added by L.Párc on sept 2024
+
 try:
     wmf_luo2024 = [float(x.strip()) for x in MODELS['wmf_luo2024'].split(',')]
     teq_luo2024 = [float(x.strip()) for x in MODELS['teq_luo2024'].split(',')]
@@ -692,7 +698,7 @@ except:
 # In[ ]:
 
 
-#@|#######--lopez & fortney et al. 2014 config--##########
+# @|#######--lopez & fortney et al. 2014 config--##########
 try:
     age_lf2014 = [x.strip() for x in MODELS['age_lf2014'].split(',')]
     opacity_lf2014 = [x.strip() for x in MODELS['opacity_lf2014'].split(',')]
@@ -798,15 +804,16 @@ try:
         linestyles_parc2024[0] = 'dashed'
         linestyles_parc2024[1] = 'dashed'
         linestyles_parc2024[2] = 'dashed'
-
+        
+    
     try:
 
         uncertainties_parc2024 = MODELS['uncertainties_parc2024']
 
     except:
-        
-         uncertainties_parc2024 = False
-        
+
+         uncertainties_parc2024 = True
+
 except:
     
     parc2024 = False
@@ -1329,7 +1336,7 @@ if turb_2020:
 
         label_wmf = WMFs_turb2020[i]
 
-        plt.plot(M_pl_turb[i], R_pl_turb[i], lw = lw_models*1.2, linestyle = 'dotted',                 zorder = -1000, c=colors_turb2020[i], label = label_core + " + "+ str(label_wmf*100)+"% "+r'$\rm H_{2}O$ steam')
+        plt.plot(M_pl_turb[i], R_pl_turb[i], lw = lw_models*1.2, linestyle = 'dotted',                 zorder = -1000, c=colors_turb2020[i], label = label_core + " + "+str(label_wmf*100)+"% "+r'$\rm H_{2}O$ steam')
 
         
 #@|Aguichine et al. (2021)
@@ -1338,21 +1345,24 @@ if aguich2021:
     for i in range(len(x_core_aguich2021)):
 
         plt.plot(M_aguich2021[i], R_aguich2021[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = str(int(x_core_aguich2021[i]*100))+'% CMF & '+str(int(x_H2O_aguich2021[i]*100))+                 r'% WMF ('+str(int(Tirr_aguich2021[i]))+'K)', c = colors_aguich2021[i])
-
-#@|Luo et al. (2024)
-if luo2024:
-
-    for i in range(len(wmf_luo2024)):
-        label_wmf = wmf_luo2024[i]
-        plt.plot(M_luo2024[i], R_luo2024[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = "Earth + " + str(label_wmf*100)+"% "+r"$\rm H_{2}O$ ("+str(int(teq_luo2024[i]))+'K)', c = colors_luo2024[i])
-
-
+        
 #@|Lopez & Fortney et al. (2014)
 if lopez_fortney2014:
     
     for i in range(len(age_lf2014)):
         
         plt.plot(M_lf2014[i], R_lf2014[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = H_He[i]+'% H/He, '+age_lf2014[i]+','+f' {Seff_lf2014[i]}'+r'$\rm S_{\oplus}$',                 c = colors_lf2014[i])
+        
+
+#@|Luo et al. (2024)
+if luo2024:
+
+    for i in range(len(wmf_luo2024)):
+        label_wmf = wmf_luo2024[i]
+        
+        plt.plot(M_luo2024[i], R_luo2024[i], lw = lw_models*1.2, linestyle = 'dotted',                 zorder = -1000, label = "Earth + " + str(label_wmf*100)+"% "+                 r"$\rm H_{2}O$ ("+str(int(teq_luo2024[i]))+'K)', c = colors_luo2024[i])
+
+
         
         
 #@|Haldemannet al. (2014) 
@@ -1439,10 +1449,10 @@ if parc2024:
         
         idx = np.where(np.array(models_parc2024)=='small')[0][0]
         plt.plot(M_parc_small, R_parc_small, lw = 2.5, c = colors_parc2024[idx],                  linestyle = linestyles_parc2024[idx])
-
+        
         if uncertainties_parc2024:
-            
-            plt.fill_between(M_parc_small, R_parc_small_lower, R_parc_small_upper, color=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
+
+            plt.fill_between(M_parc_small, R_parc_small_lower, R_parc_small_upper,                              color=colors_parc2024[idx], alpha=0.4, linestyle = linestyles_parc2024[idx])
         
     if 'intermediate' in models_parc2024:
         
@@ -1450,28 +1460,29 @@ if parc2024:
         plt.plot(M_parc_intermediate, R_parc_intermediate, lw = 2.5, c = colors_parc2024[idx],                  linestyle =  linestyles_parc2024[idx])
         
         if uncertainties_parc2024:
-            
-            plt.fill_between(M_parc_intermediate, R_parc_intermediate_lower, R_parc_intermediate_upper, color=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx])
+
+            plt.fill_between(M_parc_intermediate, R_parc_intermediate_lower, R_parc_intermediate_upper,                             color=colors_parc2024[idx], alpha=0.4, linestyle = linestyles_parc2024[idx])
         
     if 'giant' in models_parc2024:
         
         idx = np.where(np.array(models_parc2024)=='giant')[0][0]
         plt.plot(M_parc_giant, R_parc_giant, lw = 2.5, c = colors_parc2024[idx],                  linestyle = linestyles_parc2024[idx])
-
+        
         if uncertainties_parc2024:
+
+             plt.fill_between(M_parc_giant, R_parc_giant_lower, R_parc_giant_upper,                               color=colors_parc2024[idx], alpha=0.4,                               linestyle = linestyles_parc2024[idx]) 
             
-            plt.fill_between(M_parc_giant, R_parc_giant_lower, R_parc_giant_upper, color=colors_parc2024[idx], alpha=0.5, linestyle = linestyles_parc2024[idx]) 
-
     if ('small' in models_parc2024) & ('intermediate' in models_parc2024):
+        
+        pass
 
-        sep_small_inter = np.genfromtxt('/Users/lenaparc/mr-plotter-main/theoretical_models/MR-Water20_650K_DORN.txt', dtype=[('x', float), ('y', float)],skip_header=1)
-        plt.plot(sep_small_inter['x'], sep_small_inter['y'], linestyle = 'dotted', color = 'k', lw= 1.7)
-    
+        sep_small_inter = np.genfromtxt('theoretical_models/MR-Water20_650K_DORN.txt',                                         dtype=[('x', float), ('y', float)],skip_header=1)
+        plt.plot(sep_small_inter['x'], sep_small_inter['y'], linestyle = 'dotted', color = 'k', lw= 1.9)
         
         
     #@|vertical lines (only between intermediate and giant planets)
     #plt.vlines(x = [10, 138],  ymin = [1.25, 6], ymax = [4.9, 25], linestyle = 'dotted', color = 'k', lw = 1.7)
-    plt.vlines(x = [138],  ymin = [6], ymax = [25], linestyle = 'dotted', color = 'k', lw = 1.7)
+    plt.vlines(x = [138],  ymin = [6], ymax = [25], linestyle = 'dotted', color = 'k', lw = 1.9)
     
     
 #@configuration
@@ -1594,10 +1605,6 @@ print('')
 # In[ ]:
 
 
-
-
-
-# In[ ]:
 
 
 
