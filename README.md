@@ -83,7 +83,7 @@ In this example, we use the [*PlanetS*](https://dace.unige.ch/exoplanets/) catal
 python mr-plotter.py example3_TSM.ini
 ```
 
-Of course, we can do the same for the ESM! As in [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract), the transition between the small and intermediate planet populations corresponds to the composition line of 20% water at 650 K from [Luo et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024NatAs.tmp..205L/abstract), and the transition between the intermediate and giant planet population corresponds to the iso-mass line at 138⊕.
+Of course, we can do the same for the ESM! As in [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract), the transition between the small and intermediate planet populations corresponds to the composition line of 20% water at 650 K from [Luo et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024NatAs.tmp..205L/abstract), and the transition between the intermediate and giant planet population corresponds to the iso-mass line at 138 M<sub>⊕</sub>.
 
 ```
 python mr-plotter.py example3_ESM.ini
