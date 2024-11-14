@@ -215,7 +215,7 @@ In this section, we list the complete set of models implemented in *mr-plotter*.
 
 ## Contributors and Change log
 
-Mister plotter has been developed by [Amadeo Castro-González](https://github.com/castro-gzlz) with relevant contributions from [Jorge Lillo-Box](https://github.com/jlillo), [Artem Aguichine](https://github.com/an0wen), [Léna Parc](https://github.com/ParcLena), and [Katharine Hesse](https://github.com/katharinehesse). Check out the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md) with the major updates!
+Mister plotter has been developed by [Amadeo Castro-González](https://github.com/castro-gzlz) with contributions from [Léna Parc](https://github.com/ParcLena), [Artem Aguichine](https://github.com/an0wen), [Jorge Lillo-Box](https://github.com/jlillo), and [Katharine Hesse](https://github.com/katharinehesse). Check out the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md) with the major updates!
 
 ## Credits
 
