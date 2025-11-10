@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 import astropy.constants as const
 from astropy.io.votable import parse
 from configparser import ConfigParser
-from matplotlib.patches import Ellipse
+
 
 # In[ ]:
 
@@ -1288,13 +1288,7 @@ elif color_coding == 'none':
             if text_boxes == True:
                 
                 plt.scatter(globals()['m_p'+str(i)], globals()['r_p'+str(i)],                            color = globals()['c_p'+str(i)], ec = ec_my_planets,                            marker = 'h', s = size_my_planets, lw = 1.7, zorder = 1000,)
-                plt.errorbar(globals()['m_p'+str(i)], globals()['r_p'+str(i)],                             xerr = np.array([[globals()['m_p'+str(i)+'_err_down']],                                              [globals()['m_p'+str(i)+'_err_up']]]),                              yerr = np.array([[globals()['r_p'+str(i)+'_err_down']],                                              [globals()['r_p'+str(i)+'_err_up']]]),                              zorder = 999, lw = 1.7, capsize = capsize, color = 'k')
-                #e1 = Ellipse(xy=(globals()['m_p'+str(i)], globals()['r_p'+str(i)]), width=2*np.mean(np.array([[globals()['m_p'+str(i)+'_err_down']],[globals()['m_p'+str(i)+'_err_up']]])), height=2*np.mean(np.array([[globals()['r_p'+str(i)+'_err_down']],[globals()['r_p'+str(i)+'_err_up']]])),
-                #edgecolor=globals()['c_p'+str(i)], fc=globals()['c_p'+str(i)],alpha=0.5, lw=2, zorder=1000)
-                #plt.gca().add_patch(e1)    
-                #e2 = Ellipse(xy=(globals()['m_p'+str(i)], globals()['r_p'+str(i)]), width=4*np.mean(np.array([[globals()['m_p'+str(i)+'_err_down']],[globals()['m_p'+str(i)+'_err_up']]])), height=4*np.mean(np.array([[globals()['r_p'+str(i)+'_err_down']],[globals()['r_p'+str(i)+'_err_up']]])),
-                #edgecolor=globals()['c_p'+str(i)], fc=globals()['c_p'+str(i)],alpha=0.3, lw=1, zorder=999)
-                #plt.gca().add_patch(e2)                 
+                plt.errorbar(globals()['m_p'+str(i)], globals()['r_p'+str(i)],                             xerr = np.array([[globals()['m_p'+str(i)+'_err_down']],                                              [globals()['m_p'+str(i)+'_err_up']]]),                              yerr = np.array([[globals()['r_p'+str(i)+'_err_down']],                                              [globals()['r_p'+str(i)+'_err_up']]]),                              zorder = 999, lw = 1.7, capsize = capsize, color = 'k')              
                 plt.text(globals()['m_p'+str(i)] +  globals()['dis_x_p'+str(i)],                          globals()['r_p'+str(i)] +  globals()['dis_y_p'+str(i)],                          globals()['name_p'+str(i)], fontsize = 12.5,                         verticalalignment = 'bottom', horizontalalignment = 'center',                          bbox = {"boxstyle": "round",'facecolor': globals()['c_p'+str(i)],                                  'alpha': 0.8, 'pad': 0.4}, c = 'white', weight='bold', zorder = 10000)
                 
             if text_boxes == False:
