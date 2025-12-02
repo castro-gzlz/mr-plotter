@@ -13,18 +13,10 @@
 
  It can be used to **contextualize your favorite planets and infer their possible internal structures**. It can also be used to **search for correlations** at a population level thanks to its **color-coding option** based on any property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*PlanetS*](https://dace.unige.ch/exoplanets/), and [*Exoplanet.eu*](http://www.exoplanet.eu/) catalogs. 
                                                       
-  
+ If your favorite model is not yet included in *mr-plotter*, you have any usage problems, or you came up with an improvement, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es). Mister plotter is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) :smiley:
+ 
 </p>
 
-
-
-**Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool developed to create **paper-quality mass-radius diagrams** based on a **wide range of** [**state-of-the-art models**](#models--include-theoretical-models) **of planetary interiors and atmospheres**.
-
-![mr-plotter_logo_v1-cropped](https://github.com/user-attachments/assets/46b08ef3-1d05-4020-9992-5cf7477ada28)
-
-It can be used to **contextualize your favorite planets and infer their possible internal structures**. It can also be used to **search for correlations** at a population level thanks to its **color-coding option** based on any property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*PlanetS*](https://dace.unige.ch/exoplanets/), and [*Exoplanet.eu*](http://www.exoplanet.eu/) catalogs. 
-
-If your favorite model is not yet included in *mr-plotter*, you have any usage problems, or you came up with an improvement, don't hesitate to contact me at [acastro@cab.inta-csic.es](acastro@cab.inta-csic.es). Mister plotter is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) :smiley:
 
 For an **interactive** manipulation of mass-radius diagrams with **sliders** check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS)!
 
