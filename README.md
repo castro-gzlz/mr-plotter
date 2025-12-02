@@ -18,8 +18,6 @@
 </p>
 
 
-For an **interactive** manipulation of mass-radius diagrams with **sliders** check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS)!
-
 
 ## Installation & Requirements
 
