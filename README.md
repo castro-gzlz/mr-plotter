@@ -1,4 +1,23 @@
 # **mr-plotter: Mass-Radius Diagrams Plotter**
+
+
+
+<p>
+
+  <img src="https://github.com/user-attachments/assets/e8ca1984-89d4-4c0e-9a11-37ad6978afef"
+       align="left"
+       width="320"
+       style="margin-right: 20px; margin-bottom: 10px;">
+       
+ **Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool developed to create **paper-quality mass-radius diagrams** based on a **wide range of** [**state-of-the-art models**](#models--include-theoretical-models) **of planetary interiors and atmospheres**. 
+
+ It can be used to **contextualize your favorite planets and infer their possible internal structures**. It can also be used to **search for correlations** at a population level thanks to its **color-coding option** based on any property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*PlanetS*](https://dace.unige.ch/exoplanets/), and [*Exoplanet.eu*](http://www.exoplanet.eu/) catalogs. 
+                                                      
+  
+</p>
+
+
+
 **Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool developed to create **paper-quality mass-radius diagrams** based on a **wide range of** [**state-of-the-art models**](#models--include-theoretical-models) **of planetary interiors and atmospheres**.
 
 ![mr-plotter_logo_v1-cropped](https://github.com/user-attachments/assets/46b08ef3-1d05-4020-9992-5cf7477ada28)
