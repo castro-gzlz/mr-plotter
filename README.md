@@ -16,6 +16,8 @@
  If your favorite model is not yet included in *mr-plotter*, you have any usage problems, or you came up with an improvement, don't hesitate to [contact me](mailto:amadeo.castro-gonzalez@unige.ch). The code is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) :smiley:
  
 </p>
+<br>
+<br>
 
 For an **interactive** manipulation of mass-radius diagrams with **sliders** check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS)!
 
