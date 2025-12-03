@@ -4,7 +4,7 @@
 
 <p>
 
-  <img src="https://github.com/user-attachments/assets/e8ca1984-89d4-4c0e-9a11-37ad6978afef"
+  <img src="https://github.com/user-attachments/assets/8fce48e4-944f-4389-a38d-c3006b8c4e8d"
        align="left"
        width="320"
        style="margin-right: 20px; margin-bottom: 10px;">
@@ -18,6 +18,7 @@
 </p>
 
 <br>
+
 
 For an **interactive** manipulation of mass–radius diagrams with **sliders**, check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS)!
 
