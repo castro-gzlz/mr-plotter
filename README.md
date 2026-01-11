@@ -135,6 +135,17 @@ python mr-plotter.py example5.ini
 ![example5](https://github.com/user-attachments/assets/85a72cd7-36e5-448e-8cf0-4510f4d6d0ca)
 
 
+### Example 6: More models! With interpolators!! Evolutionary models of steam worlds and gas dwarfs
+
+Historically, interior models focused on end-member compositions such as Earth-like, 50% water, etc. However, it is now known that the planet radius is also sensitive to secondary effects caused by equilbrium temperature, age, spectral type of the star, etc. In addition to this, in the last few years it has became more common to use interior structure models to precisely infer the range of planet bulk compositions, in part thanks to tools such as [smint](https://github.com/cpiaulet/smint). This led to the publication of planet radii in the form of large grids covering the whole parameter space, and intermediate radii were interpolated. In this example, we show two such models: the interior model adapted to steam worlds from [Aguichine et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract), and the interior model adapted to gas dwarfs from [Tang et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract). These models present grids of planetary radii that depend on planet mass, composition, equilibrium temperature, age, and host star spectral type/envelope metallicity (respectively). Mass-radius relations can be shown for any parameter value, and not just those available, thanks to interpolation. The interpolation scheme has been taken from [MARDIGRAS](https://github.com/an0wen/MARDIGRAS). Extrapolation is possible but not advised. You can find the list of input parameters and their validity range in Section [[MODELS]](#models--include-theoretical-models). In the example below, TOI-270 d has bulk properties (mass, radius, equilibrium temperature, but unknown age, [Van Eylen et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2154V/abstract)) compatible with a 50% steam envelope, a 0.5% H<sub>2</sub>-He 1×Solar metallicity envelope, or anything in-between. Its transition spectrum was taken with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), showing the atmosphere is high metallicity (~50%).
+
+```
+python mr-plotter.py example6_evolmodels.ini
+```
+
+![example5](https://github.com/user-attachments/assets/85a72cd7-36e5-448e-8cf0-4510f4d6d0ca)
+
+
 ## Configuration file
 
 ### Mandatory parameters
@@ -201,11 +212,35 @@ In this section, we list the complete set of models implemented in *mr-plotter*.
 | Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Equilibrium temperature of your planet |
 | colors_aguich2021 | Any color | Colors of each model |
 
+[**Aguichine et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract). Update of the [Aguichine et al. (2021)] model. This models considers the evolution of steam worlds, as the planet looses its internal heat through the atmosphere. The rocky part is now fixed to be Earth-like. This model uses an interpolation scheme, so any parameter value can be provided, and the model can be extrapolated (not recommended). | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-6-more-models-with interpolators-evolutionary-models-of-steam-worlds-and-gas-dwarfs) 
+
+| Parameter | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| spt_aguich2025 | M or G* | Spectral type of the host star |
+| WMF_aguich2025 | 0.001,0.01,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0 | Water mass fraction of the hydrosphere |
+| Teq_aguich2025 | 400, 500, 700, 900, 1100, 1300, 1500 (K) | Equilibrium temperature of your planet |
+| age_aguich2025 | 0.001,0.0015,0.002,0.003,0.005,0.01,0.02,0.03,0.05,0.1,0.2,0.5,1.0,2.0,5.0,10,20 | Age of the host star |
+| colors_aguich2025 | Any color | Colors of each model |
+*Interpolation between host star spectral type is not possible
+
 [**Seager et al. (2007)**](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). 100% iron, 100% silicates, and 100% condensed water models | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/seager_2007.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-5-two-column-plots-isodensity-curves-and-more-interior-models) <br />
 
 [**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of planetary mantles | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/marcus_2010.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-5-two-column-plots-isodensity-curves-and-more-interior-models) <br />
 
 [**Lopez & Fortney et al. (2014)**](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). Rocky planets with H<sub>2</sub>/He atmospheres | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/lopez&fortney_2014.md) | [Example]() <br />
+
+[**Tang et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract). Update of the [Lopez & Fortney (2014)] model. This model uses a more detailed mineralogy for the Earth-like core, and improves on many approximations used in the previous version of the model. The study also considered boil-off, which gives an upper limit on how much gas a planet can be. This model uses an interpolation scheme, so any parameter value can be provided, and the model can be extrapolated (not recommended). | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-6-more-models-with interpolators-evolutionary-models-of-steam-worlds-and-gas-dwarfs) 
+
+| Parameter | Possible values | Description |
+| ------------- | ------------- | ------------- |
+| met_tang2025 | 1 or 50 | Metallicity of the atmosphere and envelope |
+| fenv_tang2025 | 0.10,0.20,0.50,1,2,5,10,20 | Envelope mass fraction |
+| Teq_tang2025 | 278,  494,  879, 1563 (K) | Equilibrium temperature of your planet* |
+| age_tang2025 | 0.01, 0.1, 1, 10 (Gyr) | Age of the host star |
+| boiloff_tang2025 | True or False** | If True, removes planet that boiled-off |
+| colors_aguich2025 | Any color | Colors of each model |
+*The equilibrium temperature represents planet incident fluxes of 1, 10, 100 and 1000 times Earth's incident flux.
+**The boil-off parameter does not need to be repeated, only one occurence applies to all models.
 
 [**Otegi et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract). Empirical mass-radius relationships based on the PlanetS catalog | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/otegi_2020.md) |  [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-the-planets-catalog-empirical-relations-and-color-coding-based-on-homogeneous-transmission-and-emission-spectroscopy-metrics-tsm-and-esm) <br />
 
