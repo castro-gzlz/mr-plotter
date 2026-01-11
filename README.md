@@ -239,9 +239,9 @@ In this section, we list the complete set of models implemented in *mr-plotter*.
 | Teq_tang2025 | 278,  494,  879, 1563 (K) | Equilibrium temperature of your planet<sup>**1**</sup> |
 | age_tang2025 | 0.01, 0.1, 1, 10 (Gyr) | Age of the host star |
 | boiloff_tang2025 | True or False<sup>**2**</sup> | If True, removes planet that boiled-off |
-| colors_aguich2025 | Any color | Colors of each model |
+| colors_tang2025 | Any color | Colors of each model |
 
-<sup>**1**</sup> <sub> The equilibrium temperature represents planet incident fluxes of 1, 10, 100 and 1000 times Earth's incident flux. </sub>
+<sup>**1**</sup> <sub> The equilibrium temperature represents planet incident fluxes of 1, 10, 100 and 1000 times Earth's incident flux. </sub> <br>
 <sup>**2**</sup> <sub> The boil-off parameter does not need to be repeated, only one occurence applies to all models. </sub>
 
 [**Otegi et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract). Empirical mass-radius relationships based on the PlanetS catalog | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/otegi_2020.md) |  [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-the-planets-catalog-empirical-relations-and-color-coding-based-on-homogeneous-transmission-and-emission-spectroscopy-metrics-tsm-and-esm) <br />
