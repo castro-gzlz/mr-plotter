@@ -216,12 +216,13 @@ In this section, we list the complete set of models implemented in *mr-plotter*.
 
 | Parameter | Possible values | Description |
 | ------------- | ------------- | ------------- |
-| spt_aguich2025 | M or G* | Spectral type of the host star |
-| WMF_aguich2025 | 0.001,0.01,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0 | Water mass fraction of the hydrosphere |
+| spt_aguich2025 | M or G<sup>**1**</sup> | Spectral type of the host star |
+| WMF_aguich2025 | 0.1, 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 (%) | Water mass fraction of the hydrosphere |
 | Teq_aguich2025 | 400, 500, 700, 900, 1100, 1300, 1500 (K) | Equilibrium temperature of your planet |
-| age_aguich2025 | 0.001,0.0015,0.002,0.003,0.005,0.01,0.02,0.03,0.05,0.1,0.2,0.5,1.0,2.0,5.0,10,20 | Age of the host star |
+| age_aguich2025 | 0.001, 0.0015, 0.002, 0.003, 0.005, 0.01, 0.02, 0.03, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0, 5.0, 10, 20 (Gyr) | Age of the host star |
 | colors_aguich2025 | Any color | Colors of each model |
-*Interpolation between host star spectral type is not possible
+
+<sup>**1**</sup> <sub> Interpolation between host star spectral type is not possible </sub>
 
 [**Seager et al. (2007)**](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). 100% iron, 100% silicates, and 100% condensed water models | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/seager_2007.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-5-two-column-plots-isodensity-curves-and-more-interior-models) <br />
 
@@ -234,13 +235,14 @@ In this section, we list the complete set of models implemented in *mr-plotter*.
 | Parameter | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | met_tang2025 | 1 or 50 | Metallicity of the atmosphere and envelope |
-| fenv_tang2025 | 0.10,0.20,0.50,1,2,5,10,20 | Envelope mass fraction |
-| Teq_tang2025 | 278,  494,  879, 1563 (K) | Equilibrium temperature of your planet* |
+| fenv_tang2025 | 0.10, 0.20, 0.50, 1, 2, 5, 10, 20 (%) | Envelope mass fraction |
+| Teq_tang2025 | 278,  494,  879, 1563 (K) | Equilibrium temperature of your planet<sup>**1**</sup> |
 | age_tang2025 | 0.01, 0.1, 1, 10 (Gyr) | Age of the host star |
-| boiloff_tang2025 | True or False** | If True, removes planet that boiled-off |
+| boiloff_tang2025 | True or False<sup>**2**</sup> | If True, removes planet that boiled-off |
 | colors_aguich2025 | Any color | Colors of each model |
-*The equilibrium temperature represents planet incident fluxes of 1, 10, 100 and 1000 times Earth's incident flux.
-**The boil-off parameter does not need to be repeated, only one occurence applies to all models.
+
+<sup>**1**</sup> <sub> The equilibrium temperature represents planet incident fluxes of 1, 10, 100 and 1000 times Earth's incident flux. </sub>
+<sup>**2**</sup> <sub> The boil-off parameter does not need to be repeated, only one occurence applies to all models. </sub>
 
 [**Otegi et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract). Empirical mass-radius relationships based on the PlanetS catalog | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/otegi_2020.md) |  [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-the-planets-catalog-empirical-relations-and-color-coding-based-on-homogeneous-transmission-and-emission-spectroscopy-metrics-tsm-and-esm) <br />
 

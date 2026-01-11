@@ -777,7 +777,7 @@ def make_interpolator_aguich2025():
 
 try:
     spt_aguich2025 = [x.strip() for x in MODELS['spt_aguich2025'].split(',')]
-    WMF_aguich2025 = [float(x.strip()) for x in MODELS['WMF_aguich2025'].split(',')]
+    WMF_aguich2025 = [float(x.strip())/100 for x in MODELS['WMF_aguich2025'].split(',')]
     Teq_aguich2025 = [float(x.strip()) for x in MODELS['Teq_aguich2025'].split(',')]
     age_aguich2025 = [float(x.strip()) for x in MODELS['age_aguich2025'].split(',')]
     colors_aguich2025 = [x.strip() for x in MODELS['colors_aguich2025'].split(',')]
