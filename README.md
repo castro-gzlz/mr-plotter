@@ -116,7 +116,8 @@ These models present grids of planetary radii that depend on planet mass, compos
 python mr-plotter.py example4.ini
 ```
 
-[example4.pdf](https://github.com/user-attachments/files/24567806/example4.pdf)
+<img width="4968" height="2293" alt="example4" src="https://github.com/user-attachments/assets/02123950-a6df-41c3-90ea-14d39028272a" />
+
 
 
 ### Example 5: The *PlanetS catalog*, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
@@ -133,7 +134,8 @@ We can do the same for the ESM! We note that, as in [Parc et al. (2024)](https:/
 python mr-plotter.py example5_ESM.ini
 ```
 
-<img width="4968" height="2254" alt="example5" src="https://github.com/user-attachments/assets/f8934a80-ab5c-4800-8da4-f7b53c23aa3e" />
+<img width="5608" height="2254" alt="example5_joint" src="https://github.com/user-attachments/assets/22940d4b-745b-44bd-bd43-646cc294504d" />
+
 
 
 ### Example 6: Non-numerical color codings and dark plots | The TESS legacy
