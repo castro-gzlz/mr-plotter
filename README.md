@@ -15,7 +15,7 @@ If your favorite model is not yet implemented, if you encounter any usage issues
 
 ## Installation & Requirements
 
-Simply **clone or download the repository** to your local machine. Most dependencies are widely used in the scientific Python ecosystem, but if any are missing, you can install them by navigating to the project directory and running:
+Simply **clone or download the repository** to your local machine. Most dependencies are widely used, but if any are missing, you can install them by navigating to the project directory and running:
 
 ```bash
 pip install -r requirements.txt
