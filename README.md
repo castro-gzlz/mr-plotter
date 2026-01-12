@@ -25,19 +25,22 @@ If you encounter any installation issues, please open an issue [here](https://gi
 
 ## Usage
 
-#### Python through the terminal
+#### From the terminal
 
-You just need to create a configuration file *[my_config_file.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/my_config_file.ini)* inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder and then type
+Create a configuration file named *[my_config_file.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/my_config_file.ini)* inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder, and run:
 
-```
+```bash
 python mr-plotter.py my_config_file.ini
 ```
-The file *[my_config_file.ini](https://github.com/castro-gzlz/mr-plotter/blob/main/config/my_config_file.ini)* should contain all the necessary information to make your plot, which will be saved into the *[output](https://github.com/castro-gzlz/mr-plotter/tree/main/output)* folder. In the [**Configuration file**](#configuration-file) section we describe **all the parameters** ([mandatory](#mandatory-parameters) and [optional](#optional-parameters)) that can be used in the configuration files.
 
+The configuration file should contain all the information required to generate the plot, which will be saved in the [*output*](https://github.com/castro-gzlz/mr-plotter/tree/main/output) folder.
 
-#### Python through Jupyter Notebook
+All available parameters (both [mandatory](#mandatory-parameters) and [optional](#optional-parameters)) are described in the [**Configuration file**](#configuration-file) section.
 
-Since September 2024 (v1+), *mr-plotter* can also be used via Jupyter notebook (mr-plotter.ipynb). Similarly to the terminal version, you just need to select a configuration file (config_file) and run all cells.
+#### From a Jupyter Notebook
+
+Since September 2024 (v1+), *mr-plotter* can also be used from a Jupyter Notebook (`mr-plotter.ipynb`). As in the terminal workflow, simply select a configuration file (`config_file`) and run all cells.
+
 
 ## Is this your first time using *mr-plotter*?
 
