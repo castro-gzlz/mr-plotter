@@ -81,23 +81,24 @@ Wait! do you see what I’m seeing? **Low-density super-Earths appear to be host
 
 ### Example 3: Evolutionary models (with interpolators!) of steam worlds and gas dwarfs
 
-Historically, interior models focused on end-member compositions such as Earth-like, 50% water, etc. However, it is now known that the planet radius is also sensitive to secondary effects caused by equilbrium temperature, age, spectral type of the star, etc. In addition to this, in the last few years it has became more common to use interior structure models to precisely infer the range of planet bulk compositions, in part thanks to tools such as [smint](https://github.com/cpiaulet/smint). This led to the publication of planet radii in the form of large grids covering the whole parameter space, and intermediate radii were interpolated. In this example, we show two such models: the interior model adapted to steam worlds from [Aguichine et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract):
+Early interior models traditionally focused on end-member compositions (e.g. Earth-like, 50% water). However, it is now well established that planetary radii are also sensitive to **secondary parameters**, such as equilibrium temperature, system age, and host star properties. In recent years, interior structure models have increasingly been used to **precisely infer ranges of bulk compositions**, in part thanks to tools such as [smint](https://github.com/cpiaulet/smint). This has led to the publication of planetary radii in the form of **large multidimensional grids** spanning wide regions of parameter space, with intermediate values obtained via interpolation. In this example, we illustrate two such evolutionary models implemented in *mr-plotter*. 
 
-```
+First, an interior model adapted to **steam worlds** from [Aguichine et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract):
+
+```bash
 python mr-plotter.py example3_evolmodels_aguichine.ini
 ```
+Second, an interior model adapted to **gas dwarfs** from [Tang et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract):
 
-and the interior model adapted to gas dwarfs from [Tang et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract):
-
-```
+```bash
 python mr-plotter.py example3_evolmodels_aguichine_tang.ini
 ```
 
 <img width="5626" height="2441" alt="example3_joint" src="https://github.com/user-attachments/assets/95cd817c-1a21-429a-9162-6a81e04b0561" />
 
+These models provide grids of planetary radii as functions of **planet mass, composition, equilibrium temperature, age**, and **host star properties** (spectral type and envelope metallicity). Thanks to interpolation, mass–radius relations can be generated for **any value within the validity range**, and not only for the discrete grid points. The interpolation scheme implemented here follows that of [MARDIGRAS](https://github.com/an0wen/MARDIGRAS). While extrapolation is technically possible, it is **not recommended**. A full list of input parameters and their respective validity ranges can be found in the [[MODELS]](#models--include-theoretical-models) section.
 
-These models present grids of planetary radii that depend on planet mass, composition, equilibrium temperature, age, and host star spectral type/envelope metallicity (respectively). Mass-radius relations can be shown for any parameter value, and not just those available, thanks to interpolation. The interpolation scheme has been taken from [MARDIGRAS](https://github.com/an0wen/MARDIGRAS). Extrapolation is possible but not advised. You can find the list of input parameters and their validity range in Section [[MODELS]](#models--include-theoretical-models). In the example below, TOI-270 d has bulk properties (mass, radius, equilibrium temperature, but unknown age, [Van Eylen et al. 2021](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2154V/abstract)) compatible with a 50% steam envelope, a 0.5% H<sub>2</sub>-He 1×Solar metallicity envelope, or anything in-between. Its transition spectrum was taken with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), showing the atmosphere is high metallicity (~50%).
-
+As an illustrative case, the planet TOI-270 d has measured bulk properties (mass, radius, equilibrium temperature, but unknown age; [Van Eylen et al. 2021](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2154V/abstract)) that are compatible with a **50% steam envelope**, a **0.5% H₂–He envelope at 1×Solar metallicity**, or any intermediate configuration. Its transmission spectrum was recently obtained with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), revealing a **high-metallicity atmosphere (~50%)**.
 
 ### Example 4: Two-column plots, isodensity curves and more interior models!
 
