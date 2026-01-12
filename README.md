@@ -213,7 +213,11 @@ This section allows you to manually include one or more planets that are **not p
 
 #### [MODELS] | Include theoretical models
 
-In this section, we list the complete set of models implemented in *mr-plotter*. Their inclusion into your *mr-plots* is really easy! You just need to select as many **Possible values** as models you want to visualize separated by commas, as in these examples: Example1, Example2, etc. In some cases, a model is simply defined by **one Option**, and in others it is defined by a combination of **a few Options**. In the following, we show an example of both kinds of operation: the models from  Zeng et al. 2016,2019 (single option) and Aguichine et al. 2021 (several options). For the remaining models, their corresponding tables with the **Options**, **Possible values**, and **Descriptions** can be accessed through the corresponding **hyperlinks**. 
+In this section, we list all theoretical and empirical mass–radius models implemented in *mr-plotter* and explain how to include them in your plots.
+
+Adding models to an *mr-plot* is straightforward: you simply select the desired model(s) in the configuration file by specifying their corresponding option names, separated by commas. Some models are activated using a **single option**, while others require a **combination of parameters** (e.g. composition, temperature, or age).
+
+Below, we illustrate both cases using the models from Zeng et al. (2016, 2019) as an example of single-option models, and Aguichine et al. (2021) as an example of multi-parameter models. For all other models, detailed tables listing the available options, allowed values, and descriptions can be accessed through the corresponding hyperlinks.
 
 **[Zeng et al. (2016)](https://ui.adsabs.harvard.edu/abs/2016ApJ...819..127Z/abstract)** and **[Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract)**. Rocky planets, water worlds, and gas dwarfs | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-1-the-simplest-case-contextualizing-a-new-planetary-system)
 
