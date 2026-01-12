@@ -16,6 +16,8 @@ If your favorite model is not yet implemented, if you encounter any usage issues
 
 <br>
 
+<br>
+
 For **interactive mass–radius diagrams with sliders**, check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS).
 
 ## Installation & Requirements
