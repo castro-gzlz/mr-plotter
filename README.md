@@ -173,7 +173,7 @@ Finally, this example shows how to contextualize an individual planet (in this c
 | color_coding       | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>**1,2**</sup> | Color coding of the plot             |
 
 **<sup>1</sup>** <sub>The full list of parameters that can be used to color *mr-plots* can be found [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/color_codes.md).</sub><br />
-**<sup>2</sup>** <sub>If a non-numerical color code is selected (e.g. `disc_year`, `disc_facility`), the groups to display and their associated colors must be defined (see how [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/non_numerical_config.md)).</sub>
+**<sup>2</sup>** <sub>For non-numerical color codes (e.g. `disc_year`, `disc_facility`), the groups to display and their associated colors must be defined (see how [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/non_numerical_config.md)).</sub>
 
 The package can access catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). Although we try to keep these catalogs up to date, we recommend downloading the most recent versions directly from the original sources:
 
