@@ -100,16 +100,21 @@ These models provide grids of radii as functions of **planet mass, composition, 
 
 As an illustrative case, the planet TOI-270 d has measured properties (mass, radius, equilibrium temperature, but unknown age) that are compatible with a **50% steam envelope**, a **0.5% H₂-He envelope at 1×Solar metallicity**, or any intermediate configuration. Its transmission spectrum was recently obtained with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), revealing a **high-metallicity atmosphere (~50%)**.
 
-### Example 4: Two-column plots, isodensity curves and more interior models!
+### Example 4: Two-column plots, isodensity curves, and additional interior models
 
-*mr-plotter* can also produce **paper-ready two-column plots**. In this example, we contextualize the dense super-Earth K2-229 b ([Santerne et al. 2018](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract)) by including the maximum mantle collisional stripping model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract), the BICEPS model ([Haldemann et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract)) for different pure-iron compositions (C0 and C1 compositions), and some isodensity curves. We also show how to implement the pioneer M-R relations for pure-rock and pure-water compositions from [Seager et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). The procedure to include any other model from the literature is very similar to that shown in this and previous examples. In Section [[MODELS]](#models--include-theoretical-models) you can find the complete set of models implemented in *mr-plotter*.
+*mr-plotter* can also generate **two-column figures**. In this example, we contextualize the dense super-Earth K2-229 b by including several interior structure models and reference curves.
 
-```
+Specifically, we show:
+- the **maximum mantle collisional stripping** model from [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract)
+- the **BICEPS** model from [Haldemann et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract) for different pure-iron compositions (C0 and C1)
+- the pioneering mass–radius relations for **pure-rock** and **pure-water** compositions from [Seager et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract).
+- a set of **isodensity curves**
+
+```bash
 python mr-plotter.py example4.ini
 ```
 
 <img width="4968" height="2293" alt="example4" src="https://github.com/user-attachments/assets/02123950-a6df-41c3-90ea-14d39028272a" />
-
 
 
 ### Example 5: The *PlanetS catalog*, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
