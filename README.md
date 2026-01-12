@@ -261,6 +261,10 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 Mister plotter has been developed by [Amadeo Castro-González](https://github.com/castro-gzlz) with contributions from [Léna Parc](https://github.com/ParcLena), [Artem Aguichine](https://github.com/an0wen), [Jorge Lillo-Box](https://github.com/jlillo), and [Katharine Hesse](https://github.com/katharinehesse). Check out the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md) with the main updates!
 
+## Contributors and change log
+
+*mr-plotter* has been developed by [Amadeo Castro-González](https://github.com/castro-gzlz), with contributions from [Artem Aguichine](https://github.com/an0wen), [Katharine Hesse](https://github.com/katharinehesse), [Jorge Lillo-Box](https://github.com/jlillo), and [Léna Parc](https://github.com/ParcLena). A summary of the main updates can be found in the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md).
+
 ## Credits
 
 If you use *mr-plotter*, please give credit to the [work](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract) where we present it: 
