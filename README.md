@@ -163,26 +163,28 @@ Finally, this example shows how to contextualize an individual planet (in this c
 
 ### Mandatory parameters
 
-#### [CATALOG_DATA] | Include data from the  *NASA Exoplanet Archive*, *Exoplanet.eu*, or *PlanetS* catalogs. 
+#### [CATALOG_DATA] | Include data from the *NASA Exoplanet Archive*, *Exoplanet.eu*, or *PlanetS* catalogs
 
+| Parameter          | Possible values                                   | Description                          |
+|--------------------|---------------------------------------------------|--------------------------------------|
+| catalog            | NEA, Exoplanet.eu, or PlanetS                     | Exoplanet catalog to visualize       |
+| precision_mass     | From 0 to 100 (%)                                 | Minimum precision in mass            |
+| precision_radius   | From 0 to 100 (%)                                 | Minimum precision in radius          |
+| color_coding       | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>**1,2**</sup> | Color coding of the plot             |
 
-| Parameter  | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| catalog | NEA, Exoplanet.eu, or PlanetS | Exoplanet catalog to visualize |
-| precision_mass | From 0 to 100 (%) | Minimum precision in mass |
-| precision_radius | From 0 to 100 (%) | Minimum precision in radius |
-| color_coding | none, st_met, pl_insol, st_teff, sy_kmag, etc<sup>**1,2**</sup> | Color coding of the plot |
+**<sup>1</sup>** <sub>The full list of parameters that can be used to color *mr-plots* can be found [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/color_codes.md).</sub><br />
+**<sup>2</sup>** <sub>If a non-numerical color code is selected (e.g. `disc_year`, `disc_facility`), the groups to display and their associated colors must be defined (see how [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/non_numerical_config.md)).</sub>
 
-**<sup>1</sup>** <sub> The full list of parameters that you can use to color your *mr-plots* can be found [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/color_codes.md). <br /> 
-**<sup>2</sup>** If a non-numerical color code is chosen (e.g. disc_year, disc_facility, etc), the grups to display and their colors have to be defined (see how [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/non_numerical_config.md)).  </sub>
+The package can access catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). Although we try to keep these catalogs up to date, we recommend downloading the most recent versions directly from the original sources:
 
-The package can access the catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). We try to maintain the catalogs updated, but we recommend downloading the most recent ones from: <br />
+- [NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (**.csv** format)  
+- [Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (**.csv** format)  
+- [PlanetS catalog](https://dace.unige.ch/exoplanets/) (**VOTable** format)
 
-[NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (in **.csv** format)  <br /> 
-[Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (in **.csv** format)  <br />
-[PlanetS catalog](https://dace.unige.ch/exoplanets/) (in **VOTable** format) <br />
+NEA data can also be accessed via the **TAP protocol** ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/TAP_NEA.md)). 
 
-The NEA data can be also accessed through a **TAP protocol** ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/TAP_NEA.md)). We note that when selecting the NEA option, the [Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catlog will be considered by default. However, it is also possible to use the [Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/composite_NEA_data.md)). 
+**Note:** When selecting the NEA option, the [Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catalog is used by default. Alternatively, the  
+[Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog can also be selected ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/composite_NEA_data.md)).
 
 ### Optional parameters 
 
