@@ -77,7 +77,7 @@ python mr-plotter.py example2_insol.ini
 
 ![example2_joint](https://github.com/user-attachments/assets/a2e09bee-5949-421b-bae0-79bc7ebbbf77)
 
-Wait! do you see what I’m seeing? **Low-density super-Earths appear to be hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result, see Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract).
+Wait! do you see what I’m seeing? **Low-density super-Earths appear to be hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result, see Sect. 5.3 of [this work](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract).
 
 ### Example 3: Evolutionary models (with interpolators!) of steam worlds and gas dwarfs
 
