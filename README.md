@@ -264,8 +264,6 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 If you use *mr-plotter* in your work, please cite the original publication: [Castro-González et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract).
 
-*mr-plotter* is presented in [Castro-González et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract), which should be cited in any scientific work making use of this code.
-
 ```bibtex
 @ARTICLE{2023A&A...675A..52C,
        author = {{Castro-Gonz{\'a}lez}, A. and {Demangeon}, O.~D.~S. and {Lillo-Box}, J. and {Lovis}, C. and {Lavie}, B. and {Adibekyan}, V. and {Acu{\~n}a}, L. and {Deleuil}, M. and {Aguichine}, A. and {Zapatero Osorio}, M.~R. and {Tabernero}, H.~M. and {Davoult}, J. and {Alibert}, Y. and {Santos}, N. and {Sousa}, S.~G. and {Antoniadis-Karnavas}, A. and {Borsa}, F. and {Winn}, J.~N. and {Allende Prieto}, C. and {Figueira}, P. and {Jenkins}, J.~M. and {Sozzetti}, A. and {Damasso}, M. and {Silva}, A.~M. and {Astudillo-Defru}, N. and {Barros}, S.~C.~C. and {Bonfils}, X. and {Cristiani}, S. and {Di Marcantonio}, P. and {Gonz{\'a}lez Hern{\'a}ndez}, J.~I. and {Curto}, G. Lo and {Martins}, C.~J.~A.~P. and {Nunes}, N.~J. and {Palle}, E. and {Pepe}, F. and {Seager}, S. and {Su{\'a}rez Mascare{\~n}o}, A.},
