@@ -255,7 +255,7 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
-*mr-plotter* is designed with a graphical setup that produces **paper-quality figures out of the box**. However, you may want to customize specific aspects of the plot—such as **X- and Y-axis limits**, **marker sizes**, **color maps**, or other stylistic options. All these customizations can be handled through the [OPTIONAL_CONFIG] section. A complete list of available parameters is provided in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/optional_config.md), many of which are illustrated in the [**Usage examples**](#usage-examples) section.
+*mr-plotter* is designed with a graphical setup that produces **paper-quality figures out of the box**. However, you may want to customize specific aspects of the plot, such as **X- and Y-axis limits**, **marker sizes**, **color maps**, or other stylistic options. All these customizations can be handled through [OPTIONAL_CONFIG]. A complete list of available parameters is provided in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/optional_config.md), many of which are illustrated in the [**Usage examples**](#usage-examples) section.
 
 ## Contributors and Change log
 
