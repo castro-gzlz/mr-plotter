@@ -288,3 +288,40 @@ and add the following sentence within the acknowledgements section:
 > This work made use of \texttt{mr-plotter} (available in \url{https://github.com/castro-gzlz/mr-plotter})
 
 Please also give credit to the catalog(s) used: Nasa Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)), Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)), and PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)), as well as to the interior models: The ADS site of each work can be accessed by clicking on the hyperlinks of Section [[MODELS]](#models--include-theoretical-models).
+
+
+## Credits
+
+If you use *mr-plotter* in your work, please cite the paper in which the tool is presented:
+
+[Castro-González et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract)
+
+```bibtex
+@ARTICLE{2023A&A...675A..52C,
+       author = {{Castro-Gonz{\'a}lez}, A. and {Demangeon}, O.~D.~S. and {Lillo-Box}, J. and {Lovis}, C. and {Lavie}, B. and {Adibekyan}, V. and {Acu{\~n}a}, L. and {Deleuil}, M. and {Aguichine}, A. and {Zapatero Osorio}, M.~R. and {Tabernero}, H.~M. and {Davoult}, J. and {Alibert}, Y. and {Santos}, N. and {Sousa}, S.~G. and {Antoniadis-Karnavas}, A. and {Borsa}, F. and {Winn}, J.~N. and {Allende Prieto}, C. and {Figueira}, P. and {Jenkins}, J.~M. and {Sozzetti}, A. and {Damasso}, M. and {Silva}, A.~M. and {Astudillo-Defru}, N. and {Barros}, S.~C.~C. and {Bonfils}, X. and {Cristiani}, S. and {Di Marcantonio}, P. and {Gonz{\'a}lez Hern{\'a}ndez}, J.~I. and {Curto}, G. Lo and {Martins}, C.~J.~A.~P. and {Nunes}, N.~J. and {Palle}, E. and {Pepe}, F. and {Seager}, S. and {Su{\'a}rez Mascare{\~n}o}, A.},
+        title = "{An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)}",
+      journal = {\aap},
+         year = 2023,
+        month = jul,
+       volume = {675},
+          eid = {A52},
+        pages = {A52},
+          doi = {10.1051/0004-6361/202346550},
+archivePrefix = {arXiv},
+       eprint = {2305.04922},
+ primaryClass = {astro-ph.EP}
+}
+```
+
+Please also include the following sentence in the acknowledgements section of your paper:
+
+> This work made use of \texttt{mr-plotter} (available at \url{https://github.com/castro-gzlz/mr-plotter}).
+
+In addition, please give appropriate credit to the exoplanet catalog(s) used:
+- NASA Exoplanet Archive ([Akeson et al. 2013](https://ui.adsabs.harvard.edu/abs/2013PASP..125..989A/abstract)),
+- Exoplanet.eu ([Schneider et al. 2011](https://ui.adsabs.harvard.edu/abs/2011A%26A...532A..79S/abstract)),
+- PlanetS ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)).
+
+Finally, please cite the relevant interior and evolutionary models used in your analysis. Direct links to the ADS entries of all implemented models are provided in Section [[MODELS]](#models--include-theoretical-models).
+
+
