@@ -163,11 +163,19 @@ def aguich2025_MR():
     R_aguich2025, M_aguich2025 = [], []
     for i in range(len(WMF_aguich2025)):
 
-        idxs_aguich2025 = np.where((df_aguichine_2025['ST'] == str(spt_aguich2025[i])) & (df_aguichine_2025['WMF'] == WMF_aguich2025[i]) &                                    (df_aguichine_2025['T_eq'] == Teq_aguich2025[i]) &                                    (df_aguichine_2025['Age'] == age_aguich2025[i]))[0] #@|only pick the errcode = 0 values
+        m_aguich2025 = np.logspace(np.log10(0.2),np.log10(20),20)
 
-        r_aguich2025 = (df_aguichine_2025['R_1mibar'].values)[idxs_aguich2025]
-        m_aguich2025 = (df_aguichine_2025['M_p'].values)[idxs_aguich2025]
+        if spt_aguich2025[i] == 'M': spt_aguich2025_int = 0
+        if spt_aguich2025[i] == 'G': spt_aguich2025_int = 1
 
+        input_aguich2025 = np.stack((np.full(len(m_aguich2025),0), #Radius at 20 mbar
+                       np.full(len(m_aguich2025),spt_aguich2025_int),
+                       np.full(len(m_aguich2025),WMF_aguich2025[i]),
+                       np.full(len(m_aguich2025),Teq_aguich2025[i]),
+                       m_aguich2025,
+                       np.full(len(m_aguich2025),age_aguich2025[i])), axis=-1)
+
+        r_aguich2025 = interp_aguich2025(input_aguich2025)
 
         R_aguich2025.append(r_aguich2025)
         M_aguich2025.append(m_aguich2025)
@@ -216,6 +224,40 @@ def lopez_fortney2014_MR():
         R_lf2014.append(r_lf2014)
         M_lf2014.append(m_lf2014)
 
+# In[ ]:
+
+
+def tang2025_MR():
+    
+    global R_tang2025, M_tang2025
+
+    R_tang2025, M_tang2025 = [], []
+    for i in range(len(fenv_tang2025)):
+
+        m_tang2025 = np.array([1.0,2,3,4,5,6,8,10,13,16,20])
+
+        logage_tang2025 = np.log10(age_tang2025[i])
+        input_tang2025 = np.stack((np.full(len(m_tang2025),1), #Radius at 20 mbar
+                       np.full(len(m_tang2025),met_tang2025[i]),
+                       np.full(len(m_tang2025),logage_tang2025),
+                       np.full(len(m_tang2025),Teq_tang2025[i]),
+                       m_tang2025,
+                       np.full(len(m_tang2025),fenv_tang2025[i])), axis=-1)
+
+        r_tang2025 = interp_tang2025(input_tang2025)
+
+        if boiloff_tang2025:
+            input_tang_2025_boiloff = np.stack((np.full(len(m_tang2025),met_tang2025[i]),
+                                                np.full(len(m_tang2025),Teq_tang2025[i]),
+                                                m_tang2025), axis=-1)
+            boiloff_max_fenv_tang2025 = interp_t25_boiloff_max_fenv(input_tang_2025_boiloff)
+            is_boiled_off_tang2025 = np.full(len(m_tang2025),fenv_tang2025[i]) > boiloff_max_fenv_tang2025
+
+            m_tang2025[is_boiled_off_tang2025] = np.nan
+            r_tang2025[is_boiled_off_tang2025] = np.nan
+
+        R_tang2025.append(r_tang2025)
+        M_tang2025.append(m_tang2025)
 
 # In[ ]:
 
@@ -697,13 +739,50 @@ except:
 
 
 #@|#######--aguichine et al. 2025 config--##########
+def make_interpolator_aguich2025():
+
+    swe_dim_wmf = np.array([0.1,1,10,20,30,40,50,60,70,80,90,100])/100
+    swe_dim_teq = np.array([400, 500, 700, 900, 1100, 1300, 1500])
+    swe_dim_mass = np.array([0.2       ,  0.254855  ,  0.32475535,  0.41382762,  0.52733018,
+            0.67196366,  0.85626648,  1.09111896,  1.39038559,  1.77173358,
+            2.25767578,  2.87689978,  3.66596142,  4.67144294,  5.95270288,
+            7.58538038,  9.66586048, 12.31696422, 15.69519941, 20.        ])
+    swe_dim_age = np.array([0.001,0.0015,0.002,0.003,0.005,0.01,
+                            0.02,0.03,0.05,
+                            0.1,0.2,0.5,
+                            1.0,2.0,5.0,
+                            10,20])
+    swe_dim_star = np.array([0,1])
+    swe_dim_top = np.array([0,1])
+
+    listrp1 = df_aguichine_2025['R_20mbar'].to_numpy(copy=True)
+    listrp2 = df_aguichine_2025['R_1mibar'].to_numpy(copy=True)
+
+    radius_data_aguich2025 = np.array((listrp1,listrp2))
+    radius_data_aguich2025 = np.delete(radius_data_aguich2025, np.arange(17, radius_data_aguich2025.size, 18))
+
+    swe_data_radius = np.reshape(radius_data_aguich2025,(2,2,12,7,20,17))
+    mask = np.isnan(swe_data_radius)
+    swe_data_radius[mask] = -1
+
+    interp_aguich2025 = interpolate.RegularGridInterpolator((swe_dim_top,
+                                                        swe_dim_star,
+                                                        swe_dim_wmf,
+                                                        swe_dim_teq,
+                                                        swe_dim_mass,
+                                                        swe_dim_age), 
+        swe_data_radius, method='slinear', bounds_error=False, fill_value=None)
+
+    return interp_aguich2025
+
 try:
     spt_aguich2025 = [x.strip() for x in MODELS['spt_aguich2025'].split(',')]
-    WMF_aguich2025 = [float(x.strip()) for x in MODELS['WMF_aguich2025'].split(',')]
+    WMF_aguich2025 = [float(x.strip())/100 for x in MODELS['WMF_aguich2025'].split(',')]
     Teq_aguich2025 = [float(x.strip()) for x in MODELS['Teq_aguich2025'].split(',')]
     age_aguich2025 = [float(x.strip()) for x in MODELS['age_aguich2025'].split(',')]
     colors_aguich2025 = [x.strip() for x in MODELS['colors_aguich2025'].split(',')]
-    df_aguichine_2025 = pd.read_csv('theoretical_models/aguichine_2025.dat', delim_whitespace=True, header=0)
+    df_aguichine_2025 = pd.read_csv('theoretical_models/aguichine_2025.dat', sep=r'\s+', header=0)
+    interp_aguich2025 = make_interpolator_aguich2025()
     aguich2025 = True
     aguich2025_MR()
 except:
@@ -740,6 +819,66 @@ try:
 except:
     lopez_fortney2014 = False
 
+# In[ ]:
+
+
+#@|#######--tang et al. 2025 config--##########
+def make_interpolator_tang2025():
+
+    dim_met_t25 = np.array([1.0,50.0])
+    dim_logage_t25 = np.log10(np.array([0.01,0.1,1.0,10.0]))
+    dim_finc_t25= np.array([1.0,10.0,100.0,1000.0])
+    dim_teq_t25 = 278.0*(dim_finc_t25)**(0.25)
+    dim_mass_t25= np.array([1.0,2,3,4,5,6,8,10,13,16,20])
+    dim_fenv_t25= np.array([0.10,0.20,0.50,1,2,5,10,20])
+    dim_top_t25 = np.array([0,1,2])
+
+    t25_data_radius = np.zeros((3,2,4,4,11,8))
+
+    t25_data_radius[0,:,:,:,:,:] = df_tang_2025['R_RCB[Re]'].to_numpy(copy=True).reshape(2,4,4,11,8)
+    t25_data_radius[1,:,:,:,:,:] = df_tang_2025['R_20mbar[Re]'].to_numpy(copy=True).reshape(2,4,4,11,8)
+    t25_data_radius[2,:,:,:,:,:] = df_tang_2025['R_1nbar[Re]'].to_numpy(copy=True).reshape(2,4,4,11,8)
+
+    interp_tang2025 = interpolate.RegularGridInterpolator((dim_top_t25,
+                                                        dim_met_t25, 
+                                                        dim_logage_t25, 
+                                                        dim_teq_t25, 
+                                                        dim_mass_t25, 
+                                                        dim_fenv_t25), 
+        t25_data_radius, method='linear', bounds_error=False, fill_value=None)
+
+    t25_boiloff_fenv = np.zeros((2,8,11))
+    t25_boiloff_radius = np.zeros((3,2,8,11))
+    data3 = np.genfromtxt("theoretical_models/tang_2025_boiloff.csv",delimiter=",",filling_values=20.0,comments='#',skip_header=0)
+    data3 = data3[:,:12]
+    t25_boiloff_fenv = data3[:,1:].reshape(2,8,11)
+    t25_boiloff_fenv = np.clip(t25_boiloff_fenv,a_min=0.0,a_max=20)
+
+    dim_finc_t25_boiloff = np.array([1.0,3.0,10.0,30.0,100.0,300.0,1000.0,3000.0])
+    dim_teq_t25_boiloff = 278.0*(dim_finc_t25_boiloff)**(0.25)
+
+    interp_t25_boiloff_max_fenv = interpolate.RegularGridInterpolator((dim_met_t25, 
+                                                                        dim_teq_t25_boiloff, 
+                                                                        dim_mass_t25), 
+        t25_boiloff_fenv, method='linear', bounds_error=False, fill_value=np.inf)
+
+
+    return interp_tang2025,interp_t25_boiloff_max_fenv
+
+try:
+    met_tang2025 = [float(x.strip()) for x in MODELS['met_tang2025'].split(',')]
+    fenv_tang2025 = [float(x.strip()) for x in MODELS['fenv_tang2025'].split(',')]
+    Teq_tang2025 = [float(x.strip()) for x in MODELS['Teq_tang2025'].split(',')]
+    age_tang2025 = [float(x.strip()) for x in MODELS['age_tang2025'].split(',')]
+    colors_tang2025 = [x.strip() for x in MODELS['colors_tang2025'].split(',')]
+    boiloff_tang2025 = config_object.getboolean("MODELS", "boiloff_tang2025")
+    df_tang_2025 = pd.read_csv('theoretical_models/tang_2025.dat', sep=r'\s+', header=0)
+    interp_tang2025,interp_t25_boiloff_max_fenv = make_interpolator_tang2025()
+    tang2025 = True
+    tang2025_MR()
+except:
+    print("no model for tang 2025")
+    tang2025 = False
 
 # In[ ]:
 
@@ -1381,7 +1520,10 @@ if aguich2025:
 
     for i in range(len(WMF_aguich2025)):
 
-        plt.plot(M_aguich2025[i], R_aguich2025[i], lw = lw_models*1., linestyle = 'dashed', zorder = 0,                 label = "Earth + " + str(int(WMF_aguich2025[i]*100))+                 r'% WMF ('+str(int(Teq_aguich2025[i]))+'K)', c = colors_aguich2025[i])
+        plt.plot(M_aguich2025[i], R_aguich2025[i], lw = lw_models*1., linestyle = 'dashed', zorder = 0,
+                label = f'Earth + {WMF_aguich2025[i]*100:g}% WMF ' +\
+                        f'({int(Teq_aguich2025[i]):.0f}K & {age_aguich2025[i]:g} Gyr)',
+                c = colors_aguich2025[i])
 
 #@|Luo et al. (2024)
 if luo2024:
@@ -1398,7 +1540,16 @@ if lopez_fortney2014:
         
         plt.plot(M_lf2014[i], R_lf2014[i], lw = lw_models*1.2, linestyle = 'dotted', zorder = -1000,                 label = H_He[i]+'% H/He, '+age_lf2014[i]+','+f' {Seff_lf2014[i]}'+r'$\rm S_{\oplus}$',                 c = colors_lf2014[i])
         
-        
+#@|Tang et al. (2025)
+if tang2025:
+
+    for i in range(len(fenv_tang2025)):
+
+        plt.plot(M_tang2025[i], R_tang2025[i], lw = lw_models*1., linestyle = 'dotted', zorder = 0,
+                label = f'Earth + {fenv_tang2025[i]:g}% {met_tang2025[i]:.0f}×Solar ' +\
+                        f'({int(Teq_tang2025[i]):.0f}K & {age_tang2025[i]:g} Gyr)',
+                c = colors_tang2025[i])
+
 #@|Haldemannet al. (2014) 
 if haldemann2024:
     
