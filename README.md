@@ -105,10 +105,10 @@ As an illustrative case, the planet TOI-270 d has measured properties (mass, rad
 *mr-plotter* can also generate **two-column figures**. In this example, we contextualize the dense super-Earth K2-229 b by including several interior structure models and reference curves.
 
 Specifically, we show:
+- a set of **isodensity curves**
 - the **maximum mantle collisional stripping** model from [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract)
 - the **BICEPS** model from [Haldemann et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract) for different pure-iron compositions (C0 and C1)
 - the pioneering mass–radius relations for **pure-rock** and **pure-water** compositions from [Seager et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract)
-- a set of **isodensity curves**
 
 ```bash
 python mr-plotter.py example4.ini
