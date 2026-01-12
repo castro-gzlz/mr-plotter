@@ -47,7 +47,7 @@ If so, don’t worry about the large number of available parameters. **In most c
 ## Usage examples
 
 ### Example 1: The simplest case. Contextualizing a new planetary system
-In this example, we contextualize a newly discovered planet (TOI-244 b) using data from the [NEA catalog](https://exoplanetarchive.ipac.caltech.edu/). We also include several theoretical mass–radius models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
+In this example, we contextualize the planet TOI-244 b using data from the [NEA catalog](https://exoplanetarchive.ipac.caltech.edu/). We also include several theoretical mass–radius models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
 
 ```bash
 python mr-plotter.py example1_toi244.ini
