@@ -143,7 +143,7 @@ Historically, interior models focused on end-member compositions such as Earth-l
 python mr-plotter.py example6_evolmodels.ini
 ```
 
-![example5](https://github.com/user-attachments/assets/85a72cd7-36e5-448e-8cf0-4510f4d6d0ca)
+<img width="2812" height="2441" alt="example6_evolmodels" src="https://github.com/user-attachments/assets/77a4ae03-2289-4a40-87cd-c179542bc5bf" />
 
 
 ## Configuration file
