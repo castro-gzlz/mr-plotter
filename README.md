@@ -135,7 +135,7 @@ python mr-plotter.py example5.ini
 ![example5](https://github.com/user-attachments/assets/85a72cd7-36e5-448e-8cf0-4510f4d6d0ca)
 
 
-### Example 6: More models! With interpolators!! Evolutionary models of steam worlds and gas dwarfs
+### Example 6: Evolutionary models (with interpolators!) of steam worlds and gas dwarfs
 
 Historically, interior models focused on end-member compositions such as Earth-like, 50% water, etc. However, it is now known that the planet radius is also sensitive to secondary effects caused by equilbrium temperature, age, spectral type of the star, etc. In addition to this, in the last few years it has became more common to use interior structure models to precisely infer the range of planet bulk compositions, in part thanks to tools such as [smint](https://github.com/cpiaulet/smint). This led to the publication of planet radii in the form of large grids covering the whole parameter space, and intermediate radii were interpolated. In this example, we show two such models: the interior model adapted to steam worlds from [Aguichine et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract), and the interior model adapted to gas dwarfs from [Tang et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract).
 
