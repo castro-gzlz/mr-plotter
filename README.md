@@ -154,6 +154,29 @@ This plot evidences the invaluable legacy that *TESS* is providing thanks to its
 In this example, we can also see how to contextualize a planet (in this case L 98-59 d; [Demangeon et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..41D/abstract)) with a new color not included in the color map (left panel), and a color following the non-numerical color code (right panel; L 98-59 d was discovered by TESS).
 
 
+### Example 6: Non-numerical color coding and dark plots. The TESS legacy
+
+Some parameters, such as **discovery year**, **discovery facility**, or **discovery technique**, are naturally **categorical rather than numerical**. Since v1+, *mr-plotter* allows these quantities to be used for **group-based color coding**. In this example, we first generate a mass–radius diagram of small planets, **color-coded by discovery year**:
+
+```bash
+python mr-plotter.py example6_year.ini
+```
+
+This representation highlights the rapid pace of recent exoplanet discoveries. We then produce the same diagram by distinguishing between the three main space-based planet-hunting missions: **Kepler**, **K2**, and **TESS**:
+
+```bash
+python mr-plotter.py example6_facility.ini
+```
+
+This visualization clearly illustrates the remarkable legacy of **TESS**, driven by its continuous monitoring of the bright sky. It also demonstrates how to generate **dark, poster-ready and presentation-ready** mass–radius diagrams suitable for conferences and outreach.
+
+<img width="5596" height="2414" alt="example6_joint" src="https://github.com/user-attachments/assets/6286dacf-8acb-4160-ac61-868353feff0e" />
+
+Finally, this example shows how to contextualize an individual planet (in this case **L 98-59 d**) using:
+
+- a **custom color not present in the original color map** (left panel), and
+- a color assigned according to a **non-numerical category** (right panel; L 98-59 d was discovered by **TESS**)
+
 ## Configuration file
 
 ### Mandatory parameters
