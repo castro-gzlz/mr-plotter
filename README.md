@@ -256,10 +256,6 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 *mr-plotter* is designed with a graphical setup that produces **paper-quality figures out of the box**. However, you may want to customize specific aspects of the plot, such as **X- and Y-axis limits**, **marker sizes**, **color maps**, or other stylistic options. All these customizations can be handled through [OPTIONAL_CONFIG]. A complete list of available parameters is provided in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/optional_config.md), many of which are illustrated in the [**Usage examples**](#usage-examples) section.
 
-## Contributors and Change log
-
-Mister plotter has been developed by [Amadeo Castro-González](https://github.com/castro-gzlz) with contributions from [Léna Parc](https://github.com/ParcLena), [Artem Aguichine](https://github.com/an0wen), [Jorge Lillo-Box](https://github.com/jlillo), and [Katharine Hesse](https://github.com/katharinehesse). Check out the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md) with the main updates!
-
 ## Contributors and change log
 
 *mr-plotter* has been developed by [Amadeo Castro-González](https://github.com/castro-gzlz), with contributions from [Artem Aguichine](https://github.com/an0wen), [Katharine Hesse](https://github.com/katharinehesse), [Jorge Lillo-Box](https://github.com/jlillo), and [Léna Parc](https://github.com/ParcLena). A summary of the main updates can be found in the [changelog](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/changelog.md).
