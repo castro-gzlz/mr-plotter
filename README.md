@@ -234,16 +234,6 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 [**Aguichine et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract). Update of the [Aguichine et al. (2021)] model. This models considers the evolution of steam worlds, as the planet looses its internal heat through the atmosphere. The rocky part is now fixed to be Earth-like. This model uses an interpolation scheme, so any parameter value can be provided, and the model can be extrapolated (not recommended). | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-6-more-models-with interpolators-evolutionary-models-of-steam-worlds-and-gas-dwarfs) 
 
-| Parameter | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| spt_aguich2025 | M or G<sup>**1**</sup> | Spectral type of the host star |
-| WMF_aguich2025 | 0.1, 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 (%) | Water mass fraction of the hydrosphere |
-| Teq_aguich2025 | 400, 500, 700, 900, 1100, 1300, 1500 (K) | Equilibrium temperature of your planet |
-| age_aguich2025 | 0.001, 0.0015, 0.002, 0.003, 0.005, 0.01, 0.02, 0.03, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0, 5.0, 10, 20 (Gyr) | Age of the host star |
-| colors_aguich2025 | Any color | Colors of each model |
-
-<sup>**1**</sup> <sub> Interpolation between host star spectral type is not possible </sub>
-
 [**Seager et al. (2007)**](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). 100% iron, 100% silicates, and 100% condensed water models | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/seager_2007.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-5-two-column-plots-isodensity-curves-and-more-interior-models) <br />
 
 [**Marcus et al. (2010)**](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract). Maximum collisional stripping of planetary mantles | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/marcus_2010.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-5-two-column-plots-isodensity-curves-and-more-interior-models) <br />
