@@ -229,7 +229,7 @@ In this section, we list all theoretical and empirical models implemented in *mr
 | ------------- | ------------- | ------------- |
 | x_core_aguich2021 | From 0.0 to 0.9 in steps of 0.1 | Core mass fraction |
 | x_H2O_aguich2021 | From 0.1 to 1.0 in steps of 0.1 | Water mass fraction of the hydrosphere |
-| Tirr_aguich2021 | From 400 (K) to 1300 (K) in steps of 100 (K) | Equilibrium temperature of your planet |
+| Tirr_aguich2021 | From 400 to 1300 K in steps of 100 K | Equilibrium temperature of your planet |
 | colors_aguich2021 | Any color | Colors of each model |
 
 [**Seager et al. (2007)**](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). 100% iron, 100% silicates, and 100% condensed water models | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/seager_2007.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-5-two-column-plots-isodensity-curves-and-more-interior-models) <br />
