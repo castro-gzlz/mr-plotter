@@ -186,25 +186,30 @@ NEA data can also be accessed via the **TAP protocol** ([see how](https://github
 **Note:** When selecting the NEA option, the [Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS&constraint=default_flag%20%3E0) catalog is used by default. Alternatively, the  
 [Planetary Systems Composite Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars) catalog can also be selected ([see how](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/composite_NEA_data.md)).
 
-### Optional parameters 
 
-#### [MY_DATA] | Include data of your planets
+### Optional parameters
 
-| Option | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| m_p1  | Any ($\rm M_{\oplus}$) | Mass of your planet 1 |
-| m_p1_err_up | Any ($\rm M_{\oplus}$) | Upper uncertainty on the mass of your planet 1 |
-| m_p1_err_down | Any ($\rm M_{\oplus}$) | Lower uncertainty on the mass of your planet 1 |
-| r_p1  | Any ($\rm R_{\oplus}$) | Radius of your planet 1 |
-| r_p1_err_up | Any ($\rm R_{\oplus}$) | Upper uncertainty on the radius of your planet 1 |
-| r_p1_err_down | Any ($\rm R_{\oplus}$) | Lower uncertainty on the radius of your planet 1 |
-| c_p1<sup>**1**</sup>   | Any color/value| Color of your planet 1 |
-| name_p1| Any name | Name of your planet 1 (e.g. TOI-244 b) |
-| dis_x_p1<sup>**2**</sup>  | Any ($\rm M_{\oplus}$)  | Location of a text box in terms of distance from the planet (*X*-axis) |
-| dis_y_p1<sup>**2**</sup> | Any ($\rm R_{\oplus}$)  | Location of a text box in terms of distance from the planet (*Y*-axis) |
-|....|....|....|
+#### [MY_DATA] | Include data for custom planets
 
-**<sup>1</sup>** <sub> If color_coding = **none**, type a color (e.g. **blue**). If color_coding = **st_met**, **pl_insol**,...etc, type the corresponding **value** for your planet so it can be **color-coded** as the rest of the catalog planets. <br /> **<sup>2</sup>** If not defined, the name of the planet(s) will be included in the legend of the plot. </sub>
+This section allows you to manually include one or more planets that are **not present in the selected catalog**, or to highlight specific objects of interest.
+
+| Parameter        | Possible values                  | Description |
+|------------------|----------------------------------|-------------|
+| m_p1             | Any ($\rm M_{\oplus}$)           | Mass of planet 1 |
+| m_p1_err_up      | Any ($\rm M_{\oplus}$)           | Upper uncertainty on the mass of planet 1 |
+| m_p1_err_down    | Any ($\rm M_{\oplus}$)           | Lower uncertainty on the mass of planet 1 |
+| r_p1             | Any ($\rm R_{\oplus}$)           | Radius of planet 1 |
+| r_p1_err_up      | Any ($\rm R_{\oplus}$)           | Upper uncertainty on the radius of planet 1 |
+| r_p1_err_down    | Any ($\rm R_{\oplus}$)           | Lower uncertainty on the radius of planet 1 |
+| c_p1<sup>1</sup> | Any color or value               | Color or value associated with planet 1 |
+| name_p1          | Any string                       | Name of planet 1 (e.g. *TOI-244 b*) |
+| dis_x_p1<sup>2</sup> | Any ($\rm M_{\oplus}$)     | Horizontal offset of the planet label (*X*-axis) |
+| dis_y_p1<sup>2</sup> | Any ($\rm R_{\oplus}$)     | Vertical offset of the planet label (*Y*-axis) |
+| ...              | ...                              | Additional planets can be added following the same naming pattern |
+
+**<sup>1</sup>** <sub> If color_coding = none, provide a valid color name (e.g. blue). If color_coding = st_met, pl_insol, etc., provide the corresponding **numerical value** for the planet so it can be color-coded consistently with catalog planets. </sub> **<sup>2</sup>** <sub> If not specified, the planet name(s) will be displayed in the legend instead of directly on the plot.
+</sub>
+
 
 #### [MODELS] | Include theoretical models
 
