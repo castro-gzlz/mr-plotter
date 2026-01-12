@@ -238,20 +238,6 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 [**Lopez & Fortney et al. (2014)**](https://ui.adsabs.harvard.edu/abs/2014ApJ...792....1L/abstract). Rocky planets with H<sub>2</sub>/He atmospheres | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/lopez&fortney_2014.md) | [Example]() <br />
 
-[**Tang et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract). Update of the [Lopez & Fortney (2014)] model. This model uses a more detailed mineralogy for the Earth-like core, and improves on many approximations used in the previous version of the model. The study also considered boil-off, which gives an upper limit on how much gas a planet can be. This model uses an interpolation scheme, so any parameter value can be provided, and the model can be extrapolated (not recommended). | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-6-more-models-with interpolators-evolutionary-models-of-steam-worlds-and-gas-dwarfs) 
-
-| Parameter | Possible values | Description |
-| ------------- | ------------- | ------------- |
-| met_tang2025 | 1 or 50 | Metallicity of the atmosphere and envelope |
-| fenv_tang2025 | 0.10, 0.20, 0.50, 1, 2, 5, 10, 20 (%) | Envelope mass fraction |
-| Teq_tang2025 | 278,  494,  879, 1563 (K) | Equilibrium temperature of your planet<sup>**1**</sup> |
-| age_tang2025 | 0.01, 0.1, 1, 10 (Gyr) | Age of the host star |
-| boiloff_tang2025 | True or False<sup>**2**</sup> | If True, removes planet that boiled-off |
-| colors_tang2025 | Any color | Colors of each model |
-
-<sup>**1**</sup> <sub> The equilibrium temperature represents planet incident fluxes of 1, 10, 100 and 1000 times Earth's incident flux. </sub> <br>
-<sup>**2**</sup> <sub> The boil-off parameter does not need to be repeated, only one occurence applies to all models. </sub>
-
 [**Otegi et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract). Empirical mass-radius relationships based on the PlanetS catalog | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/otegi_2020.md) |  [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-the-planets-catalog-empirical-relations-and-color-coding-based-on-homogeneous-transmission-and-emission-spectroscopy-metrics-tsm-and-esm) <br />
 
 [**Turbet et al. (2020)**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). Rocky planets with atmospheres of steam and supercritical water | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/turbet_2020.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-2-colourig-my-worlds-and-including-steam-water-atmospheres) <br />
@@ -261,6 +247,8 @@ In this section, we list all theoretical and empirical models implemented in *mr
 [**Parc et al. (2024)**](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). Revised empirical mass-radius relationships based on the PlanetS catalog | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/parc_2024.md) |  [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-the-planets-catalog-empirical-relations-and-color-coding-based-on-homogeneous-transmission-and-emission-spectroscopy-metrics-tsm-and-esm)  <br />
 
 [**Aguichine et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract). Updated version of the Aguichine et al. (2021) model, describing the **evolution of steam worlds** as planets lose their internal heat through their atmospheres. The rocky interior is fixed to an **Earth-like composition**. This model is provided as a **multidimensional grid with interpolation**, allowing any parameter value within the validity range to be explored (extrapolation is possible but **not recommended**) | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/aguichine_2025.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-evolutionary-models-with-interpolators-of-steam-worlds-and-gas-dwarfs)
+
+[**Tang et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract). Updated version of the Lopez & Fortney (2014) model, featuring a **more detailed mineralogy for the Earth-like core** and improved treatments of several physical approximations used in the original formulation. The model also accounts for **atmospheric boil-off**, which sets an upper limit on the amount of gas a planet can retain. This model is provided as a **multidimensional grid with interpolation**, allowing any parameter value within the validity range to be explored (extrapolation is technically possible but **not recommended**) | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/tang_2025.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-evolutionary-models-with-interpolators-of-steam-worlds-and-gas-dwarfs)
 
 [**Isodensity curves**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/iso_density.md). Mass-radius relations corresponding to a constant density | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/isodensity.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-5-two-column-plots-isodensity-curves-and-more-interior-models)
 
