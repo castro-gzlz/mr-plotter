@@ -153,7 +153,7 @@ python mr-plotter.py example6_facility.ini
 
 This plot evidences the invaluable legacy that *TESS* is providing thanks to its incessant monitoring of the bright sky. This example also shows how to make dark poster-ready and presentation-ready diagrams for conferences!
 
-<img width="2798" height="2414" alt="example6_year" src="https://github.com/user-attachments/assets/385b8893-461e-49f6-85f0-02eb7db97219" />
+<img width="5596" height="2414" alt="example6_joint" src="https://github.com/user-attachments/assets/6286dacf-8acb-4160-ac61-868353feff0e" />
 
 In this example, we can also see how to contextualize a planet (in this case L 98-59 d; [Demangeon et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..41D/abstract)) with a new color not included in the color map (left panel), and a color following the non-numerical color code (right panel; L 98-59 d was discovered by TESS).
 
