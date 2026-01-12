@@ -250,8 +250,7 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 [**Aguichine et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract). Evolutionary models for steam worlds with Earth-like interiors | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/aguichine_2025.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-evolutionary-models-with-interpolators-of-steam-worlds-and-gas-dwarfs)
 
-[**Tang et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract). Updated version of the Lopez & Fortney (2014) model, featuring a **more detailed mineralogy for the Earth-like core** and improved treatments of several physical approximations. The model also accounts for **atmospheric boil-off**, which sets an upper limit on the amount of gas a planet can retain. This model is provided as a **multidimensional grid with interpolation**, allowing any parameter value within the validity range to be explored (extrapolation is technically possible but **not recommended**) | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/tang_2025.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-evolutionary-models-with-interpolators-of-steam-worlds-and-gas-dwarfs) 
-
+[**Tang et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract). Evolutionary models for gas-rich planets with Earth-like cores. | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/tang_2025.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-evolutionary-models-with-interpolators-of-steam-worlds-and-gas-dwarfs)
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
