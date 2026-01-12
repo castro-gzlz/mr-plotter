@@ -7,6 +7,8 @@
        style="margin-right: 20px; margin-bottom: 10px;"
        alt="Example mass-radius diagram">
 
+<br>
+
 **Mister plotter** is a **user-friendly** tool designed to produce **paper-quality mass-radius diagrams**, based on a **broad selection of** [state-of-the-art models](#models--include-theoretical-models) of **planetary interiors and atmospheres**.
 
 It allows you to **contextualize individual planets**, **infer their possible internal structures**, and **explore population-level correlations** through flexible **color-coding** based on planetary properties available in different catalogs.
