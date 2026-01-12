@@ -15,11 +15,13 @@ If your favorite model is not yet implemented, if you encounter any usage issues
 
 ## Installation & Requirements
 
-Just **clone or download** this folder on your computer. All the dependencies are widely used, so you probably already have them installed. However, if this is not the case, you can just enter the folder via the terminal and type
-```
+Simply **clone or download the repository** to your local machine. Most dependencies are widely used in the scientific Python ecosystem, but if any are missing, you can install them by navigating to the project directory and running:
+
+```bash
 pip install -r requirements.txt
 ```
-If you have any problems with the installation, you can drop an issue [here](https://github.com/castro-gzlz/mr-plotter/issues).
+
+If you encounter any installation issues, please open an issue [here](https://github.com/castro-gzlz/mr-plotter/issues).
 
 ## Usage
 
