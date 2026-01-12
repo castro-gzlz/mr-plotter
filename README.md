@@ -41,7 +41,7 @@ Since September 2024 (v1+), *mr-plotter* can also be used from a Jupyter Noteboo
 
 ## Is this your first time using *mr-plotter*?
 
-If so, don’t worry about the large number of available parameters. **In most cases, you will only need a few**. To **get familiar with the main options** and **gain a first hands-on experience** with *mr-plotter*, we encourage you to check the [**Usage examples**](#usage-examples) section, which illustrates the package workflow in **several key scenarios**. All example configuration files can be found in the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
+If so, don’t worry about the large number of available parameters. **In most cases, you will only need a few**. To **get familiar with the main options** and **gain a first hands-on experience** with *mr-plotter*, we encourage you to check the [**Usage examples**](#usage-examples) section, which illustrates the package workflow in **several key scenarios**. All example configuration files can be found in the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy 🙂.
 
 
 ## Usage examples
