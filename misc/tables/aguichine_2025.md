@@ -1,3 +1,8 @@
+This model is an updated version of Aguichine et al. (2021) and describes the **thermal and structural evolution of steam worlds** as planets progressively lose their internal heat through their atmospheres. The rocky interior is fixed to an **Earth-like composition**.
+
+The model is provided as a **multidimensional grid** spanning planetary mass, water mass fraction, equilibrium temperature, host-star properties, and age. An **interpolation scheme** allows any parameter value within the model validity range to be explored. While extrapolation is technically possible, it is **not recommended**.
+
+
 | Parameter | Possible values | Description |
 | ------------- | ------------- | ------------- |
 | spt_aguich2025 | M or G<sup>**1**</sup> | Spectral type of the host star |
