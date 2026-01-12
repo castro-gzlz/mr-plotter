@@ -39,10 +39,10 @@ The configuration file should contain all the information required to generate t
 
 Since September 2024 (v1+), *mr-plotter* can also be used from a Jupyter Notebook (`mr-plotter.ipynb`). As in the terminal workflow, simply select a configuration file (`config_file`) and run all cells.
 
-
 ## Is this your first time using *mr-plotter*?
 
-If so, please don't be overwhelmed by the large number of parameters. In most cases, you will only use a few! To **get familiarized** with the main options and **have a first contact** with *mr-plotter*, we invite you to take a look at the [**Usage examples**](#usage-examples) section, which illustrates the operation of the package in **different key scenarios**. You can find **all the example configuration files** inside the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
+If so, don’t worry about the large number of available parameters. **In most cases, you will only need a few**. To **get familiar with the main options** and **gain a first hands-on experience** with *mr-plotter*, we encourage you to check the [**Usage examples**](#usage-examples) section, which illustrates the package workflow in **several key scenarios**. All example configuration files can be found in the [*config*](https://github.com/castro-gzlz/mr-plotter/tree/main/config) folder. Enjoy :smiley:.
+
 
 ## Usage examples
 
