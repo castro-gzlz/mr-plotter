@@ -61,27 +61,23 @@ python mr-plotter.py example1_misc.ini
 
 ![example1_joint](https://github.com/user-attachments/assets/2457c704-9e5d-47d5-9a02-33683583e0db)
 
+### Example 2: [Colouring my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
 
-### Example 2: [Colourig my worlds](https://www.youtube.com/watch?v=fKtwi3cNtEs) and including steam water atmospheres
+We now **include a color code** based on the stellar host metallicity. We also include three theoretical mass–radius models derived from the equations of [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract). These models consider a **steam water atmosphere** over a rocky composition. As shown, a small amount of steam water (0.3–5% in mass) forming an extended hydrosphere can naturally explain the composition of the [emerging population of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract). These models are valid up to a **5% water mass fraction (WMF)**. Above this value, the models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract) are more appropriate, as they cover a validity range between **10% and 100% core mass fraction (CMF) and WMF**. In this example, we include two models from Aguichine et al. (2021): 30% CMF & 10% WMF (400 K), and 30% CMF & 20% WMF (400 K).
 
-We now **include a color code** according to the stellar host metallicity. We also include three models based on [Turbet et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A..41T/abstract) equations. These models consider a steam water atmosphere over a rocky composition. As we can see, a small amount of steam water (0.3%-5% in mass) forming an extensive hydrosphere can explain very well the composition of the [emerging group of low-density super-Earths](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract). These models are valid up to a 5% water mass fraction (WMF). Above this value, you might want to use the models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract), which have a validity range between 10% and 100% core mass fractions (CMF) and WMF. In this example, we include two models from [Aguichine et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...914...84A/abstract): 30% CMF & 10 WMF (400K), and 30% CMF & 20% WMF (400K). 
-
-```
+```bash
 python mr-plotter.py example2_met.ini
 ```
 
-We now run the same example by including a color code based on the received stellar insolation flux. We note that in both examples we customized the size of the planets through the *size_catalog_planets* keyword and the maximum and minimum values of the color map through the *color_min* and *color_max* keywords.
+We then run the same example using a color code based on the **received stellar insolation flux**. In both cases, we customize the planet marker sizes using the *size_catalog_planets* parameter, and control the color scale limits via the *color_min* and *color_max* parameters.
 
-```
+```bash
 python mr-plotter.py example2_insol.ini
 ```
 
 ![example2_joint](https://github.com/user-attachments/assets/a2e09bee-5949-421b-bae0-79bc7ebbbf77)
 
-
-Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result I invite you to look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
-
-
+Wait! do you see what I’m seeing? **Low-density super-Earths appear to be hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result, see Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract).
 
 ### Example 3: Evolutionary models (with interpolators!) of steam worlds and gas dwarfs
 
