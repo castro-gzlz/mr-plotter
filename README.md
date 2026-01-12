@@ -152,6 +152,8 @@ This visualization clearly illustrates the remarkable legacy of **TESS**, driven
 
 <img width="5596" height="2414" alt="example6_joint" src="https://github.com/user-attachments/assets/6286dacf-8acb-4160-ac61-868353feff0e" />
 
+</br>
+
 Finally, this example shows how to contextualize an individual planet (in this case **L 98-59 d**) using:
 
 - a **custom color not present in the original color map** (left panel), and
