@@ -50,7 +50,7 @@ The following color codes can be used when selecting the **NEA** catalog.
 
 ## PlanetS catalog
 
-The *PlanetS* catalog includes **all NEA parameters listed above**, and provides additional quantities computed **for the full sample**.
+The **PlanetS** catalog includes **all NEA parameters listed above**, and provides additional quantities computed **for the full sample**.
 
 ### Spectroscopy metrics
 | Code | Description |
