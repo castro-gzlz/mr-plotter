@@ -1,11 +1,80 @@
-### Color codes that can be used with the NASA Exoplanet Archive catalog
- 
-**none** (None),  **disc_year** (Discovery year), **disc_facility** (Discovery facility), **discoverymethod** (Discovery method),  **pl_orbper** (Orbital period in days), **pl_orbsmax** (Semi-major axis  in AU), **pl_orbeccen** (Eccentricity), **pl_insol** (Insolation Flux in $\rm S_{\oplus}$), **pl_eqt** (Eq. temperature  in K), **pl_rvamp** (Radial Velocity semi-amplitude in m/s), **pl_trandep** (Transit depth), **st_teff** (Stellar effective temperature in K), **st_rad** (Stellar radius in $\rm R_{\odot}$), **st_mass** (Stellar mass in $\rm M_{\odot}$), **st_met** (Stellar metallicity in dex), **st_logg** (Stellar surface gravity in dex), **st_lum** (Stellar Luminosity in Log($\rm L_{\odot}$)), **st_age** (Stellar Age in Gyr), **sy_dist** (Distance in pc), **sy_vmag** ($V$ magnitude), **sy_kmag** ($K_{\rm s}$ magnitude), and **sy_gaiamag** ($Gaia$ magnitude). 
- 
-### Color codes that can be used with the PlanetS catalog
+# Available color codes
 
-The [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog has **all the parameters listed above from the NASA Exoplanet Archive**. Besides, it has additional color coding options such as **TSM** (Transmission Spectroscopy Metric) and **ESM** (Emission Spectroscopy Metric), which were computed homogeneously for the complete catalog. It also includes other parameters computed homogeneously such as **pl_insol_PlanetS** (Insolation Flux in $\rm S_{\oplus}$) and **pl_eqt_PlanetS** (Eq. temperature  in K), as well as different parameters extracted from the [*Gaia* DR3](https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract) catalog: **st_teff_gaia** (Stellar effective temperature in K), **st_met_gaia** (Stellar metallicity in dex), **st_logg_gaia** (Stellar surface gravity in dex), **st_age_gaia** (Stellar Age in Gyr), and **st_lum_gaia** (Stellar Luminosity in Log($\rm L_{\odot}$)).
+This document lists all parameters that can be used for **color coding** in *mr-plotter*, depending on the selected exoplanet catalog.
 
-### Color codes that can be used with the Exoplanet.eu catalog
+---
 
-Same as in the NASA Exoplanet Archive. 
+## NASA Exoplanet Archive (NEA)
+
+The following color codes can be used when selecting the **NEA** catalog.
+
+### Non-numerical parameters
+| Code            | Description            |
+|-----------------|------------------------|
+| `none`          | No color coding        |
+| `disc_year`     | Discovery year         |
+| `disc_facility` | Discovery facility     |
+| `discoverymethod` | Discovery method    |
+
+### Planetary parameters
+| Code            | Description                          | Units |
+|-----------------|--------------------------------------|-------|
+| `pl_orbper`     | Orbital period                       | days  |
+| `pl_orbsmax`    | Semi-major axis                      | AU    |
+| `pl_orbeccen`   | Orbital eccentricity                 | —     |
+| `pl_insol`      | Insolation flux                      | S⊕    |
+| `pl_eqt`        | Equilibrium temperature              | K     |
+| `pl_rvamp`      | Radial-velocity semi-amplitude       | m/s   |
+| `pl_trandep`    | Transit depth                        | —     |
+
+### Stellar parameters
+| Code            | Description                          | Units |
+|-----------------|--------------------------------------|-------|
+| `st_teff`       | Stellar effective temperature        | K     |
+| `st_rad`        | Stellar radius                       | R⊙    |
+| `st_mass`       | Stellar mass                         | M⊙    |
+| `st_met`        | Stellar metallicity                  | dex   |
+| `st_logg`       | Stellar surface gravity              | dex   |
+| `st_lum`        | Stellar luminosity                   | log(L⊙) |
+| `st_age`        | Stellar age                          | Gyr   |
+
+### System parameters
+| Code            | Description          | Units |
+|-----------------|----------------------|-------|
+| `sy_dist`       | Distance             | pc    |
+| `sy_vmag`       | V-band magnitude     | mag   |
+| `sy_kmag`       | Ks-band magnitude    | mag   |
+| `sy_gaiamag`    | Gaia G magnitude     | mag   |
+
+---
+
+## PlanetS catalog
+
+The [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog includes **all NEA parameters listed above**, and provides additional quantities computed **homogeneously for the full sample**.
+
+### Spectroscopy metrics
+| Code  | Description                         |
+|-------|-------------------------------------|
+| `TSM` | Transmission Spectroscopy Metric    |
+| `ESM` | Emission Spectroscopy Metric        |
+
+### Homogeneously computed planetary parameters
+| Code                | Description                 | Units |
+|---------------------|-----------------------------|-------|
+| `pl_insol_PlanetS`  | Insolation flux             | S⊕    |
+| `pl_eqt_PlanetS`    | Equilibrium temperature     | K     |
+
+### Gaia DR3 stellar parameters
+| Code              | Description                          | Units |
+|-------------------|--------------------------------------|-------|
+| `st_teff_gaia`    | Stellar effective temperature        | K     |
+| `st_met_gaia`     | Stellar metallicity                  | dex   |
+| `st_logg_gaia`    | Stellar surface gravity              | dex   |
+| `st_age_gaia`     | Stellar age                          | Gyr   |
+| `st_lum_gaia`     | Stellar luminosity                   | log(L⊙) |
+
+---
+
+## Exoplanet.eu catalog
+
+The **Exoplanet.eu** catalog supports the **same color codes as the NASA Exoplanet Archive**.
