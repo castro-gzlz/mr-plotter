@@ -163,7 +163,7 @@ Finally, this example shows how to contextualize an individual planet (in this c
 
 ### Mandatory parameters
 
-#### [CATALOG_DATA] | Include data from the  [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](https://exoplanet.eu/home/), or [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs. 
+#### [CATALOG_DATA] | Include data from the  *NASA Exoplanet Archive*, *Exoplanet.eu*, or *PlanetS* catalogs. 
 
 
 | Parameter  | Possible values | Description |
