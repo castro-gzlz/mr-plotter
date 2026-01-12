@@ -5,13 +5,17 @@
        align="left"
        width="320"
        style="margin-right: 20px; margin-bottom: 10px;"
-       alt="Example mass-radius diagram">
+       alt="Example mass–radius diagram">
 
-*mr-plotter* is a **user-friendly** tool designed to produce **paper-quality mass-radius diagrams** based on a **broad selection of** [state-of-the-art models](#models--include-theoretical-models) of **planetary interiors and atmospheres**.
+*mr-plotter* is a **user-friendly** tool designed to produce **paper-quality mass–radius diagrams** based on a **broad selection of** [state-of-the-art models](#models--include-theoretical-models) of **planetary interiors and atmospheres**.
 
 It allows you to **contextualize new planets**, **infer their possible internal structures**, and **explore population-level correlations** through flexible **color-coding** based on planetary and stellar properties available in different catalogs.
 
-If your favorite model is not yet implemented, if you encounter any usage issues, or if you have suggestions for improvement, feel free to [contact me](mailto:amadeo.castro-gonzalez@unige.ch). The code is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) 🙂. For interactive mass–radius diagrams with sliders, check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS).
+If your favorite model is not yet implemented, if you encounter any usage issues, or if you have suggestions for improvement, feel free to [contact me](mailto:amadeo.castro-gonzalez@unige.ch). The code is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) 🙂.
+</p>
+
+For interactive mass–radius diagrams with sliders, check out  
+[MARDIGRAS](https://github.com/an0wen/MARDIGRAS).
 
 ## Installation & Requirements
 
