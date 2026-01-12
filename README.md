@@ -87,69 +87,74 @@ python mr-plotter.py example2_insol.ini
 Wait! Do you see what I'm seeing? **All low-density super-Earths are hosted by metal-poor stars and tend to receive relatively low insolation fluxes!** If you are interested in this result I invite you to look at Sect. 5.3 of [An unusually low-density super-Earth transiting the bright early-type M-dwarf GJ 1018 (TOI-244)](https://ui.adsabs.harvard.edu/abs/2023arXiv230504922C/abstract).
 
 
-### Example 3: The *PlanetS catalog*, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
+
+### Example 3: Evolutionary models (with interpolators!) of steam worlds and gas dwarfs
+
+Historically, interior models focused on end-member compositions such as Earth-like, 50% water, etc. However, it is now known that the planet radius is also sensitive to secondary effects caused by equilbrium temperature, age, spectral type of the star, etc. In addition to this, in the last few years it has became more common to use interior structure models to precisely infer the range of planet bulk compositions, in part thanks to tools such as [smint](https://github.com/cpiaulet/smint). This led to the publication of planet radii in the form of large grids covering the whole parameter space, and intermediate radii were interpolated. In this example, we show two such models: the interior model adapted to steam worlds from [Aguichine et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract):
+
+```
+python mr-plotter.py example3_evolmodels_aguichine.ini
+```
+
+and the interior model adapted to gas dwarfs from [Tang et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract):
+
+```
+python mr-plotter.py example3_evolmodels_aguichine_tang.ini
+```
+
+<img width="5624" height="2441" alt="example3_joint" src="https://github.com/user-attachments/assets/ee48180f-215a-406f-9762-72715de4091e" />
+
+
+These models present grids of planetary radii that depend on planet mass, composition, equilibrium temperature, age, and host star spectral type/envelope metallicity (respectively). Mass-radius relations can be shown for any parameter value, and not just those available, thanks to interpolation. The interpolation scheme has been taken from [MARDIGRAS](https://github.com/an0wen/MARDIGRAS). Extrapolation is possible but not advised. You can find the list of input parameters and their validity range in Section [[MODELS]](#models--include-theoretical-models). In the example below, TOI-270 d has bulk properties (mass, radius, equilibrium temperature, but unknown age, [Van Eylen et al. 2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2154V/abstract)) compatible with a 50% steam envelope, a 0.5% H<sub>2</sub>-He 1×Solar metallicity envelope, or anything in-between. Its transition spectrum was taken with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), showing the atmosphere is high metallicity (~50%).
+
+
+### Example 4: Two-column plots, isodensity curves and more interior models!
+
+*mr-plotter* can also produce **paper-ready two-column plots**. In this example, we contextualize the dense super-Earth K2-229 b ([Santerne et al. 2018](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract)) by including the maximum mantle collisional stripping model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract), the BICEPS model ([Haldemann et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract)) for different pure-iron compositions (C0 and C1 compositions), and some isodensity curves. We also show how to implement the pioneer M-R relations for pure-rock and pure-water compositions from [Seager et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). The procedure to include any other model from the literature is very similar to that shown in this and previous examples. In Section [[MODELS]](#models--include-theoretical-models) you can find the complete set of models implemented in *mr-plotter*.
+
+```
+python mr-plotter.py example4.ini
+```
+
+[example4.pdf](https://github.com/user-attachments/files/24567806/example4.pdf)
+
+
+### Example 5: The *PlanetS catalog*, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
 
 In this example, we use the [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)). This catalog contains published planets characterized robustly and accurately (relative error in mass < 25% and relative error in radius < 8%). It collects many parameters from the [NEA](https://exoplanetarchive.ipac.caltech.edu/), stellar parameters from [*Gaia* DR3](https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract), and also includes homogeneous calculations of $S_{\rm eff}$, $T_{\rm eq}$, TSM, ESM, etc. In this example, we plot the entire catalog color-coded according to the planetary TSM. We also show how we can include a new planetary system (TOI-5005; [Castro-González et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240918129C/abstract)) consistently colored with the catalog. In addition, we plot the **empirical relationships** for small, intermediate, and giant planets derived by [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). You might have noticed that we have changed the color code! By default, *mr-plotter* uses *rainbow*, but any [matplotlib's color map](https://matplotlib.org/stable/users/explain/colors/colormaps.html) can be easily chosen. 
 
 ```
-python mr-plotter.py example3_TSM.ini
+python mr-plotter.py example5_TSM.ini
 ```
 
 We can do the same for the ESM! We note that, as in [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract), the transition between the small and intermediate planet populations is marked by the composition line of 20% water at 650 K from [Luo et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024NatAs.tmp..205L/abstract), and the transition between the intermediate and giant planet population is marked by the iso-mass line at 138 M<sub>⊕</sub>.
 
 ```
-python mr-plotter.py example3_ESM.ini
+python mr-plotter.py example5_ESM.ini
 ```
 
-![example3_joint](https://github.com/user-attachments/assets/75d18651-4b05-4552-a6ae-7c71c6f6429a)
+<img width="4968" height="2254" alt="example5" src="https://github.com/user-attachments/assets/f8934a80-ab5c-4800-8da4-f7b53c23aa3e" />
 
 
-### Example 4: Non-numerical color codings and dark plots | The TESS legacy
+### Example 6: Non-numerical color codings and dark plots | The TESS legacy
 
 There are several parameters such as the discovery year, facility, or technique, that you might want to **separate by groups**. This is now possible to implement in *mr-plotter* (v1+). In this example, we first build the mass-radius diagram of small planets colored according to their discovery year. 
 
 ```
-python mr-plotter.py example4_year.ini
+python mr-plotter.py example6_year.ini
 ```
 It's amazing to see the exciting era we live in, right?! We can also make the same plot by differentiating between the three main space-based planet-hunting missions: *Kepler*, *K2*, and *TESS*.
 
 ```
-python mr-plotter.py example4_facility.ini
+python mr-plotter.py example6_facility.ini
 ```
 
 This plot evidences the invaluable legacy that *TESS* is providing thanks to its incessant monitoring of the bright sky. This example also shows how to make dark poster-ready and presentation-ready diagrams for conferences!
 
-![example4_joint](https://github.com/user-attachments/assets/b7cf7e8c-695d-4728-8e53-1aeb33fc1492)
+<img width="2798" height="2414" alt="example6_year" src="https://github.com/user-attachments/assets/385b8893-461e-49f6-85f0-02eb7db97219" />
 
 In this example, we can also see how to contextualize a planet (in this case L 98-59 d; [Demangeon et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..41D/abstract)) with a new color not included in the color map (left panel), and a color following the non-numerical color code (right panel; L 98-59 d was discovered by TESS).
 
-
-### Example 5: Two-column plots, isodensity curves and more interior models!
-
-*mr-plotter* can also produce **paper-ready two-column plots**. In this example, we contextualize the dense super-Earth K2-229 b ([Santerne et al. 2018](https://ui.adsabs.harvard.edu/abs/2018NatAs...2..393S/abstract)) by including the maximum mantle collisional stripping model by [Marcus et al. (2010)](https://ui.adsabs.harvard.edu/abs/2010ApJ...712L..73M/abstract), the BICEPS model ([Haldemann et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..96H/abstract)) for different pure-iron compositions (C0 and C1 compositions), and some isodensity curves. We also show how to implement the pioneer M-R relations for pure-rock and pure-water compositions from [Seager et al. (2007)](https://ui.adsabs.harvard.edu/abs/2007ApJ...669.1279S/abstract). The procedure to include any other model from the literature is very similar to that shown in this and previous examples. In Section [[MODELS]](#models--include-theoretical-models) you can find the complete set of models implemented in *mr-plotter*.
-
-```
-python mr-plotter.py example5.ini
-```
-
-![example5](https://github.com/user-attachments/assets/85a72cd7-36e5-448e-8cf0-4510f4d6d0ca)
-
-
-### Example 6: Evolutionary models (with interpolators!) of steam worlds and gas dwarfs
-
-Historically, interior models focused on end-member compositions such as Earth-like, 50% water, etc. However, it is now known that the planet radius is also sensitive to secondary effects caused by equilbrium temperature, age, spectral type of the star, etc. In addition to this, in the last few years it has became more common to use interior structure models to precisely infer the range of planet bulk compositions, in part thanks to tools such as [smint](https://github.com/cpiaulet/smint). This led to the publication of planet radii in the form of large grids covering the whole parameter space, and intermediate radii were interpolated. In this example, we show two such models: the interior model adapted to steam worlds from [Aguichine et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...988..186A/abstract), and the interior model adapted to gas dwarfs from [Tang et al. (2025)](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract).
-
-```
-python mr-plotter.py example6_evolmodels.ini
-```
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/77a4ae03-2289-4a40-87cd-c179542bc5bf"
-       alt="example6_evolmodels"
-       width="500">
-</p>
-
-These models present grids of planetary radii that depend on planet mass, composition, equilibrium temperature, age, and host star spectral type/envelope metallicity (respectively). Mass-radius relations can be shown for any parameter value, and not just those available, thanks to interpolation. The interpolation scheme has been taken from [MARDIGRAS](https://github.com/an0wen/MARDIGRAS). Extrapolation is possible but not advised. You can find the list of input parameters and their validity range in Section [[MODELS]](#models--include-theoretical-models). In the example below, TOI-270 d has bulk properties (mass, radius, equilibrium temperature, but unknown age, [Van Eylen et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2154V/abstract)) compatible with a 50% steam envelope, a 0.5% H<sub>2</sub>-He 1×Solar metallicity envelope, or anything in-between. Its transition spectrum was taken with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), showing the atmosphere is high metallicity (~50%).
 
 ## Configuration file
 
