@@ -53,7 +53,7 @@ In this example, we contextualize the planet TOI-244 b using data from the [NEA]
 python mr-plotter.py example1_toi244.ini
 ```
 
-We can also contextualize multiple planets within the same diagram. In the following example, a **faint appearance** is used to better highlight the planets HD 21520 b, TOI-469 b,  TOI-469 d,  and LHS 1140 c. In this case, we use the [Exoplanet.eu](https://exoplanet.eu/home/) catalog and include planet names in the legend to avoid excessively overloading the figure.
+We can also contextualize multiple planets within the same diagram. In the following example, a **faint appearance** is used to better highlight the planets HD 21520 b, TOI-469 b, TOI-469 d, and LHS 1140 c. In this case, we use the [Exoplanet.eu](https://exoplanet.eu/home/) catalog and include planet names in the legend to avoid excessively overloading the figure.
 
 ```bash
 python mr-plotter.py example1_misc.ini
