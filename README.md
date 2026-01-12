@@ -252,11 +252,11 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 [**Tang et al. (2025)**](https://ui.adsabs.harvard.edu/abs/2025ApJ...989...28T/abstract). Updated version of the Lopez & Fortney (2014) model, featuring a **more detailed mineralogy for the Earth-like core** and improved treatments of several physical approximations. The model also accounts for **atmospheric boil-off**, which sets an upper limit on the amount of gas a planet can retain. This model is provided as a **multidimensional grid with interpolation**, allowing any parameter value within the validity range to be explored (extrapolation is technically possible but **not recommended**) | [Usage](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/tang_2025.md) | [Example](https://github.com/castro-gzlz/mr-plotter/tree/main?tab=readme-ov-file#example-3-evolutionary-models-with-interpolators-of-steam-worlds-and-gas-dwarfs) 
 
- <br />
 
 #### [OPTIONAL_CONFIG] | Optional configuration
 
-*mr-plotter* has been designed to have a default graphic configuration able to generate paper-quality plots. However, there are some particular aspects such as the **X- and Y-axis limits**, **size of the data points**, **color map**, **etc**, that you might want to modify at your ease. This is also possible with [OPTIONAL_CONFIG]! Check out **all the available options** in [**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/optional_config.md) (most of them were used in the [**Usage examples**](#usage-examples) section).
+*mr-plotter* is designed with a default graphical setup that produces **paper-quality figures out of the box**. However, you may want to customize specific aspects of the plot—such as **X- and Y-axis limits**, **marker sizes**, **color maps**, or other stylistic options. All these customizations can be handled through the [OPTIONAL_CONFIG] section. A complete list of available parameters is provided in  
+[**this table**](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/optional_config.md), many of which are illustrated in the [**Usage examples**](#usage-examples) section.
 
 ## Contributors and Change log
 
