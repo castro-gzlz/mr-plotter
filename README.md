@@ -96,7 +96,7 @@ and the interior model adapted to gas dwarfs from [Tang et al. (2025)](https://u
 python mr-plotter.py example3_evolmodels_aguichine_tang.ini
 ```
 
-<img width="5626" height="2441" alt="example3_joint" src="https://github.com/user-attachments/assets/f24ed7c7-8f29-44da-8215-023307cf6c02" />
+<img width="5626" height="2441" alt="example3_joint" src="https://github.com/user-attachments/assets/d6bbce1b-61aa-44a5-b137-2caaf3242e5b" />
 
 
 These models present grids of planetary radii that depend on planet mass, composition, equilibrium temperature, age, and host star spectral type/envelope metallicity (respectively). Mass-radius relations can be shown for any parameter value, and not just those available, thanks to interpolation. The interpolation scheme has been taken from [MARDIGRAS](https://github.com/an0wen/MARDIGRAS). Extrapolation is possible but not advised. You can find the list of input parameters and their validity range in Section [[MODELS]](#models--include-theoretical-models). In the example below, TOI-270 d has bulk properties (mass, radius, equilibrium temperature, but unknown age, [Van Eylen et al. 2021](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2154V/abstract)) compatible with a 50% steam envelope, a 0.5% H<sub>2</sub>-He 1×Solar metallicity envelope, or anything in-between. Its transition spectrum was taken with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), showing the atmosphere is high metallicity (~50%).
