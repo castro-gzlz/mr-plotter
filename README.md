@@ -175,7 +175,7 @@ Finally, this example shows how to contextualize an individual planet (in this c
 **<sup>1</sup>** <sub>The full list of parameters that can be used to color *mr-plots* can be found [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/color_codes.md).</sub><br />
 **<sup>2</sup>** <sub>For non-numerical color codes (e.g. `disc_facility`), the groups to display and their associated colors must be defined (see how [here](https://github.com/castro-gzlz/mr-plotter/blob/main/misc/tables/non_numerical_config.md)).</sub>
 
-The package can access catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). Although we try to keep these catalogs up to date, we recommend downloading the most recent versions directly from the original sources:
+The package can access catalog data **locally** from different folders inside [*catalog_data*](https://github.com/castro-gzlz/mr-plotter/tree/main/catalog_data). Although we try to keep these catalogs up to date, we recommend downloading the most recent versions from the original sources:
 
 - [NEA Planetary Systems](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS) (**.csv** format)  
 - [Exoplanet.eu catalog](https://exoplanet.eu/catalog/#downloads-section) (**.csv** format)  
