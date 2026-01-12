@@ -33,9 +33,7 @@ Create a configuration file named *[my_config_file.ini](https://github.com/castr
 python mr-plotter.py my_config_file.ini
 ```
 
-The configuration file should contain all the information required to generate the plot, which will be saved in the [*output*](https://github.com/castro-gzlz/mr-plotter/tree/main/output) folder.
-
-All available parameters (both [mandatory](#mandatory-parameters) and [optional](#optional-parameters)) are described in the [**Configuration file**](#configuration-file) section.
+The configuration file should contain all the information required to generate the plot, which will be saved in the [*output*](https://github.com/castro-gzlz/mr-plotter/tree/main/output) folder. All available parameters (both [mandatory](#mandatory-parameters) and [optional](#optional-parameters)) are described in the [**Configuration file**](#configuration-file) section.
 
 #### From a Jupyter Notebook
 
