@@ -143,7 +143,11 @@ Historically, interior models focused on end-member compositions such as Earth-l
 python mr-plotter.py example6_evolmodels.ini
 ```
 
-<img width="1406" height="2441" alt="example6_evolmodels" src="https://github.com/user-attachments/assets/77a4ae03-2289-4a40-87cd-c179542bc5bf" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/77a4ae03-2289-4a40-87cd-c179542bc5bf"
+       alt="example6_evolmodels"
+       width="600">
+</p>
 
 These models present grids of planetary radii that depend on planet mass, composition, equilibrium temperature, age, and host star spectral type/envelope metallicity (respectively). Mass-radius relations can be shown for any parameter value, and not just those available, thanks to interpolation. The interpolation scheme has been taken from [MARDIGRAS](https://github.com/an0wen/MARDIGRAS). Extrapolation is possible but not advised. You can find the list of input parameters and their validity range in Section [[MODELS]](#models--include-theoretical-models). In the example below, TOI-270 d has bulk properties (mass, radius, equilibrium temperature, but unknown age, [Van Eylen et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2154V/abstract)) compatible with a 50% steam envelope, a 0.5% H<sub>2</sub>-He 1×Solar metallicity envelope, or anything in-between. Its transition spectrum was taken with JWST [Benneke et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024arXiv240303325B/abstract), showing the atmosphere is high metallicity (~50%).
 
