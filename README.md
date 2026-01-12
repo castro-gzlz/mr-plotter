@@ -125,7 +125,7 @@ In this example, we illustrate how *mr-plotter* can be used to **visualize empir
 python mr-plotter.py example5_TSM.ini
 ```
 
-The same visualization can be produced using the **ESM**. The transition between small and intermediate planets is marked by the **20% water composition line at 650 K** from [Luo et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024NatAs.tmp..205L/abstract), while the boundary between intermediate and giant planets is defined by the **138 M⊕ iso-mass line**, following Parc et al. (2024).
+The same visualization can be produced using the **ESM**. The transition between small and intermediate planets is marked by the **20% water composition line at 650 K** from [Luo et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024NatAs.tmp..205L/abstract), while the boundary between intermediate and giant planets is defined by the **138 M<sub>⊕</sub> iso-mass line**, following Parc et al. (2024).
 
 ```bash
 python mr-plotter.py example5_ESM.ini
