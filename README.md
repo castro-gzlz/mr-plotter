@@ -47,14 +47,13 @@ If so, don’t worry about the large number of available parameters. **In most c
 ## Usage examples
 
 ### Example 1: The simplest case. Contextualizing a new planetary system
-In this example, we contextualize a newly discovered planet (TOI-244 b; [Castro-González et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract)) using data from the [NEA catalog](https://exoplanetarchive.ipac.caltech.edu/). We also include several theoretical mass–radius models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
+In this example, we contextualize a newly discovered planet (TOI-244 b) using data from the [NEA catalog](https://exoplanetarchive.ipac.caltech.edu/). We also include several theoretical mass–radius models for **rocky planets**, **water worlds**, and **gas dwarfs** from [Zeng et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019PNAS..116.9723Z/abstract).
 
 ```bash
 python mr-plotter.py example1_toi244.ini
 ```
 
-We can also contextualize multiple planets within the same diagram. In the following example, a **faint appearance** is used to better highlight the planets HD 21520 b ([Nies et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240609595N/abstract)), TOI-469 b & d ([Damasso et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...679A..33D/abstract);  
-[Egger et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240618653E/abstract)), and LHS 1140 c ([Lillo-Box et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.121L/abstract); [Cadieux et al. 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...960L...3C/abstract)). In this case, we use the [Exoplanet.eu](https://exoplanet.eu/home/) catalog and include planet names in the legend to avoid excessively overloading the figure.
+We can also contextualize multiple planets within the same diagram. In the following example, a **faint appearance** is used to better highlight the planets HD 21520 b, TOI-469 b & d, and LHS 1140 c. In this case, we use the [Exoplanet.eu](https://exoplanet.eu/home/) catalog and include planet names in the legend to avoid excessively overloading the figure.
 
 ```bash
 python mr-plotter.py example1_misc.ini
