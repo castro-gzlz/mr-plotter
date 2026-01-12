@@ -11,7 +11,7 @@
 
 It allows you to **contextualize individual planets**, **infer their possible internal structures**, and **explore population-level correlations** through flexible **color-coding** based on planetary properties available in different catalogs.
 
-If your favorite model is not yet implemented, if you encounter any usage issues, or if you have suggestions for improvement, feel free to [contact me](mailto:amadeo.castro-gonzalez@unige.ch). The code is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) 🙂 For **interactive mass–radius diagrams with sliders**, check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS).
+If your favorite model is not yet implemented, if you encounter any usage issues, or if you have suggestions for improvement, feel free to [contact me](mailto:amadeo.castro-gonzalez@unige.ch). The code is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) 🙂. For **interactive mass–radius diagrams with sliders**, check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS).
 
 ## Installation & Requirements
 
