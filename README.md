@@ -1,26 +1,22 @@
 # **mr-plotter: Mass-Radius Diagrams Plotter**
 
-
-
 <p>
-
   <img src="https://github.com/user-attachments/assets/8fce48e4-944f-4389-a38d-c3006b8c4e8d"
        align="left"
        width="320"
-       style="margin-right: 20px; margin-bottom: 10px;">
-       
- **Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool to create **paper-quality mass-radius diagrams** based on a **wide range of** [state-of-the-art models](#models--include-theoretical-models) **of planetary interiors and atmospheres**. 
+       style="margin-right: 20px; margin-bottom: 10px;"
+       alt="Example mass-radius diagram">
 
- It can be used to **contextualize your favorite planets and infer their possible internal structures**. It can also be used to **search for correlations** at a population level thanks to its **color-coding option** based on any property collected in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*PlanetS*](https://dace.unige.ch/exoplanets/), and [*Exoplanet.eu*](http://www.exoplanet.eu/) catalogs. 
-                                                      
- If your favorite model is not yet included in *mr-plotter*, you have any usage problems, or you came up with an improvement, don't hesitate to [contact me](mailto:amadeo.castro-gonzalez@unige.ch). The code is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) :smiley:
- 
+**Mister plotter** (*mr-plotter*) is a **user-friendly** Python tool designed to produce **paper-quality mass–radius diagrams**, based on a **broad selection of** [state-of-the-art models](#models--include-theoretical-models) of **planetary interiors and atmospheres**.
+
+It allows you to **contextualize individual planets**, **infer their possible internal structures**, and **explore population-level correlations** through flexible **color-coding** based on planetary properties available in the [*NASA Exoplanet Archive*](https://exoplanetarchive.ipac.caltech.edu/), [*Exoplanet.eu*](http://www.exoplanet.eu/), and [*PlanetS*](https://dace.unige.ch/exoplanets/) catalogs.
+
+If your favorite model is not yet implemented, if you encounter any usage issues, or if you have suggestions for improvement, feel free to [contact me](mailto:amadeo.castro-gonzalez@unige.ch). The code is open to [contributors](https://github.com/castro-gzlz/mr-plotter?tab=readme-ov-file#contributors-and-change-log) 🙂
 </p>
 
 <br>
 
-
-For an **interactive** manipulation of mass–radius diagrams with **sliders**, check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS)!
+For **interactive mass–radius diagrams with sliders**, check out [MARDIGRAS](https://github.com/an0wen/MARDIGRAS).
 
 ## Installation & Requirements
 
