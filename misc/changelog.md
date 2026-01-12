@@ -1,5 +1,10 @@
+*mr-plotter* is actively maintained through incremental improvements and bug fixes. Major updates (such as the inclusion of new catalogs or theoretical models) are released as new versions.
 
-*mr-plotter* is actively mantained by including improvements and fixing issues. However, bigger changes can also be implemented (e.g. iclusion of new catalogs or models from the literature, etc), for which we release a new version. Below we incude a summary of each version.
+**Jun 2023** (**v0**)  
+First public release. Generation of paper-quality mass–radius diagrams based on confirmed and composite planets from the NASA Exoplanet Archive.
 
-**Jun 2023** (**v0**) | First release. Paper-ready M-R diagrams based on the Nasa Exoplanet Archive confirmed planets and composite catalogs. <br />
-**Sep 2024** (**v1**) | Compatibility with the Exoplanet.eu and PlanetS catalogs. Inclusion of new models and relationships (), **TBC** 
+**Sep 2024** (**v1**)  
+Major update including support for the Exoplanet.eu and PlanetS catalogs, new theoretical and empirical mass–radius models, extended color-coding capabilities (including non-numerical categories), and improved plotting and configuration options.
+
+**Jan 2026** (**v2**)  
+Implementation of evolutionary mass–radius models from **Aguichine et al. (2025)** and **Tang et al. (2025)**, including interpolators, model-specific configuration options, and dedicated usage examples. Documentation updated accordingly.
