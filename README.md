@@ -117,22 +117,20 @@ python mr-plotter.py example4.ini
 <img width="4968" height="2293" alt="example4" src="https://github.com/user-attachments/assets/02123950-a6df-41c3-90ea-14d39028272a" />
 
 
-### Example 5: The *PlanetS catalog*, empirical relations, and color coding based on homogeneous Transmission and Emission Spectroscopy metrics (TSM and ESM)
+### Example 5: Empirical mass–radius relations and TSM/ESM color coding
 
-In this example, we use the [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)). This catalog contains published planets characterized robustly and accurately (relative error in mass < 25% and relative error in radius < 8%). It collects many parameters from the [NEA](https://exoplanetarchive.ipac.caltech.edu/), stellar parameters from [*Gaia* DR3](https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract), and also includes homogeneous calculations of $S_{\rm eff}$, $T_{\rm eq}$, TSM, ESM, etc. In this example, we plot the entire catalog color-coded according to the planetary TSM. We also show how we can include a new planetary system (TOI-5005; [Castro-González et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240918129C/abstract)) consistently colored with the catalog. In addition, we plot the **empirical relationships** for small, intermediate, and giant planets derived by [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). You might have noticed that we have changed the color code! By default, *mr-plotter* uses *rainbow*, but any [matplotlib's color map](https://matplotlib.org/stable/users/explain/colors/colormaps.html) can be easily chosen. 
+In this example, we illustrate how *mr-plotter* can be used to **visualize empirical mass–radius relations** for small, intermediate, and giant planets, together with **observational prioritization metrics** such as the Transmission and Emission Spectroscopy Metrics (**TSM and ESM**). We include the empirical relations derived by [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract). The planetary sample is taken from the [*PlanetS*](https://dace.unige.ch/exoplanets/) catalog ([Otegi et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..43O/abstract); [Parc et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract)), which also served as the basis for deriving these relations.
 
-```
+```bash
 python mr-plotter.py example5_TSM.ini
-```
 
-We can do the same for the ESM! We note that, as in [Parc et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...688A..59P/abstract), the transition between the small and intermediate planet populations is marked by the composition line of 20% water at 650 K from [Luo et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024NatAs.tmp..205L/abstract), and the transition between the intermediate and giant planet population is marked by the iso-mass line at 138 M<sub>⊕</sub>.
+The same visualization can be produced using **ESM** as the color-coding parameter. The transition between small and intermediate planets is marked by the **20% water composition line at 650 K** from [Luo et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024NatAs.tmp..205L/abstract), while the boundary between intermediate and giant planets is defined by the **138 M⊕ iso-mass line**, following Parc et al. (2024).
 
-```
+```bash
 python mr-plotter.py example5_ESM.ini
 ```
 
 <img width="5608" height="2254" alt="example5_joint" src="https://github.com/user-attachments/assets/22940d4b-745b-44bd-bd43-646cc294504d" />
-
 
 
 ### Example 6: Non-numerical color codings and dark plots | The TESS legacy
