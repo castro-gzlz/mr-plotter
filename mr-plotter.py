@@ -786,7 +786,6 @@ try:
     aguich2025 = True
     aguich2025_MR()
 except:
-    print("pas de modèle aguichine 2025")
     aguich2025 = False
 
 # In[ ]:
@@ -877,7 +876,6 @@ try:
     tang2025 = True
     tang2025_MR()
 except:
-    print("no model for tang 2025")
     tang2025 = False
 
 # In[ ]:
