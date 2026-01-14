@@ -262,7 +262,7 @@ In this section, we list all theoretical and empirical models implemented in *mr
 
 ## Credits
 
-If you use *mr-plotter* in your work, please cite: [Castro-González et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract).
+If you use *mr-plotter*, please give credit to [this work](https://ui.adsabs.harvard.edu/abs/2023A%26A...675A..52C/abstract):
 
 ```bibtex
 @ARTICLE{2023A&A...675A..52C,
